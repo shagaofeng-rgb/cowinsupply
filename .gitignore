@@ -1,3 +1,11 @@
 .tools/
 .sync-raw/
 .incoming/
+node_modules/
+.next/
+.data/
+.vercel/
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
