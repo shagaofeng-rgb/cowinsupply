@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { apiError, apiOk, requireAdminApi } from "@/lib/adminApi";
 import { appendAuditLog, deleteCmsItem, getCmsItems, saveCmsItem, slugify, updateCmsItemStatus } from "@/lib/cmsStore";
+import { refreshSitemap } from "@/lib/sitemapService";
 
 const allowedTypes = new Set(["product", "news"]);
 
@@ -44,6 +45,14 @@ export async function POST(request, { params }) {
     });
     await appendAuditLog({ action: "save", module: type, target: item.slug });
   }
+
+  const sitemapRun = await refreshSitemap({ trigger: `admin_${type}_${action}`, submit: false });
+  await appendAuditLog({
+    action: "refresh-sitemap",
+    module: "seo",
+    target: `${sitemapRun.totalUrls || 0} urls`,
+    result: sitemapRun.errors?.length ? "failed" : "success"
+  });
 
   redirect(`/admin/${type === "product" ? "products" : "news"}`);
 }

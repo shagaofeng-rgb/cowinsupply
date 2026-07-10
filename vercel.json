@@ -10,6 +10,10 @@
     {
       "path": "/api/cron/email-health",
       "schedule": "30 2 1,15 * *"
+    },
+    {
+      "path": "/api/cron/sitemap",
+      "schedule": "10 18 * * *"
     }
   ]
 }

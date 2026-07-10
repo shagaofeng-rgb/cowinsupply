@@ -10,7 +10,11 @@ const pages = [
   { path: "/api/news/feed", name: "news-rss" },
   { path: "/api/content/sitemap", name: "content-sitemap" },
   { path: "/robots.txt", name: "robots" },
-  { path: "/sitemap.xml", name: "static-sitemap" },
+  { path: "/sitemap.xml", name: "sitemap-index" },
+  { path: "/sitemaps/sitemap-pages.xml", name: "sitemap-pages" },
+  { path: "/sitemaps/sitemap-products.xml", name: "sitemap-products" },
+  { path: "/sitemaps/sitemap-posts.xml", name: "sitemap-posts" },
+  { path: "/sitemaps/sitemap-categories.xml", name: "sitemap-categories" },
   { path: "/api/health", name: "health" }
 ];
 
@@ -46,7 +50,11 @@ async function checkUrl(page) {
     if (page.expectCanonical && !/rel=["']canonical["']/i.test(text)) issues.push("Missing canonical");
     if (page.expectJsonLd && !/application\/ld\+json/i.test(text)) issues.push("Missing JSON-LD");
     if (page.name === "news-rss" && !/<rss/i.test(text)) issues.push("RSS feed invalid");
-    if (page.name.includes("sitemap") && !/<urlset|products|news/i.test(text)) issues.push("Sitemap response invalid");
+    if (page.name === "sitemap-index" && !/<sitemapindex[\s>]/i.test(text)) issues.push("Sitemap index invalid");
+    if (page.name.startsWith("sitemap-") && page.name !== "sitemap-index" && !/<urlset[\s>]/i.test(text)) issues.push("Sitemap urlset invalid");
+    if (page.name.startsWith("sitemap-") && !/https:\/\/www\.cowinsupply\.com/i.test(text)) issues.push("Sitemap missing absolute production URLs");
+    if (page.name.startsWith("sitemap-") && /\/(admin|login|search)(\/|<|\?|$)/i.test(text)) issues.push("Sitemap includes blocked URL");
+    if (page.name === "robots" && !/Sitemap:\s*https:\/\/www\.cowinsupply\.com\/sitemap\.xml/i.test(text)) issues.push("robots.txt missing production sitemap");
     if (/password|SMTP_PASSWORD|GOOGLE_SERVICE_ACCOUNT|PRIVATE KEY/i.test(text)) issues.push("Potential secret leak marker");
     return { ...page, url, status: response.status, ms: Date.now() - started, ok: !issues.length, issues };
   } catch (error) {
