@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node tools/prepare-static-seo.mjs",
     "build": "next build",
     "start": "next start",
     "sitemap:generate": "node tools/sitemap-generate.mjs",
+    "seo:audit": "node tools/indexability-audit.mjs",
     "self-check": "node tools/site-self-check.mjs"
   },
   "dependencies": {

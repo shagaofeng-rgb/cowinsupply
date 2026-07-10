@@ -4,7 +4,7 @@ import { publicHtmlResponse } from "@/lib/staticHtml";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(_request, { params }) {
+export async function GET(request, { params }) {
   const { slug } = await params;
   const [news, products] = await Promise.all([getCmsItems("news"), getCmsItems("product")]);
   const article = news.find((item) => item.slug === slug);
@@ -13,5 +13,5 @@ export async function GET(_request, { params }) {
       headers: { "content-type": "text/html; charset=utf-8", "cache-control": "s-maxage=300, stale-while-revalidate=3600" }
     });
   }
-  return publicHtmlResponse(`news/${slug}.html`);
+  return publicHtmlResponse(`news/${slug}.html`, { canonicalPath: new URL(request.url).pathname });
 }

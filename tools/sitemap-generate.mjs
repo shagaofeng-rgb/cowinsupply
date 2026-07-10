@@ -13,6 +13,7 @@ const dataDir = path.join(cwd, ".data");
 const cacheFile = path.join(dataDir, "sitemap-cache.json");
 const logFile = path.join(dataDir, "sitemap-runs.json");
 const publicDir = path.join(cwd, "public");
+const contentBaselineDate = process.env.SITEMAP_CONTENT_BASELINE_DATE || "2026-07-10";
 
 const startedAt = new Date();
 const snapshot = await buildSnapshot();
@@ -92,7 +93,7 @@ async function getStaticPages() {
 async function getTagPages() {
   try {
     const entries = await fs.readdir(path.join(publicDir, "tag"), { withFileTypes: true });
-    return Promise.all(entries.filter((entry) => entry.isDirectory()).map(async (entry) => ({ loc: `${siteUrl}/tag/${encodeURIComponent(entry.name)}/`, lastmod: await fileDate(path.join("tag", entry.name, "index.html")) })));
+    return Promise.all(entries.filter((entry) => entry.isDirectory()).map(async (entry) => ({ loc: `${siteUrl}/tag/${encodeURIComponent(entry.name)}`, lastmod: await fileDate(path.join("tag", entry.name, "index.html")) })));
   } catch {
     return [];
   }
@@ -139,9 +140,10 @@ async function writeJsonAtomic(filePath, value) {
 
 async function fileDate(relativePath) {
   try {
-    return (await fs.stat(path.join(publicDir, relativePath))).mtime.toISOString().slice(0, 10);
+    const fileLastmod = (await fs.stat(path.join(publicDir, relativePath))).mtime.toISOString().slice(0, 10);
+    return fileLastmod > contentBaselineDate ? fileLastmod : contentBaselineDate;
   } catch {
-    return "2026-07-07";
+    return contentBaselineDate;
   }
 }
 
