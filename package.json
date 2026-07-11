@@ -9,6 +9,7 @@
     "start": "next start",
     "sitemap:generate": "node tools/sitemap-generate.mjs",
     "seo:audit": "node tools/indexability-audit.mjs",
+    "structured-data:audit": "node tools/structured-data-audit.mjs",
     "self-check": "node tools/site-self-check.mjs"
   },
   "dependencies": {
