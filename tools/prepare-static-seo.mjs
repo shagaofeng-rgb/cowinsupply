@@ -41,10 +41,10 @@ async function addFile(relativePath, canonicalPath) {
     `<meta property="og:url" content="${escapeAttr(canonicalUrl)}">`
   ].join("\n    ");
   const cleaned = html
-    .replace(/<link\b[^>]*\brel=["']canonical["'][^>]*>\s*/gi, "")
-    .replace(/<meta\b[^>]*\bname=["']robots["'][^>]*>\s*/gi, "")
-    .replace(/<meta\b[^>]*\bproperty=["']og:url["'][^>]*>\s*/gi, "");
-  const next = /<\/head>/i.test(cleaned) ? cleaned.replace(/<\/head>/i, `    ${tags}\n</head>`) : cleaned;
+    .replace(/[ \t]*<link\b[^>]*\brel=["']canonical["'][^>]*>\s*/gi, "")
+    .replace(/[ \t]*<meta\b[^>]*\bname=["']robots["'][^>]*>\s*/gi, "")
+    .replace(/[ \t]*<meta\b[^>]*\bproperty=["']og:url["'][^>]*>\s*/gi, "");
+  const next = /<\/head>/i.test(cleaned) ? cleaned.replace(/<\/head>/i, `        ${tags}\n</head>`) : cleaned;
   if (next !== html) await fs.writeFile(filePath, next, "utf8");
   targets.push(relativePath.replaceAll(path.sep, "/"));
 }
