@@ -13,6 +13,7 @@
     "self-check": "node tools/site-self-check.mjs"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
     "next": "^16.2.10",
     "nodemailer": "^9.0.3",
     "react": "19.2.6",

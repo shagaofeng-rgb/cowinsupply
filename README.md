@@ -52,12 +52,11 @@ npm run build
 - `SMTP_PASSWORD`
 - `SMTP_FROM`
 - `ADMIN_NOTIFICATION_EMAIL`
+- `DATABASE_URL`（Vercel/Neon PostgreSQL，生产环境新闻、询盘、后台数据持久化）
 
 ## 数据存储说明
 
-当前版本的数据读写集中在 `lib/cmsStore.js`。本地使用 `.data` 目录，Vercel Serverless 环境会使用临时目录，因此不适合作为长期生产数据库。
-
-要达到生产级中文管理后台要求，请接入 PostgreSQL 或等价持久数据库，并把 `cmsStore` 替换为数据库实现。
+数据读写集中在 `lib/cmsStore.js`。生产环境存在 `DATABASE_URL` 或 `POSTGRES_URL` 时，数据存入 PostgreSQL；本地未配置数据库时使用 `.data` 目录，便于开发。生产写入不会再依赖 Vercel 临时文件系统。
 
 ## 部署
 
