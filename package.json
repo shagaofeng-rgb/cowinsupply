@@ -10,7 +10,8 @@
     "sitemap:generate": "node tools/sitemap-generate.mjs",
     "seo:audit": "node tools/indexability-audit.mjs",
     "structured-data:audit": "node tools/structured-data-audit.mjs",
-    "self-check": "node tools/site-self-check.mjs"
+    "self-check": "node tools/site-self-check.mjs",
+    "test:news": "node --test tests/newsQuery.test.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",

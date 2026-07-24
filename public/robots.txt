@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.cowinsupply.com/sitemap.xml
+Sitemap: https://www.cowinsupply.com/news-sitemap.xml

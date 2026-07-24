@@ -1,5 +1,15 @@
 # Cowin Supply 中文管理后台实施计划
 
+## News Automation Delivery Status (2026-07-24)
+
+- Architecture: Next.js route handlers, Neon PostgreSQL persistent storage, Vercel Cron, and the authenticated admin console.
+- Sources: public RSS feeds only, with allowlist/blacklist controls, timeouts, private-network SSRF blocking, and no login or paywall bypass.
+- Publication: four-article daily target, `Asia/Shanghai` accounting, 72-hour source-time validation, seven-day URL/title/event deduplication, a persistent concurrency lock, audit records, and email shortfall alerts.
+- Product relation: each automatic article must resolve to one to three public products. The relation is persisted on the article, exposed through the product-news API, shown on the News page, and surfaced back on matching product pages.
+- SEO/GEO: server-rendered list/detail pages, canonical metadata, Open Graph/Twitter tags, `NewsArticle` and `BreadcrumbList` JSON-LD, RSS, standard XML Sitemap, Google News Sitemap, and robots discovery.
+- Operations: four Vercel Cron windows per day, sitemap refresh after publication, authenticated retry controls, and production health checks.
+- Validation: `npm run test:news`, `npm run build`, production API/list/detail/feed/sitemap checks, then Vercel production deployment.
+
 ## 当前状态
 
 - 项目：Cowin Supply 官网与中文管理后台。
