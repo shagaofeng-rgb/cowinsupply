@@ -2,15 +2,7 @@
 const nextConfig = {
   poweredByHeader: false,
   trailingSlash: false,
-  output: undefined,
-  async rewrites() {
-    return [
-      {
-        source: "/product/:slug.html",
-        destination: "/product/:slug"
-      }
-    ];
-  }
+  output: undefined
 };
 
 module.exports = nextConfig;
