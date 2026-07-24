@@ -35,7 +35,7 @@ a {
 .whatsapp-float {
   position: fixed;
   right: 24px;
-  bottom: 24px;
+  top: 50%;
   z-index: 1000;
   display: grid;
   width: 60px;
@@ -45,12 +45,24 @@ a {
   border-radius: 50%;
   background: #25d366;
   box-shadow: 0 10px 26px rgba(8, 38, 25, 0.28);
+  transform: translateY(-50%);
   transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.whatsapp-float::before {
+  position: absolute;
+  inset: -8px;
+  border: 2px solid rgba(37, 211, 102, 0.55);
+  border-radius: 50%;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  animation: whatsapp-pulse 2.2s ease-out infinite;
 }
 
 .whatsapp-float:hover,
 .whatsapp-float:focus-visible {
-  transform: translateY(-3px) scale(1.04);
+  transform: translateY(-50%) scale(1.08);
   box-shadow: 0 14px 30px rgba(8, 38, 25, 0.34);
 }
 
@@ -63,10 +75,19 @@ a {
 @media (max-width: 620px) {
   .whatsapp-float {
     right: 16px;
-    bottom: 16px;
     width: 54px;
     height: 54px;
   }
+}
+
+@keyframes whatsapp-pulse {
+  0% { transform: scale(0.8); opacity: 0; }
+  25% { opacity: 0.65; }
+  100% { transform: scale(1.42); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float::before { animation: none; }
 }
 
 .admin-login-page {
