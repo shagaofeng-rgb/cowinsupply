@@ -20,6 +20,7 @@ export default async function AdminSettingsPage() {
           <label>站点名称<input name="siteName" defaultValue={settings.siteName} /></label>
           <label>官网域名<input name="siteUrl" defaultValue={settings.siteUrl} /></label>
           <label>公司邮箱<input name="companyEmail" defaultValue={settings.companyEmail} /></label>
+          <label>Company phone<input name="companyPhone" defaultValue={settings.companyPhone} /></label>
           <label>默认语言<input name="defaultLanguage" defaultValue={settings.defaultLanguage} /></label>
           <label>SEO 标题<input name="seoTitle" defaultValue={settings.seoTitle} /></label>
           <label>SEO 描述<textarea name="seoDescription" defaultValue={settings.seoDescription} /></label>
