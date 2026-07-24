@@ -61,7 +61,7 @@ export default async function AdminNewsPage({ searchParams }) {
           <label>新闻标题<input name="title" required /></label>
           <label>URL Slug<input name="slug" placeholder="industry-update" /></label>
           <label>分类<input name="category" placeholder="Industry News" /></label>
-          <label>图片地址<input name="image" placeholder="/cowin-assets/scene-news-grinder.jpg" /></label>
+          <label>图片地址<input name="image" placeholder="/cowin-assets/scene-news-grinder.webp" /></label>
           <label>摘要<textarea name="summary" /></label>
           <button type="submit">保存新闻</button>
         </form>
