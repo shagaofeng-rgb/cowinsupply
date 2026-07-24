@@ -1,14 +1,16 @@
-import { DataTable, EmptyPanel, MetricCard, RangeBox, SyncStrip } from "@/components/admin/DataPanels";
-import { getAnalyticsReport, getCmsItems, getInquiries, getSyncStatus } from "@/lib/cmsStore";
+import { DataTable, EmptyPanel, MetricCard, SyncStrip } from "@/components/admin/DataPanels";
+import RangeBox from "@/components/admin/RangeBox";
+import { getAdminDateRange } from "@/lib/adminDateRange";
+import { getAnalyticsReport, getCmsItems, getSyncStatus } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
-export default async function AdminDashboardPage() {
-  const [analytics, products, news, inquiries, sync] = await Promise.all([
-    getAnalyticsReport(),
+export default async function AdminDashboardPage({ searchParams }) {
+  const range = getAdminDateRange(await searchParams);
+  const [analytics, products, news, sync] = await Promise.all([
+    getAnalyticsReport(range),
     getCmsItems("product", { includeInactive: true }),
     getCmsItems("news", { includeInactive: true }),
-    getInquiries(),
     getSyncStatus()
   ]);
 
@@ -30,7 +32,7 @@ export default async function AdminDashboardPage() {
         <MetricCard label="独立访客" value={analytics.uv} hint="UV" />
         <MetricCard label="产品浏览" value={analytics.productViews} hint="产品页面" />
         <MetricCard label="新闻浏览" value={analytics.newsViews} hint="新闻页面" />
-        <MetricCard label="表单提交" value={inquiries.length} hint="客户询盘" />
+        <MetricCard label="表单提交" value={analytics.inquiries} hint="客户询盘" />
         <MetricCard label="转化率" value={`${analytics.conversionRate}%`} hint="询盘 / PV" />
         <MetricCard label="产品内容" value={products.length} hint="当前内容" />
         <MetricCard label="新闻内容" value={news.length} hint="当前内容" />

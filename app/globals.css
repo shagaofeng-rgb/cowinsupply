@@ -775,7 +775,7 @@ body:has(.admin-dashboard) {
   font-size: 13px;
 }
 
-.range-box div {
+.range-options {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
@@ -788,12 +788,47 @@ body:has(.admin-dashboard) {
   background: #0a1728;
   color: #d8ecff;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .range-box button.is-active,
 .range-refresh {
   background: linear-gradient(90deg, #77e1ef, #ffd91d) !important;
   color: #03101e !important;
+}
+
+.range-box button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.range-custom {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 8px;
+  align-items: end;
+}
+
+.range-custom label {
+  display: grid;
+  gap: 5px;
+  color: #9fb1ca;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.range-custom input {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid rgba(110, 222, 236, 0.24);
+  border-radius: 8px;
+  padding: 7px 8px;
+  background: #0a1728;
+  color: #d8ecff;
+}
+
+.range-custom button {
+  min-height: 38px;
 }
 
 .sync-strip {

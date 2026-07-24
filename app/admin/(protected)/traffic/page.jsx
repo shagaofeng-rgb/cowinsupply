@@ -1,10 +1,13 @@
-import { DataTable, EmptyPanel, MetricCard, RangeBox, SyncStrip } from "@/components/admin/DataPanels";
+import { DataTable, EmptyPanel, MetricCard, SyncStrip } from "@/components/admin/DataPanels";
+import RangeBox from "@/components/admin/RangeBox";
+import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getAnalyticsReport, getSyncStatus } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
-export default async function TrafficPage() {
-  const [analytics, sync] = await Promise.all([getAnalyticsReport(), getSyncStatus()]);
+export default async function TrafficPage({ searchParams }) {
+  const range = getAdminDateRange(await searchParams);
+  const [analytics, sync] = await Promise.all([getAnalyticsReport(range), getSyncStatus()]);
 
   return (
     <>
