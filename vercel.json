@@ -2,6 +2,12 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/product/:slug.html",
+      "destination": "/product/:slug"
+    }
+  ],
   "crons": [
     {
       "path": "/api/cron/news",
