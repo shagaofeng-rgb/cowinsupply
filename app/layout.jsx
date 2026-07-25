@@ -5,7 +5,10 @@ export const metadata = {
   title: "Cowin Supply",
   description: "Factory direct professional power tools",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.png", type: "image/png" }
+    ],
     apple: "/cowin-assets/cowin-logo.png"
   }
 };
