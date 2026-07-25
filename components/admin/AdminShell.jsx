@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -25,7 +25,7 @@ export default function AdminShell({ children, email }) {
     <div className="admin-dashboard">
       <aside className="admin-sidebar">
         <Link className="admin-logo" href="/admin">
-          <span>CY</span>
+          <img className="admin-brand-mark" src="/cowin-assets/cowin-logo.png" alt="Cowin Supply logo" />
           <strong>网站数据后台</strong>
         </Link>
         <nav>

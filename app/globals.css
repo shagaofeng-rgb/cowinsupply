@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
   --admin-bg: #f4f6f8;
   --admin-panel: #ffffff;
@@ -115,16 +115,12 @@ a {
   text-decoration: none;
 }
 
-.admin-login-brand span,
-.admin-logo span {
+.admin-brand-mark {
   width: 38px;
   height: 38px;
-  display: grid;
-  place-items: center;
   border-radius: 8px;
-  background: var(--admin-brand);
-  color: #fff;
-  font-weight: 800;
+  object-fit: contain;
+  background: #fff;
 }
 
 .eyebrow {
@@ -651,9 +647,8 @@ body:has(.admin-dashboard) {
   background: #030b13;
 }
 
-.admin-logo span {
-  background: #ffe66b;
-  color: #04101d;
+.admin-logo .admin-brand-mark {
+  background: #fff;
 }
 
 .admin-logo strong,

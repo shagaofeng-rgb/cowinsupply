@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import PasswordField from "@/components/admin/PasswordField";
 import { getConfiguredAdminEmail, localAdminHint } from "@/lib/adminAccountStore";
 import { isAdminAuthConfigured } from "@/lib/adminAuth";
@@ -24,7 +24,7 @@ export default async function AdminLoginPage({ searchParams }) {
     <main className="admin-login-page">
       <section className="admin-login-card">
         <Link className="admin-login-brand" href="/">
-          <span>CS</span>
+          <img className="admin-brand-mark" src="/cowin-assets/cowin-logo.png" alt="Cowin Supply logo" />
           <strong>Cowin Supply</strong>
         </Link>
         <p className="eyebrow">Website Admin</p>
