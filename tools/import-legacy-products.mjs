@@ -3,6 +3,7 @@ import path from "node:path";
 
 const LEGACY_ORIGIN = "https://s8ozwsrp.fuwucms.com";
 const OUTPUT = path.join(process.cwd(), "data", "legacyProducts.json");
+const LEGACY_LOGO_FILE = "946363e1618f9f1d9800222ee0156477.jpeg";
 
 const decode = (value = "") => String(value)
   .replaceAll("&amp;", "&")
@@ -38,7 +39,7 @@ for (const url of urls) {
   const details = between(html, /class=["'][^"']*product-detail-text[^"']*["'][^>]*>([\s\S]*?)<\/div>\s*<\/div>\s*<\/div>/i);
   const imageUrls = [...html.matchAll(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi)]
     .map((match) => normalizeUrl(match[1]).replace(/\?image_process=[^"']*/i, ""))
-    .filter((image) => /cdn\.fuwucms\.com\/a\/375612959223\/files\//i.test(image));
+    .filter((image) => /cdn\.fuwucms\.com\/a\/375612959223\/files\//i.test(image) && !image.includes(LEGACY_LOGO_FILE));
   const productImage = normalizeUrl((between(html, /class=["'][^"']*lanyun-effect-top[^"']*["'][\s\S]*?<img[^>]+src=["']([^"']+)/i) || imageUrls[0] || "")).replace(/\?image_process=[^"']*/i, "");
   const detailImages = [...new Set(imageUrls.filter((image) => image !== productImage))].slice(0, 12);
   const published = decode(between(html, /Release time\s*:\s*([^<\n]+)/i));
