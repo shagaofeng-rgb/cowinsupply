@@ -3,9 +3,13 @@ import { renderProductDetailHtml } from "@/lib/productRendering";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(_request, { params }) {
+export async function GET(request, { params }) {
   const { slug: parts } = await params;
-  const slug = (Array.isArray(parts) ? parts.join("/") : String(parts || "")).replace(/\.html$/i, "");
+  const rawSlug = Array.isArray(parts) ? parts.join("/") : String(parts || "");
+  if (/^index(?:\.html)?$/i.test(rawSlug)) {
+    return Response.redirect(new URL("/product", request.url), 308);
+  }
+  const slug = rawSlug.replace(/\.html$/i, "");
   const products = await getCmsItems("product");
   const product = products.find((item) => item.slug === slug);
   if (!product) return new Response("Not found", { status: 404 });
