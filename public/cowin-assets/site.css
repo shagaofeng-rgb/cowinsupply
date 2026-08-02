@@ -1,3 +1,5 @@
+@import url("/cowin-assets/site-polish.css");
+
 :root {
   --orange: #ff5a00;
   --orange-dark: #d94c00;
@@ -10,13 +12,14 @@
   --max: 1280px;
 }
 
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--text);
   background: var(--white);
-  font-family: Arial, "Noto Sans SC", sans-serif;
+  font-family: "Aptos", "Segoe UI", "Noto Sans SC", sans-serif;
   overflow-x: hidden;
 }
 img { display: block; max-width: 100%; }
@@ -88,7 +91,7 @@ button, input, textarea { font: inherit; }
 
 h1, h2, h3 {
   margin: 0;
-  font-family: "Arial Black", Impact, Arial, sans-serif;
+  font-family: "Aptos Display", "Aptos", "Segoe UI", sans-serif;
   letter-spacing: 0;
   line-height: 1.05;
   text-transform: uppercase;
@@ -245,7 +248,7 @@ p { line-height: 1.7; }
   background: rgba(255,255,255,.08);
   border: 1px solid rgba(255,255,255,.14);
 }
-.stat strong { display: block; color: var(--orange); font-size: 38px; font-family: "Arial Black", Impact, Arial, sans-serif; }
+.stat strong { display: block; color: var(--orange); font-size: 38px; font-family: "Aptos Display", "Aptos", "Segoe UI", sans-serif; }
 .stat span { color: #d7dde4; }
 
 .page-hero {

@@ -18,7 +18,7 @@
 body {
   margin: 0;
   color: var(--admin-text);
-  font-family: Arial, "Microsoft YaHei", sans-serif;
+  font-family: "Aptos", "Segoe UI", "Microsoft YaHei", sans-serif;
 }
 
 button,
@@ -1007,4 +1007,62 @@ body:has(.admin-dashboard) {
   .data-hero h1 {
     font-size: 38px;
   }
+}
+
+/* Admin visual refresh: operational density with restrained contrast and clear actions. */
+.admin-shell { min-height: 100vh; background: #f4f8fb; color: #1f3348; }
+.admin-sidebar { background: #102a43; border-right: 1px solid #0c2237; }
+.admin-logo { color: #fff; }
+.admin-logo-mark { background: #d7f3f7; color: #056889; border-radius: 7px; }
+.admin-sidebar nav { gap: 4px; }
+.admin-sidebar nav a { color: #c7d6e5; border-radius: 6px; border: 1px solid transparent; }
+.admin-sidebar nav a:hover { color: #fff; background: rgba(255, 255, 255, .08); }
+.admin-sidebar nav a.active { color: #fff; border-color: rgba(111, 213, 227, .42); background: #174a66; }
+.admin-sidebar-foot { border-top-color: rgba(199, 214, 229, .22); color: #c7d6e5; }
+.admin-sidebar-foot strong { color: #fff; }
+.admin-main { background: #f4f8fb; }
+.admin-topbar { background: rgba(255,255,255,.9); border-bottom-color: #d9e2ec; box-shadow: 0 1px 2px rgba(16,42,67,.04); }
+.admin-topbar h1, .admin-content h1 { color: #102a43; letter-spacing: 0; }
+.admin-topbar p, .admin-content > p { color: #627d98; }
+.admin-card, .admin-panel, .data-table-wrap { border-color: #d9e2ec; border-radius: 8px; background: #fff; box-shadow: 0 1px 2px rgba(16,42,67,.035); }
+.admin-card:hover, .admin-panel:hover { border-color: #b8d6df; }
+.admin-card h2, .admin-card h3, .admin-panel h2 { color: #102a43; letter-spacing: 0; }
+.admin-card p, .admin-panel p, .admin-table td { color: #486581; }
+.admin-table th { color: #334e68; background: #f6f9fc; }
+.admin-table tr + tr td { border-top-color: #e5edf3; }
+.admin-button, .admin-content button:not(.range-box button), .admin-content [type="submit"] { border-radius: 6px; background: #087ea4; box-shadow: none; }
+.admin-button:hover, .admin-content button:not(.range-box button):hover, .admin-content [type="submit"]:hover { background: #056889; transform: translateY(-1px); }
+.admin-content input, .admin-content textarea, .admin-content select { border-radius: 6px; border-color: #b8c7d5; background: #fff; color: #243b53; }
+.admin-content input:focus, .admin-content textarea:focus, .admin-content select:focus { outline: 3px solid rgba(8,126,164,.14); border-color: #087ea4; }
+
+.data-hero { margin: -4px -4px 24px; padding: 32px; border: 1px solid #d9e2ec; border-radius: 8px; background: #fff; }
+.data-hero small, .data-panel small { color: #056889; }
+.data-hero h1 { color: #102a43; font-size: clamp(32px, 4vw, 52px); }
+.data-hero p { color: #627d98; }
+.range-box { border-color: #d0e1e8; border-radius: 8px; background: #f8fcfd; }
+.range-box small { color: #102a43; }
+.range-box span, .range-custom label { color: #627d98; }
+.range-box button { border-color: #c8dae4; border-radius: 6px; background: #fff; color: #334e68; }
+.range-box button:hover { border-color: #087ea4; color: #056889; }
+.range-box button.is-active, .range-refresh { background: #087ea4 !important; color: #fff !important; }
+.range-custom input { border-color: #c8dae4; border-radius: 6px; background: #fff; color: #243b53; }
+.sync-strip { border-color: #b9e2e8; border-radius: 8px; background: #edf9fa; color: #056889; }
+.metric-card { min-height: 126px; border-color: #d9e2ec; border-radius: 8px; background: #fff; box-shadow: 0 1px 2px rgba(16,42,67,.035); }
+.metric-card i { background: #087ea4; box-shadow: none; }
+.metric-card span { color: #486581; }
+.metric-card strong { color: #102a43; }
+.metric-card small { color: #056889; }
+.data-panel { border-color: #d9e2ec; border-radius: 8px; background: #fff; }
+.data-panel h2 { color: #102a43; font-size: 25px; }
+.empty-line { border-color: #cbd9e4; border-radius: 6px; color: #627d98; background: #f9fbfd; }
+.status-pill { border-radius: 999px; }
+.status-pill.good { background: #e5f6eb; color: #087443; }
+.status-pill.warn { background: #fff7db; color: #9a6700; }
+.progress-row { border-bottom-color: #e5edf3; }
+.mini-chart { border-color: #d9e2ec; border-radius: 6px; background: #fbfdfe; }
+.mini-chart span { color: #627d98; }
+.mini-chart i { background: #58c5d7; }
+
+@media (max-width: 980px) {
+  .data-hero { margin: 0 0 20px; padding: 24px; }
 }
