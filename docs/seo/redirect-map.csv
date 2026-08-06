@@ -1,0 +1,10 @@
+source,target,status,reason
+/index.html,/,301,duplicate home URL
+/about/index.html,/about,301,duplicate about URL
+/contact/index.html,/contact,301,duplicate contact URL
+/product/index.html,/product,301,duplicate product URL
+/blog/index.html,/blog,301,duplicate blog URL
+/news/index.html,/news,301,duplicate news URL
+/news/anglegrinder,/blog/angle-grinder-troubleshooting-and-safety,301,merged into editorial safety guide
+/news/repair,/blog/angle-grinder-troubleshooting-and-safety,301,merged into editorial safety guide
+/news/WallChaseImproves,/blog/brushless-wall-chaser-selection-guide,301,merged into editorial wall chaser guide

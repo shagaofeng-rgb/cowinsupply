@@ -1,0 +1,4 @@
+type,rule,action,status
+news,96 records matching known source/template signals,removed and recorded as Gone,410
+news,11 named legacy thin records,removed or merged to three guides,301 or 410
+blog,cowin-supply-blog-webhook-production-verification,removed and recorded as Gone,410

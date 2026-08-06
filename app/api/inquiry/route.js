@@ -13,8 +13,11 @@ export async function POST(request) {
     ? await request.json()
     : Object.fromEntries((await request.formData()).entries());
 
-  if (!body.name || !validEmail(body.email) || !body.message) {
+  if (body.website || !body.name || !validEmail(body.email) || !body.message) {
     return apiError("Name, valid email and message are required.", 400);
+  }
+  if ([body.name, body.email, body.company, body.phone, body.product, body.message].some((value) => String(value || "").length > 4000)) {
+    return apiError("Inquiry contains an invalid field length.", 400);
   }
 
   const inquiry = await saveInquiry(body);
