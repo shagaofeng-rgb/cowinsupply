@@ -16,8 +16,9 @@ The generator uses fully qualified production URLs, XML escaping, UTF-8 output, 
 ## Automatic updates
 
 - Admin product/news changes call `refreshSitemap()` after save, publish, offline, or delete.
-- Vercel Cron calls `/api/cron/sitemap` daily.
-- The cron route submits the sitemap to Google Search Console only when `GOOGLE_SEARCH_CONSOLE_ENABLED=true`.
+- Vercel Cron calls `/api/cron/sitemap` daily to refresh sitemap data without sending a Google submission.
+- Vercel Cron calls `/api/cron/google-sitemap-submit` every three calendar days to submit the current sitemap to Google Search Console.
+- `/api/cron/sync-legacy-products` remains a protected, manual recovery endpoint only; it is not scheduled because it performs a full legacy catalog replacement.
 
 ## Manual command
 

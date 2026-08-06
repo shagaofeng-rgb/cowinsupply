@@ -13,7 +13,7 @@ export async function GET(request) {
     if (auth !== `Bearer ${secret}` && token !== secret) return apiError("Unauthorized cron request", 401);
   }
   const products = await replaceCmsItems("product", legacyProducts);
-  const sitemap = await refreshSitemap({ trigger: "legacy_product_sync", submit: true });
+  const sitemap = await refreshSitemap({ trigger: "legacy_product_sync", submit: false });
   await appendAuditLog({ action: "replace", module: "product", target: `${products.length} legacy products` });
   return apiOk({ imported: products.length, sitemap });
 }

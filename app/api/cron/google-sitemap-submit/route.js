@@ -11,7 +11,6 @@ export async function GET(request) {
     if (auth !== `Bearer ${secret}` && token !== secret) return apiError("Unauthorized cron request", 401);
   }
 
-  // Sitemap content still refreshes daily; Google submission has its own three-day cron.
-  const run = await refreshSitemap({ trigger: "vercel_sitemap_refresh", submit: false });
-  return apiOk(run, { status: run.errors?.length ? 500 : 200 });
+  const run = await refreshSitemap({ trigger: "vercel_google_sitemap_submit", submit: true });
+  return apiOk(run, { status: run.errors?.length || !run.gscSubmit?.success ? 500 : 200 });
 }
