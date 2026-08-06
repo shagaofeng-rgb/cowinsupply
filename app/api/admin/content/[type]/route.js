@@ -3,7 +3,7 @@ import { apiError, apiOk, requireAdminApi } from "@/lib/adminApi";
 import { appendAuditLog, deleteCmsItem, getCmsItems, saveCmsItem, slugify, updateCmsItemStatus } from "@/lib/cmsStore";
 import { refreshSitemap } from "@/lib/sitemapService";
 
-const allowedTypes = new Set(["product", "news"]);
+const allowedTypes = new Set(["product", "news", "blog"]);
 
 export async function GET(_request, { params }) {
   const unauthorized = await requireAdminApi();
@@ -41,6 +41,9 @@ export async function POST(request, { params }) {
       category: form.get("category"),
       image: form.get("image"),
       summary: form.get("summary"),
+      content: form.get("content"),
+      authorId: form.get("authorId"),
+      authorName: form.get("authorName"),
       status: "published"
     });
     await appendAuditLog({ action: "save", module: type, target: item.slug });
@@ -54,5 +57,5 @@ export async function POST(request, { params }) {
     result: sitemapRun.errors?.length ? "failed" : "success"
   });
 
-  redirect(`/admin/${type === "product" ? "products" : "news"}`);
+  redirect(`/admin/${type === "product" ? "products" : type}`);
 }

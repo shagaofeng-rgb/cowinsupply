@@ -8,13 +8,12 @@ export const runtime = "nodejs";
 export async function POST(request) {
   try {
     const input = await readInput(request);
-    const configuredKey = String(process.env.BLOG_WEBHOOK_API_KEY || "").trim();
-    if (!configuredKey) return response(0, "Blog webhook is not configured");
-    if (!safeEqual(String(input.sign || ""), configuredKey)) return response(0, "Invalid API key");
+    const configuredKey = String(process.env.WEBHOOK_ARTICLE_SIGN || process.env.BLOG_WEBHOOK_API_KEY || "").trim();
+    if (!configuredKey) return response(0, "服务器未配置 WEBHOOK_ARTICLE_SIGN");
+    if (!safeEqual(String(input.sign || ""), configuredKey)) return response(0, "秘钥错误");
 
-    // Some publishing plugins validate a connection with only the API key before sending article fields.
-    if (!String(input.title || "").trim() && !String(input.content || "").trim()) {
-      return response(1, "Webhook verified");
+    if (isVerificationPayload(input)) {
+      return response(1, "验证成功");
     }
 
     const title = normalizeText(input.title, 180);
@@ -22,16 +21,16 @@ export async function POST(request) {
     const classId = normalizeText(input.class_id || "blog", 80) || "blog";
     const authorId = normalizeText(input.author_id || "admin", 80) || "admin";
     const imageUrl = normalizeUrl(input.image_url || "");
-    if (!title) return response(0, "Title is required");
-    if (!rawContent) return response(0, "Content is required");
-    if (rawContent.length > 100000) return response(0, "Content exceeds 100000 characters");
-    if (input.image_url && !imageUrl) return response(0, "image_url must be an http or https URL");
+    if (!title) return response(0, "文章标题不能为空");
+    if (!rawContent) return response(0, "文章正文不能为空");
+    if (rawContent.length > 100000) return response(0, "文章正文超过 100000 字符限制");
+    if (input.image_url && !imageUrl) return response(0, "image_url 必须是 http 或 https 图片地址");
 
     const content = toSafeHtml(rawContent);
     const contentHash = createHash("sha256").update(`${title}\n${rawContent}`).digest("hex");
     const existing = await getCmsItems("blog", { includeInactive: true });
     const duplicate = existing.find((item) => item.contentHash === contentHash);
-    if (duplicate) return response(1, "Published successfully", { id: duplicate.id, slug: duplicate.slug, url: `/blog/${duplicate.slug}`, duplicate: true });
+    if (duplicate) return response(1, "发布成功", { id: duplicate.id, slug: duplicate.slug, url: `/blog/${duplicate.slug}`, duplicate: true });
 
     const slug = uniqueSlug(slugify(title), existing);
     const summary = toPlainText(rawContent).slice(0, 300);
@@ -57,15 +56,15 @@ export async function POST(request) {
     });
     const sitemap = await refreshSitemap({ trigger: "blog_webhook_publish", submit: false });
     await appendAuditLog({ actor: "blog-webhook", action: "publish", module: "blog", target: item.slug, result: sitemap.errors?.length ? "success-with-sitemap-warning" : "success" });
-    return response(1, "Published successfully", { id: item.id, slug: item.slug, url: `/blog/${item.slug}` });
+    return response(1, "发布成功", { id: item.id, slug: item.slug, url: `/blog/${item.slug}` });
   } catch (error) {
     console.error("Blog webhook publish failed", error instanceof Error ? error.message : "unknown-error");
-    return response(0, "Publication failed. Please retry.");
+    return response(0, "发布失败，请稍后重试");
   }
 }
 
 export async function GET() {
-  return response(0, "Use POST with application/x-www-form-urlencoded fields");
+  return response(0, "请使用 application/x-www-form-urlencoded 的 POST 请求");
 }
 
 async function readInput(request) {
@@ -83,6 +82,14 @@ function safeEqual(left, right) {
   const a = Buffer.from(left);
   const b = Buffer.from(right);
   return a.length === b.length && timingSafeEqual(a, b);
+}
+
+function isVerificationPayload(input) {
+  const title = toPlainText(input.title || "").trim();
+  const content = toPlainText(input.content || "").trim();
+  if (!title && !content) return true;
+  const placeholder = /^(test|testing|title|content|demo|验证|测试|标题|正文)$/i;
+  return title.length < 6 || content.length < 40 || placeholder.test(title) || placeholder.test(content);
 }
 
 function normalizeText(value, limit) { return String(value || "").trim().replace(/\s+/g, " ").slice(0, limit); }

@@ -9,6 +9,7 @@ const links = [
   { href: "/admin/seo-data", label: "SEO 数据" },
   { href: "/admin/products", label: "产品管理" },
   { href: "/admin/news", label: "新闻管理" },
+  { href: "/admin/blog", label: "Blog 管理" },
   { href: "/admin/links", label: "内外链审计" },
   { href: "/admin/inquiries", label: "客户表单" },
   { href: "/admin/visitors", label: "访客记录" },

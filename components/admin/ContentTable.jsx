@@ -17,7 +17,7 @@ export default function ContentTable({ items, type }) {
               <td>
                 <strong>{item.title}</strong>
                 <br />
-                <span className="admin-muted">/{type === "product" ? "product" : "news"}/{item.slug}.html</span>
+                <span className="admin-muted">{type === "product" ? `/product/${item.slug}.html` : `/${type}/${item.slug}`}</span>
               </td>
               <td>{item.category || "-"}</td>
               <td><span className="admin-badge">{statusLabel(item.status)}</span></td>
