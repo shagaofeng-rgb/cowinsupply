@@ -1,6 +1,7 @@
 import { apiError, apiOk } from "@/lib/adminApi";
 import { saveInquiry } from "@/lib/cmsStore";
 import { sendAdminInquiryEmail } from "@/lib/emailService";
+import { allowInquiry } from "@/lib/inquiryRateLimit";
 
 function validEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || ""));
@@ -18,6 +19,9 @@ export async function POST(request) {
   }
   if ([body.name, body.email, body.company, body.phone, body.product, body.message].some((value) => String(value || "").length > 4000)) {
     return apiError("Inquiry contains an invalid field length.", 400);
+  }
+  if (!(await allowInquiry(request))) {
+    return apiError("Too many submissions. Please try again later.", 429);
   }
 
   const inquiry = await saveInquiry(body);
