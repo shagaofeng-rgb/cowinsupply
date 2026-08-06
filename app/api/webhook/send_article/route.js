@@ -16,6 +16,8 @@ export async function POST(request) {
       return response(1, "验证成功");
     }
 
+    return response(0, "Blog articles require manual editorial publishing in the Cowin Supply admin.");
+
     const title = normalizeText(input.title, 180);
     const rawContent = String(input.content || "").trim();
     const classId = normalizeText(input.class_id || "blog", 80) || "blog";
