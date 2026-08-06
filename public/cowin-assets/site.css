@@ -58,7 +58,7 @@ button, input, textarea { font: inherit; }
   font-size: 14px;
   font-weight: 800;
 }
-.main-nav a:hover { color: var(--orange); }
+.main-nav a:hover, .main-nav a.is-active { color: var(--orange); }
 .nav-toggle {
   display: none;
   width: 42px;
