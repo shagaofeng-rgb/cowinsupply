@@ -23,6 +23,8 @@ Final deployment: `dpl_GiFWqzZHCPEbRMW1inoN2ds3pCYG` (READY)
 - Sitemap eligibility excludes drafts, non-indexable content, tags and products without specification rows.
 - Added canonical legacy HTML redirects, six product category URLs, a disallow policy for admin/API/tag routes, an `llms.txt` statement and basic inquiry anti-bot/field-length checks.
 - Disabled the legacy endpoint that could replace the entire reviewed product catalog, restored a Google sitemap submission cron on a three-day schedule, and added an IP-hash-based inquiry rate limit.
+- Removed 128 obsolete static tag files after creating an ignored local ZIP backup; legacy tag handling remains available through controlled 301/410 rules only.
+- Replaced the remaining homepage "Factory Direct" positioning with a neutral, supportable B2B product statement and guarded the legacy import script behind an explicit migration flag.
 
 ## Test evidence
 

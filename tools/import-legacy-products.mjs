@@ -1,6 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
+if (process.env.ALLOW_LEGACY_PRODUCT_IMPORT !== "true") {
+  throw new Error("Legacy product import is disabled. Set ALLOW_LEGACY_PRODUCT_IMPORT=true only for an approved, backed-up migration.");
+}
+
 const LEGACY_ORIGIN = "https://s8ozwsrp.fuwucms.com";
 const OUTPUT = path.join(process.cwd(), "data", "legacyProducts.json");
 const LEGACY_LOGO_FILE = "946363e1618f9f1d9800222ee0156477.jpeg";
