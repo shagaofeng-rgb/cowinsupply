@@ -1,5 +1,6 @@
 import { apiOk } from "@/lib/adminApi";
 import { getCmsItems, paginateItems } from "@/lib/cmsStore";
+import { publicProduct } from "@/lib/publicContent";
 
 export const dynamic = "force-dynamic";
 
@@ -12,5 +13,5 @@ export async function GET(request) {
     q: searchParams.get("q"),
     status: ""
   });
-  return apiOk(result);
+  return apiOk({ ...result, items: result.items.map(publicProduct) });
 }
