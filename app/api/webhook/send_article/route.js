@@ -12,6 +12,11 @@ export async function POST(request) {
     if (!configuredKey) return response(0, "Blog webhook is not configured");
     if (!safeEqual(String(input.sign || ""), configuredKey)) return response(0, "Invalid API key");
 
+    // Some publishing plugins validate a connection with only the API key before sending article fields.
+    if (!String(input.title || "").trim() && !String(input.content || "").trim()) {
+      return response(1, "Webhook verified");
+    }
+
     const title = normalizeText(input.title, 180);
     const rawContent = String(input.content || "").trim();
     const classId = normalizeText(input.class_id || "blog", 80) || "blog";

@@ -22,6 +22,8 @@ Use the following values in the publishing plugin:
 
 The endpoint accepts URL-encoded form data as required by the plugin. JSON is also supported for technical testing only.
 
+For the plugin's website verification action, send only `sign`. A valid configured key returns `{"code":1,"msg":"Webhook verified"}`. Article fields remain required for publication.
+
 ## Success and failure response
 
 Success returns HTTP 200 with `{"code":1,"msg":"Published successfully"}` and the published article `slug` and `url`. A repeat delivery with the same title and content is idempotent and returns success without creating a duplicate article.
