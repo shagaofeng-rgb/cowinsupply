@@ -9,7 +9,7 @@ const TAG_REDIRECTS = [
   [/water drilling rig|wall polishing/i, "/products/specialty-tools"]
 ];
 
-export function middleware(request) {
+export function proxy(request) {
   const encodedSlug = request.nextUrl.pathname.slice("/tag/".length);
   const slug = decodeURIComponent(encodedSlug);
   const match = TAG_REDIRECTS.find(([pattern]) => pattern.test(slug));
