@@ -11,6 +11,7 @@ Final deployment: `dpl_GiFWqzZHCPEbRMW1inoN2ds3pCYG` (READY)
 - Public News, Blog and product routes read CMS records, not fixture-only page arrays.
 - `robots.txt`, sitemap index, category sitemap and `llms.txt` are available in production.
 - Product category route `/products/wall-chasers` returns HTTP 200.
+- Production product API contains 18 products classified across six intended categories; all 18 are intentionally excluded from the product sitemap until verified specification rows are supplied.
 - Legacy tag handling is enforced before public static files: a relevant tag returns 301; an unknown tag returns 410.
 
 ## Completed remediation
@@ -21,6 +22,7 @@ Final deployment: `dpl_GiFWqzZHCPEbRMW1inoN2ds3pCYG` (READY)
 - Blog webhook accepts only an authenticated short verification request. Full article payloads are refused and cannot create a public Blog post.
 - Sitemap eligibility excludes drafts, non-indexable content, tags and products without specification rows.
 - Added canonical legacy HTML redirects, six product category URLs, a disallow policy for admin/API/tag routes, an `llms.txt` statement and basic inquiry anti-bot/field-length checks.
+- Disabled the legacy endpoint that could replace the entire reviewed product catalog, restored a Google sitemap submission cron on a three-day schedule, and added an IP-hash-based inquiry rate limit.
 
 ## Test evidence
 
@@ -34,6 +36,8 @@ Final deployment: `dpl_GiFWqzZHCPEbRMW1inoN2ds3pCYG` (READY)
 | `/tag/obsolete-term` | HTTP 410 |
 | `/robots.txt`, `/sitemap.xml`, `/sitemaps/sitemap-categories.xml`, `/llms.txt` | HTTP 200 |
 | Invalid-signature Blog webhook POST | `{"code":0,"msg":"Invalid signing key."}`; no publication attempt accepted |
+| Product classification migration | 18 products: 3 angle grinders, 4 saws, 4 cordless tools, 2 measuring tools, 1 specialty tool, 4 wall chasers |
+| Product sitemap eligibility | 0 URLs; all records lack confirmed specification rows and are `seoIndexable: false` |
 
 ## Items not verified automatically
 
