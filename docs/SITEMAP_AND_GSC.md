@@ -7,7 +7,8 @@ Production site: `https://www.cowinsupply.com`
 - `/sitemap.xml` returns the sitemap index.
 - `/sitemaps/sitemap-pages.xml` returns main public pages.
 - `/sitemaps/sitemap-products.xml` returns published product URLs.
-- `/sitemaps/sitemap-posts.xml` returns published news/blog URLs.
+- `/sitemaps/sitemap-blog.xml` returns published Blog URLs.
+- `/news-sitemap.xml` and `/sitemaps/news-sitemap.xml` return eligible, recently published News URLs.
 - `/sitemaps/sitemap-categories.xml` returns public tag/category URLs when present.
 - `/robots.txt` points Google to `https://www.cowinsupply.com/sitemap.xml`.
 
@@ -18,6 +19,7 @@ The generator uses fully qualified production URLs, XML escaping, UTF-8 output, 
 - Admin product/news changes call `refreshSitemap()` after save, publish, offline, or delete.
 - Vercel Cron calls `/api/cron/sitemap` daily to refresh sitemap data without sending a Google submission.
 - Vercel Cron calls `/api/cron/google-sitemap-submit` every three calendar days to submit the current sitemap to Google Search Console.
+- Vercel Cron calls `/api/cron/news` every six hours to collect and quality-check News candidates. The persistent publication gate allows at most one News article every 48 hours.
 - `/api/cron/sync-legacy-products` remains a protected, manual recovery endpoint only; it is not scheduled because it performs a full legacy catalog replacement.
 
 ## Manual command

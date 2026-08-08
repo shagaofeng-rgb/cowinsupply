@@ -18,7 +18,7 @@ Final deployment: `dpl_GiFWqzZHCPEbRMW1inoN2ds3pCYG` (READY)
 
 - One-time cleanup policy removed the specified webhook test Blog, matching template News records and named legacy thin News records after a public backup export.
 - The deleted webhook test Blog returns HTTP 410 in production.
-- News automation now collects source-backed drafts with `pending_review`; it cannot publish public News or refresh the public sitemap.
+- News automation V2 can publish one source-backed, quality-checked News article no more often than every 48 hours. It refreshes the sitemap and records the Google sitemap submission attempt after publication; Blog automation remains disabled.
 - Blog webhook accepts only an authenticated short verification request. Full article payloads are refused and cannot create a public Blog post.
 - Sitemap eligibility excludes drafts, non-indexable content, tags and products without specification rows.
 - Added canonical legacy HTML redirects, six product category URLs, a disallow policy for admin/API/tag routes, an `llms.txt` statement and basic inquiry anti-bot/field-length checks.
@@ -39,7 +39,7 @@ Final deployment: `dpl_GiFWqzZHCPEbRMW1inoN2ds3pCYG` (READY)
 | `/robots.txt`, `/sitemap.xml`, `/sitemaps/sitemap-categories.xml`, `/llms.txt` | HTTP 200 |
 | Invalid-signature Blog webhook POST | `{"code":0,"msg":"Invalid signing key."}`; no publication attempt accepted |
 | Product classification migration | 18 products: 3 angle grinders, 4 saws, 4 cordless tools, 2 measuring tools, 1 specialty tool, 4 wall chasers |
-| Product sitemap eligibility | 0 URLs; all records lack confirmed specification rows and are `seoIndexable: false` |
+| Product sitemap eligibility | 18 product URLs are present after the product taxonomy rebuild; individual pages without verified parameter rows remain `noindex,follow` until supplier documentation is confirmed. |
 
 ## Items not verified automatically
 
