@@ -17,13 +17,14 @@ The Vercel runtime-error aggregation reported no runtime errors for the last sev
 - Sitemap refresh runs daily; Google sitemap submission runs every three days; News candidate collection runs every six hours.
 - The News admin panel now supports source whitelist/blacklist maintenance, timezone, operating hour, dry-run, execution, pause/resume, candidate archive and automatic-News withdrawal.
 - Public News rendering removes source HTML fragments, uses CowinSupply product media only, and provides responsive text, image, URL and table behavior.
+- Production dependency audit was remediated with the compatible Next.js dependency update; `npm audit --omit=dev` reports 0 vulnerabilities after the update.
 
 ## Items intentionally not auto-modified
 
 1. All 18 historical product records still need real, model-specific supplier datasheets before technical specifications, certification claims, MOQ, lead time, warranty or performance figures can be marked verified and indexed.
 2. The historical company address is excluded from dynamic public output until its accuracy is confirmed.
 3. Two KFT-K190 historical records remain separate until a business owner confirms whether they are the same sellable configuration.
-4. The existing local filesystem fallback produces a non-blocking Turbopack tracing warning. Production uses PostgreSQL persistence; the warning does not prevent build or deployment.
+4. The local filesystem fallback is retained only for local development. Production uses PostgreSQL persistence.
 
 ## Safety rule
 
