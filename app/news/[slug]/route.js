@@ -7,6 +7,10 @@ export const dynamic = "force-dynamic";
 
 export async function GET(request, { params }) {
   const { slug } = await params;
+  if (/\.html$/i.test(String(slug || ""))) {
+    const canonicalSlug = String(slug).replace(/\.html$/i, "");
+    return Response.redirect(new URL(`/news/${encodeURIComponent(canonicalSlug)}`, request.url), 301);
+  }
   const cleanSlug = String(slug || "").replace(/\.html$/, "");
   const redirectTarget = LEGACY_NEWS_REDIRECTS.get(cleanSlug);
   if (redirectTarget) return Response.redirect(new URL(redirectTarget, request.url), 301);
