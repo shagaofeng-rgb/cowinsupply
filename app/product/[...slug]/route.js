@@ -9,6 +9,9 @@ export async function GET(request, { params }) {
   if (/^index(?:\.html)?$/i.test(rawSlug)) {
     return Response.redirect(new URL("/product", request.url), 308);
   }
+  if (!/\.html$/i.test(rawSlug)) {
+    return Response.redirect(new URL(`/product/${encodeURIComponent(rawSlug)}.html`, request.url), 301);
+  }
   const slug = rawSlug.replace(/\.html$/i, "");
   const products = await getCmsItems("product");
   const product = products.find((item) => item.slug === slug);
