@@ -1,0 +1,6 @@
+old_url,new_url,http_code,reason,checked_at
+/products/brushless-angle-grinders,/products/angle-grinders,301,Legacy category taxonomy replaced by canonical Angle Grinders category,2026-08-08T00:00:00.000Z
+/products/cordless-power-tools,/products/cordless-drills,301,Legacy aggregate category replaced by canonical Cordless Drills category,2026-08-08T00:00:00.000Z
+/products/brushless-saws,/products/jig-saws-curve-saws,301,Legacy aggregate category replaced by canonical Jig Saws and Curve Saws category,2026-08-08T00:00:00.000Z
+/products/laser-measuring-tools,/products/measuring-tools,301,Legacy category name replaced by canonical Measuring Tools category,2026-08-08T00:00:00.000Z
+/products/specialty-tools,/products/wall-polishing-machines,301,Legacy category entry was only used for wall polishing product records,2026-08-08T00:00:00.000Z

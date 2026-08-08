@@ -3,6 +3,7 @@ import path from "node:path";
 
 const cwd = process.cwd();
 const publicDir = path.join(cwd, "public");
+const companyProfile = JSON.parse(await fs.readFile(path.join(cwd, "data", "companyProfile.json"), "utf8"));
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "https://www.cowinsupply.com").replace(/\/$/, "");
 const targets = [];
 
@@ -64,8 +65,10 @@ function injectSharedChrome(html, canonicalPath) {
   const activePath = ["/product", "/news", "/about", "/contact"].find((pathName) => canonicalPath === pathName || canonicalPath.startsWith(`${pathName}/`)) || "";
   const navItems = [["/product", "Products"], ["/news", "News"], ["/blog", "Blog"], ["/about", "About"], ["/contact", "Contact"]];
   const navLinks = navItems.map(([href, label]) => `<a href="${href}"${href === activePath ? ' class="is-active" aria-current="page"' : ""}>${label}</a>`).join("");
-  const header = `<header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="/cowin-assets/cowin-logo.png" alt="Cowin Supply logo"><span>Cowin Supply</span></a><nav class="main-nav" aria-label="Main navigation">${navLinks}</nav><a class="btn btn-dark header-cta" href="/contact#quote">Get Wholesale Price</a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button></div></header>`;
-  const footer = `<footer class="site-footer"><div class="container footer-grid"><div><h3>Cowin Supply</h3><p>Quzhou Qiying Import &amp; Export Co., Ltd.<br>No. 18, Sanxin Road, Lanjiang Sub-district, Lanxi City, Jinhua City, Zhejiang Province, China</p></div><div><h3>Products</h3><a href="/product">All Products</a><a href="/product/6000wsolttingmachine.html">Wall Chasers</a><a href="/product/LaserMeasuringDevicwithMultiFunction.html">Measuring Tools</a></div><div><h3>Resources</h3><a href="/news">News</a><a href="/blog">Blog</a><a href="/about">About</a><a href="/contact">Contact</a></div><div><h3>Contact</h3><a href="tel:+8617601255205">+8617601255205</a><a href="mailto:davidsha@cowinsupply.com">davidsha@cowinsupply.com</a></div></div><div class="footer-bottom"><div class="container">Copyright 2026 Cowin Supply. All rights reserved.</div></div></footer>`;
+  const phoneHref = `tel:${String(companyProfile.phone || "").replace(/[^+\d]/g, "")}`;
+  const address = companyProfile.addressStatus === "confirmed" && companyProfile.address ? `<br>${escapeAttr(companyProfile.address)}` : "";
+  const header = `<header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="/cowin-assets/cowin-logo.png" alt="${escapeAttr(companyProfile.brandName)} logo"><span>${escapeAttr(companyProfile.brandName)}</span></a><nav class="main-nav" aria-label="Main navigation">${navLinks}</nav><a class="btn btn-dark header-cta" href="/contact#quote">Get Wholesale Price</a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button></div></header>`;
+  const footer = `<footer class="site-footer"><div class="container footer-grid"><div><h3>${escapeAttr(companyProfile.brandName)}</h3><p>${escapeAttr(companyProfile.legalName)}${address}</p></div><div><h3>Products</h3><a href="/product">All Products</a><a href="/products/wall-chasers">Wall Chasers</a><a href="/products/measuring-tools">Measuring Tools</a></div><div><h3>Resources</h3><a href="/news">News</a><a href="/blog">Blog</a><a href="/about">About</a><a href="/contact">Contact</a></div><div><h3>Contact</h3><a href="${phoneHref}">${escapeAttr(companyProfile.phone)}</a><a href="mailto:${escapeAttr(companyProfile.email)}">${escapeAttr(companyProfile.email)}</a></div></div><div class="footer-bottom"><div class="container">Copyright 2026 ${escapeAttr(companyProfile.brandName)}. All rights reserved.</div></div></footer>`;
   return html.replace(/<header\b[^>]*>[\s\S]*?<\/header>/i, header).replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/i, footer);
 }
 

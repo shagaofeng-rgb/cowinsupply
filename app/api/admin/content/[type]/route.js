@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { apiError, apiOk, requireAdminApi } from "@/lib/adminApi";
-import { appendAuditLog, deleteCmsItem, getCmsItems, saveCmsItem, slugify, updateCmsItemStatus } from "@/lib/cmsStore";
+import { appendAuditLog, deleteCmsItem, getCmsItems, restoreProductVersion, saveCmsItem, slugify, updateCmsItemStatus } from "@/lib/cmsStore";
 import { refreshSitemap } from "@/lib/sitemapService";
 
 const allowedTypes = new Set(["product", "news", "blog"]);
@@ -31,6 +31,9 @@ export async function POST(request, { params }) {
   } else if (action === "offline" || action === "publish") {
     await updateCmsItemStatus(type, slug, action === "publish" ? "published" : "offline");
     await appendAuditLog({ action, module: type, target: slug });
+  } else if (action === "restore" && type === "product") {
+    const item = await restoreProductVersion(slug, String(form.get("versionId") || ""));
+    await appendAuditLog({ action: "restore-version", module: type, target: item.slug });
   } else {
     const title = String(form.get("title") || "").trim();
     if (!title) return apiError("Title is required", 400);
@@ -39,8 +42,22 @@ export async function POST(request, { params }) {
       title,
       slug: slug || slugify(title),
       category: form.get("category"),
+      categorySlug: form.get("categorySlug"),
+      model: form.get("model"),
       image: form.get("image"),
       summary: form.get("summary"),
+      gallery: parseJsonArray(form.get("gallery")),
+      features: parseJsonArray(form.get("features")),
+      applications: parseJsonArray(form.get("applications")),
+      specifications: parseJsonArray(form.get("specifications")),
+      faq: parseJsonArray(form.get("faq")),
+      relatedProducts: parseJsonArray(form.get("relatedProducts")),
+      relatedArticles: parseJsonArray(form.get("relatedArticles")),
+      seoTitle: form.get("seoTitle"),
+      seoDescription: form.get("seoDescription"),
+      geoSummary: form.get("geoSummary"),
+      parameterStatus: form.get("parameterStatus"),
+      status: form.get("status") || "draft",
       content: form.get("content"),
       authorId: form.get("authorId"),
       authorName: form.get("authorName"),
@@ -58,4 +75,15 @@ export async function POST(request, { params }) {
   });
 
   redirect(`/admin/${type === "product" ? "products" : type}`);
+}
+
+function parseJsonArray(value) {
+  const text = String(value || "").trim();
+  if (!text) return undefined;
+  try {
+    const parsed = JSON.parse(text);
+    return Array.isArray(parsed) ? parsed : undefined;
+  } catch {
+    return undefined;
+  }
 }
