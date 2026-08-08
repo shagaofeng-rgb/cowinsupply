@@ -24,7 +24,11 @@ export async function POST(request) {
     return apiError("Too many submissions. Please try again later.", 429);
   }
 
-  const inquiry = await saveInquiry(body);
+  const inquiry = await saveInquiry({
+    ...body,
+    userAgent: request.headers.get("user-agent") || "",
+    visitorCountry: request.headers.get("x-vercel-ip-country") || ""
+  });
   let notification = { sent: false };
 
   try {

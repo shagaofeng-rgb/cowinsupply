@@ -12,9 +12,19 @@ const columns = [
   ["product", "产品"],
   ["message", "留言"],
   ["pageUrl", "来源页面"],
+  ["landingPage", "落地页"],
+  ["referrer", "引荐来源"],
   ["utmSource", "UTM Source"],
   ["utmMedium", "UTM Medium"],
-  ["utmCampaign", "UTM Campaign"]
+  ["utmCampaign", "UTM Campaign"],
+  ["utmTerm", "UTM Term"],
+  ["utmContent", "UTM Content"],
+  ["visitorCountry", "访问国家/地区"],
+  ["browserLanguage", "浏览器语言"],
+  ["timezone", "访客时区"],
+  ["screen", "屏幕尺寸"],
+  ["visitorId", "访客ID"],
+  ["sessionId", "会话ID"]
 ];
 
 export async function GET() {

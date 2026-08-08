@@ -50,9 +50,10 @@ export default async function AdminInquiriesPage({ searchParams }) {
                 <td>{item.email || "-"}<br /><span className="admin-muted">{item.phone || "-"}</span></td>
                 <td>{item.product || "-"}</td>
                 <td><span className="admin-badge">{statusText(item.status)}</span></td>
-                <td>{item.message || "-"}</td>
+                <td><span className="admin-muted">{item.utmSource || item.referrer || "Direct"}</span><br /><span className="admin-muted">{item.visitorId ? "Path linked" : "Legacy record"}</span></td>
                 <td>{new Date(item.createdAt).toLocaleString("zh-CN")}</td>
                 <td>
+                  <a className="admin-detail-link" href={`/admin/inquiries/${item.id}`}>View details</a>
                   <form className="admin-inline-form" action="/api/admin/inquiries/status" method="post">
                     <input name="id" type="hidden" value={item.id} />
                     <select name="status" defaultValue={item.status}>
