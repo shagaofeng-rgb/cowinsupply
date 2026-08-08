@@ -44,6 +44,18 @@ Date: 2026-08-08 (Asia/Shanghai)
 - Google submission needs the existing Search Console service account to retain sitemap ownership permissions. A successful sitemap request is not evidence of index inclusion.
 - Initial production runs can create candidates, but may only publish one article after all gates pass; rejected items stay in `needs_review` with recorded reasons.
 
+## Production verification
+
+Deployment `dpl_E1KiqU2MoZdzoVqpNTytGSMyaPk3` for commit `7f1e3ce` reached `READY` on Vercel.
+
+| Endpoint | Result |
+| --- | --- |
+| `https://www.cowinsupply.com/news` | HTTP 200 |
+| `https://www.cowinsupply.com/blog` | HTTP 200 |
+| `https://www.cowinsupply.com/news-sitemap.xml` | HTTP 200 and News sitemap XML returned |
+| `https://www.cowinsupply.com/api/cron/news?dryRun=1` without token | HTTP 401; Cron authentication is active |
+| `https://www.cowinsupply.com/api/admin/news/automation` without admin session | HTTP 401; admin authentication is active |
+
 ## Residual build note
 
 Next.js reports its existing broad file-tracing warning from `lib/cmsStore.js` and the legacy file-backed local-development fallback. The build itself succeeds; production persistence continues to use PostgreSQL when configured.
