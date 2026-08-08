@@ -2,6 +2,13 @@
 
 Completed: 2026-08-08 (Asia/Shanghai)
 
+## Production deployment
+
+- Product rebuild deployment: `dpl_FpZCMtTsc9X6JWy9G3sNNpq6aJ8s` (READY).
+- Sitemap cache follow-up deployment: `dpl_2gdCRRsvYrVkaFvJj3uuxWkz1kcc` (READY).
+- Production aliases confirmed: `www.cowinsupply.com`, `cowinsupply.com`.
+- Final live checks: product detail returned 200 with canonical and Product JSON-LD; canonical category returned 200; legacy category returned a one-hop 301; `sitemap-products.xml` returned 18 production product locations.
+
 ## Scope and backup
 
 - Backup created before edits: `backups/product-rebuild-2026-08-08/`.
