@@ -1,5 +1,6 @@
-﻿"use client";
+"use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -26,7 +27,7 @@ export default function AdminShell({ children, email }) {
     <div className="admin-dashboard">
       <aside className="admin-sidebar">
         <Link className="admin-logo" href="/admin">
-          <img className="admin-brand-mark" src="/cowin-assets/cowin-logo.png" alt="Cowin Supply logo" />
+          <Image className="admin-brand-mark" src="/cowin-assets/cowin-logo.png" alt="Cowin Supply logo" width={38} height={38} priority />
           <strong>网站数据后台</strong>
         </Link>
         <nav>
@@ -37,8 +38,8 @@ export default function AdminShell({ children, email }) {
           ))}
         </nav>
         <div className="admin-sidebar-foot">
-          <strong>半小时自动同步 0 PV / 0 询盘</strong>
-          <small>最近同步：{new Date().toLocaleTimeString("zh-CN")}</small>
+          <strong>数据由已连接服务同步</strong>
+          <small>请在对应模块查看实时统计与同步状态</small>
           <small>当前账号</small>
           <span>{email}</span>
           <form action="/api/admin/logout" method="post">

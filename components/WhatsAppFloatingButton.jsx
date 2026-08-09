@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const WHATSAPP_URL = "https://wa.me/message/L6JST5GV37UYI1";
@@ -17,7 +18,7 @@ export default function WhatsAppFloatingButton() {
       aria-label="Chat with Cowin Supply on WhatsApp"
       title="Chat on WhatsApp"
     >
-      <img src="/cowin-assets/whatsapp.svg" alt="" />
+      <Image src="/cowin-assets/whatsapp.svg" alt="" width={34} height={34} />
     </a>
   );
 }

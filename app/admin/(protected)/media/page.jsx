@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getMediaAssets } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
@@ -13,12 +14,11 @@ export default async function AdminMediaPage() {
           <p>查看 Cowin Supply 官网当前使用的真实图片和图标素材。</p>
         </div>
       </header>
-
       <section className="admin-media-grid">
         {assets.map((asset) => (
           <article className="admin-media-card" key={asset.path}>
             <div className="admin-media-preview">
-              <img alt={asset.name} src={asset.path} />
+              <Image alt={asset.name} height={480} src={asset.path} width={640} />
             </div>
             <strong title={asset.name}>{asset.name}</strong>
             <span>{asset.type} · {formatSize(asset.size)}</span>
