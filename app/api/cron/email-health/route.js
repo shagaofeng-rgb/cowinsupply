@@ -1,16 +1,13 @@
 import { apiError, apiOk } from "@/lib/adminApi";
+import { requireCronSecret } from "@/lib/cronAuth";
 import { appendAuditLog } from "@/lib/cmsStore";
 import { sendEmailHealthCheck } from "@/lib/emailService";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(request) {
-  const secret = process.env.CRON_SECRET;
-  if (secret) {
-    const auth = request.headers.get("authorization") || "";
-    const token = request.nextUrl.searchParams.get("secret") || "";
-    if (auth !== `Bearer ${secret}` && token !== secret) return apiError("Unauthorized cron request", 401);
-  }
+  const unauthorized = requireCronSecret(request);
+  if (unauthorized) return unauthorized;
 
   try {
     const result = await sendEmailHealthCheck({ trigger: "half-month-cron" });

@@ -39,7 +39,7 @@ export async function POST(request) {
   }
 
   if (!isJson) {
-    return Response.redirect(new URL("/message/index.html?success=1", request.url), 303);
+    return Response.redirect(new URL("/message?success=1", request.url), 303);
   }
   return apiOk({ inquiry, notification }, { status: 201 });
 }

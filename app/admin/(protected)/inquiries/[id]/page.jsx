@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getInquiryDetail } from "@/lib/cmsStore";
 
@@ -13,7 +14,7 @@ export default async function InquiryDetailPage({ params }) {
 
   return <>
     <header className="admin-page-head inquiry-detail-head">
-      <div><a className="admin-back-link" href="/admin/inquiries">Back to inquiries</a><h1>{inquiry.name || "Unnamed contact"}</h1><p>{inquiry.company || "No company provided"} · submitted {formatTime(inquiry.createdAt)}</p></div>
+      <div><Link className="admin-back-link" href="/admin/inquiries">Back to inquiries</Link><h1>{inquiry.name || "Unnamed contact"}</h1><p>{inquiry.company || "No company provided"} · submitted {formatTime(inquiry.createdAt)}</p></div>
       <form className="admin-inline-form" action="/api/admin/inquiries/status" method="post"><input name="id" type="hidden" value={inquiry.id} /><select name="status" defaultValue={inquiry.status}>{statuses.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select><button type="submit">Save status</button></form>
     </header>
     <section className="inquiry-summary-grid"><Summary label="Submitted" value={formatTime(inquiry.createdAt)} /><Summary label="Page views" value={`${summary.pageViews} views / ${summary.uniquePages} pages`} /><Summary label="First seen" value={summary.firstSeenAt ? formatTime(summary.firstSeenAt) : "No recorded visit"} /><Summary label="Last seen" value={summary.lastSeenAt ? formatTime(summary.lastSeenAt) : "No recorded visit"} /></section>

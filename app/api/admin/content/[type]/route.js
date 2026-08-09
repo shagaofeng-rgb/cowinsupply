@@ -57,11 +57,10 @@ export async function POST(request, { params }) {
       seoDescription: form.get("seoDescription"),
       geoSummary: form.get("geoSummary"),
       parameterStatus: form.get("parameterStatus"),
-      status: form.get("status") || "draft",
+      status: form.get("status") || "published",
       content: form.get("content"),
       authorId: form.get("authorId"),
-      authorName: form.get("authorName"),
-      status: "published"
+      authorName: form.get("authorName")
     });
     await appendAuditLog({ action: "save", module: type, target: item.slug });
   }
