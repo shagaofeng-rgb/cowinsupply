@@ -1,5 +1,5 @@
 import { apiError, apiOk, requireAdminApi } from "@/lib/adminApi";
-import { archiveCandidate, getNewsAutomationDashboard, runNewsAutomation, updateNewsAutomationConfig, withdrawNewsArticle } from "@/lib/newsAutomationV2";
+import { archiveCandidate, getNewsAutomationDashboard, runNewsAutomation, runNewsIngest, updateNewsAutomationConfig, withdrawNewsArticle } from "@/lib/newsAutomationV2";
 
 export const dynamic = "force-dynamic";
 
@@ -15,6 +15,7 @@ export async function POST(request) {
   const body = await request.json().catch(() => ({}));
   try {
     if (body.action === "run" || body.action === "dry-run") return apiOk(await runNewsAutomation({ trigger: "admin", dryRun: body.action === "dry-run" }));
+    if (body.action === "ingest" || body.action === "ingest-dry-run") return apiOk(await runNewsIngest({ trigger: "admin", dryRun: body.action === "ingest-dry-run" }));
     if (body.action === "config") return apiOk(await updateNewsAutomationConfig(body.config || {}));
     if (body.action === "withdraw") return apiOk(await withdrawNewsArticle(String(body.slug || "")));
     if (body.action === "archive") return apiOk(await archiveCandidate(String(body.id || "")));

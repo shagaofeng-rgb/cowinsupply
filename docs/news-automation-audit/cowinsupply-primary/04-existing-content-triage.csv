@@ -1,0 +1,2 @@
+site_id,url,content_type,published_at,title,source_url,source_date,word_count,duplicate_cluster,similarity_score,index_status,decision,reason,redirect_target,rollback_method,reviewer
+cowinsupply-primary,existing-production-content,news,unchanged,Historic News retained,not-reprocessed,not-reprocessed,not-reprocessed,not-reprocessed,not-reprocessed,not-reprocessed,keep,No bulk content action is safe without a source-by-source review,,Restore status in CMS,automation-audit
