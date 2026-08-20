@@ -1,11 +1,13 @@
 # Old Code Removal Plan
 
-Implemented conflict removals:
+Implemented conflict removals and supersessions:
 
 - Replaced the old single News execution path, which fetched and could publish in one invocation, with separate ingest and publication phases.
-- Replaced the old daily News cron with a 12-hour ingest cron and a separate 12-hour publication retry trigger guarded by a 48-hour successful-publication interval.
+- Replaced the former 12-hour ingest and 12-hour publication schedules with one protected daily orchestrator at `00:10 UTC` (`08:10` Asia/Shanghai).
+- Replaced the former 48-hour successful-publication interval with a single successful-publication limit per Asia/Shanghai calendar day.
+- Replaced the legacy standalone source with the user-supplied source catalog. Only sources that have a recorded public-feed and robots verification can be enabled.
 - Stopped ingest from preparing article body content or writing published content.
-- Reduced News product context to one internal product link and removed the sales-oriented support FAQ.
+- Preserved the one-product contextual-link limit and non-promotional source attribution.
 
 Preserved:
 

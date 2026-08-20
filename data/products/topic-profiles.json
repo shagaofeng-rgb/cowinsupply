@@ -1,0 +1,884 @@
+[
+  {
+    "productId": "product-kft-q450brushlessjigsaw",
+    "productName": "KFT-Q450 800W AC Brushless Jig Saw",
+    "primaryKeywords": [
+      "brushless jig saw",
+      "curve saw",
+      "shaped cutting"
+    ],
+    "secondaryKeywords": [
+      "Jig Saws & Curve Saws",
+      "KFT-Q450"
+    ],
+    "longTailKeywords": [
+      "brushless jig saw for controlled shaped cutting in fit-out work"
+    ],
+    "aliases": [
+      "KFT-Q450",
+      "KFT-Q450BrushlessJigSaw"
+    ],
+    "industries": [
+      "woodworking",
+      "interior fit-out",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "controlled shaped cutting in fit-out work"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#KFT-Q450BrushlessJigSaw",
+      "lib/productTechnicalData.js#KFT-Q450BrushlessJigSaw"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-6000wsolttingmachine",
+    "productName": "KFT-K230 6000W AC Brushless Wall Chaser",
+    "primaryKeywords": [
+      "wall chaser",
+      "wall slotting machine",
+      "conduit channel"
+    ],
+    "secondaryKeywords": [
+      "Wall Chasers",
+      "KFT-K230"
+    ],
+    "longTailKeywords": [
+      "wall chaser for conduit channel preparation in masonry"
+    ],
+    "aliases": [
+      "KFT-K230",
+      "6000wsolttingmachine"
+    ],
+    "industries": [
+      "construction",
+      "MEP installation",
+      "renovation"
+    ],
+    "applicationScenarios": [
+      "conduit channel preparation in masonry"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#6000wsolttingmachine",
+      "lib/productTechnicalData.js#6000wsolttingmachine"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-heavycuttingmachine",
+    "productName": "KFT-K210 5500W AC Brushless Wall Chaser",
+    "primaryKeywords": [
+      "wall chaser",
+      "wall slotting machine",
+      "conduit channel"
+    ],
+    "secondaryKeywords": [
+      "Wall Chasers",
+      "KFT-K210"
+    ],
+    "longTailKeywords": [
+      "wall chaser for conduit channel preparation in masonry"
+    ],
+    "aliases": [
+      "KFT-K210",
+      "HeavyCuttingMachine"
+    ],
+    "industries": [
+      "construction",
+      "MEP installation",
+      "renovation"
+    ],
+    "applicationScenarios": [
+      "conduit channel preparation in masonry"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#HeavyCuttingMachine",
+      "lib/productTechnicalData.js#HeavyCuttingMachine"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-cuttingmachine",
+    "productName": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+    "primaryKeywords": [
+      "wall chaser",
+      "wall slotting machine",
+      "conduit channel"
+    ],
+    "secondaryKeywords": [
+      "Wall Chasers",
+      "KFT-K190"
+    ],
+    "longTailKeywords": [
+      "wall chaser for conduit channel preparation in masonry"
+    ],
+    "aliases": [
+      "KFT-K190",
+      "CuttingMachine"
+    ],
+    "industries": [
+      "construction",
+      "MEP installation",
+      "renovation"
+    ],
+    "applicationScenarios": [
+      "conduit channel preparation in masonry"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#CuttingMachine",
+      "lib/productTechnicalData.js#CuttingMachine"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-lasermeasuringdevicwithmultifunction",
+    "productName": "Handheld Laser Distance Meter",
+    "primaryKeywords": [
+      "laser distance meter",
+      "site measurement",
+      "layout verification"
+    ],
+    "secondaryKeywords": [
+      "Laser Distance Meters",
+      "configuration confirmation"
+    ],
+    "longTailKeywords": [
+      "laser distance meter for layout and dimension verification"
+    ],
+    "aliases": [
+      "LaserMeasuringDevicwithMultiFunction"
+    ],
+    "industries": [
+      "construction",
+      "interior fit-out",
+      "site measurement"
+    ],
+    "applicationScenarios": [
+      "layout and dimension verification"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#LaserMeasuringDevicwithMultiFunction"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-measuringtapewithdigitaldisplay",
+    "productName": "3-in-1 Laser Measuring Tape (40m/60m Listing)",
+    "primaryKeywords": [
+      "laser distance meter",
+      "site measurement",
+      "layout verification"
+    ],
+    "secondaryKeywords": [
+      "Laser Measuring Tapes",
+      "configuration confirmation"
+    ],
+    "longTailKeywords": [
+      "laser distance meter for layout and dimension verification"
+    ],
+    "aliases": [
+      "MeasuringTapewithDigitalDisplay"
+    ],
+    "industries": [
+      "construction",
+      "interior fit-out",
+      "site measurement"
+    ],
+    "applicationScenarios": [
+      "layout and dimension verification"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#MeasuringTapewithDigitalDisplay"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-screwdriverforelectronics",
+    "productName": "Handheld Precision Electric Screwdriver",
+    "primaryKeywords": [
+      "electric screwdriver",
+      "precision assembly",
+      "repair tool"
+    ],
+    "secondaryKeywords": [
+      "Electric Screwdrivers",
+      "configuration confirmation"
+    ],
+    "longTailKeywords": [
+      "electric screwdriver for controlled assembly and repair work"
+    ],
+    "aliases": [
+      "ScrewdriverforElectronics"
+    ],
+    "industries": [
+      "electronics repair",
+      "light assembly",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "controlled assembly and repair work"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#ScrewdriverforElectronics"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-rechargeablebrushlessanglegrinder",
+    "productName": "Rechargeable Brushless Angle Grinder",
+    "primaryKeywords": [
+      "angle grinder",
+      "metal grinding",
+      "metal cutting"
+    ],
+    "secondaryKeywords": [
+      "Angle Grinders",
+      "configuration confirmation"
+    ],
+    "longTailKeywords": [
+      "angle grinder for metal cutting and grinding preparation"
+    ],
+    "aliases": [
+      "RechargeableBrushlessAngleGrinder"
+    ],
+    "industries": [
+      "metal fabrication",
+      "construction",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "metal cutting and grinding preparation"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#RechargeableBrushlessAngleGrinder"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-brushlesslithiumioncordlessdrill",
+    "productName": "Brushless Lithium-Ion Cordless Drill",
+    "primaryKeywords": [
+      "drilling tools",
+      "installation drilling",
+      "construction drilling"
+    ],
+    "secondaryKeywords": [
+      "Cordless Drills",
+      "configuration confirmation"
+    ],
+    "longTailKeywords": [
+      "drilling tools for controlled drilling and installation preparation"
+    ],
+    "aliases": [
+      "BrushlessLithiumIonCordlessDrill"
+    ],
+    "industries": [
+      "construction",
+      "installation",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "controlled drilling and installation preparation"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#BrushlessLithiumIonCordlessDrill"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-brushlesslithium",
+    "productName": "Cordless Brushless Lithium Battery Drill",
+    "primaryKeywords": [
+      "drilling tools",
+      "installation drilling",
+      "construction drilling"
+    ],
+    "secondaryKeywords": [
+      "Cordless Drills",
+      "configuration confirmation"
+    ],
+    "longTailKeywords": [
+      "drilling tools for controlled drilling and installation preparation"
+    ],
+    "aliases": [
+      "BrushlessLithium"
+    ],
+    "industries": [
+      "construction",
+      "installation",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "controlled drilling and installation preparation"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#BrushlessLithium"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-acbrushlesscurvesaw",
+    "productName": "AC Brushless Curve Saw",
+    "primaryKeywords": [
+      "brushless jig saw",
+      "curve saw",
+      "shaped cutting"
+    ],
+    "secondaryKeywords": [
+      "Jig Saws & Curve Saws",
+      "configuration confirmation"
+    ],
+    "longTailKeywords": [
+      "brushless jig saw for controlled shaped cutting in fit-out work"
+    ],
+    "aliases": [
+      "ACBrushlesscurvesaw"
+    ],
+    "industries": [
+      "woodworking",
+      "interior fit-out",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "controlled shaped cutting in fit-out work"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#ACBrushlesscurvesaw"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-acbrushlesswallpolishingmachine",
+    "productName": "KFT-W215 1000W Variable-Speed AC Brushless Wall Polishing Machine",
+    "primaryKeywords": [
+      "wall chaser",
+      "wall slotting machine",
+      "conduit channel"
+    ],
+    "secondaryKeywords": [
+      "Wall Polishing Machines",
+      "KFT-W215"
+    ],
+    "longTailKeywords": [
+      "wall chaser for conduit channel preparation in masonry"
+    ],
+    "aliases": [
+      "KFT-W215",
+      "ACBrushlesswallpolishingmachine"
+    ],
+    "industries": [
+      "construction",
+      "MEP installation",
+      "renovation"
+    ],
+    "applicationScenarios": [
+      "conduit channel preparation in masonry"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#ACBrushlesswallpolishingmachine",
+      "lib/productTechnicalData.js#ACBrushlesswallpolishingmachine"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-acbrushlesscoldcuttingsaw",
+    "productName": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+    "primaryKeywords": [
+      "cold cutting saw",
+      "metal profile cutting",
+      "steel pipe cutting"
+    ],
+    "secondaryKeywords": [
+      "Cold Cutting Saws",
+      "KFT-L190"
+    ],
+    "longTailKeywords": [
+      "cold cutting saw for metal profile cutting for installation work"
+    ],
+    "aliases": [
+      "KFT-L190",
+      "ACBrushlesscoldcuttingsaw"
+    ],
+    "industries": [
+      "metal fabrication",
+      "pipe installation",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "metal profile cutting for installation work"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#ACBrushlesscoldcuttingsaw",
+      "lib/productTechnicalData.js#ACBrushlesscoldcuttingsaw"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-brushlessannularcutter",
+    "productName": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+    "primaryKeywords": [
+      "large diameter cutting equipment"
+    ],
+    "secondaryKeywords": [
+      "needs_confirmation",
+      "KFT-Y370"
+    ],
+    "longTailKeywords": [
+      "large diameter cutting equipment for category and configuration review before quotation"
+    ],
+    "aliases": [
+      "KFT-Y370",
+      "brushlessannularcutter"
+    ],
+    "industries": [
+      "construction"
+    ],
+    "applicationScenarios": [
+      "category and configuration review before quotation"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#brushlessannularcutter",
+      "lib/productTechnicalData.js#brushlessannularcutter"
+    ],
+    "prohibitedClaims": [
+      "Do not describe as a magnetic drill or standard annular cutter until category, blade and safety configuration are confirmed."
+    ]
+  },
+  {
+    "productId": "product-acbrushlesswaterdrillingrig",
+    "productName": "KFT-S218 6000W AC Brushless Water Drilling Rig",
+    "primaryKeywords": [
+      "drilling tools",
+      "installation drilling",
+      "construction drilling"
+    ],
+    "secondaryKeywords": [
+      "Core Drills",
+      "KFT-S218"
+    ],
+    "longTailKeywords": [
+      "drilling tools for controlled drilling and installation preparation"
+    ],
+    "aliases": [
+      "KFT-S218",
+      "ACBrushlesswaterdrillingrig"
+    ],
+    "industries": [
+      "construction",
+      "installation",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "controlled drilling and installation preparation"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#ACBrushlesswaterdrillingrig",
+      "lib/productTechnicalData.js#ACBrushlesswaterdrillingrig"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-40",
+    "productName": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+    "primaryKeywords": [
+      "wall chaser",
+      "wall slotting machine",
+      "conduit channel"
+    ],
+    "secondaryKeywords": [
+      "Wall Chasers",
+      "KFT-K190"
+    ],
+    "longTailKeywords": [
+      "wall chaser for conduit channel preparation in masonry"
+    ],
+    "aliases": [
+      "KFT-K190",
+      "40"
+    ],
+    "industries": [
+      "construction",
+      "MEP installation",
+      "renovation"
+    ],
+    "applicationScenarios": [
+      "conduit channel preparation in masonry"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#40",
+      "lib/productTechnicalData.js#40"
+    ],
+    "prohibitedClaims": []
+  },
+  {
+    "productId": "product-brushlessanglegrinde",
+    "productName": "KRT-A125B Brushless Angle Grinder",
+    "primaryKeywords": [
+      "angle grinder",
+      "metal grinding",
+      "metal cutting"
+    ],
+    "secondaryKeywords": [
+      "Angle Grinders",
+      "KRT-A125B"
+    ],
+    "longTailKeywords": [
+      "angle grinder for metal cutting and grinding preparation"
+    ],
+    "aliases": [
+      "KRT-A125B",
+      "BrushlessAngleGrinde"
+    ],
+    "industries": [
+      "metal fabrication",
+      "construction",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "metal cutting and grinding preparation"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#BrushlessAngleGrinde"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  },
+  {
+    "productId": "product-brushlessanglegrinder",
+    "productName": "KRT-A125 Brushless Angle Grinder",
+    "primaryKeywords": [
+      "angle grinder",
+      "metal grinding",
+      "metal cutting"
+    ],
+    "secondaryKeywords": [
+      "Angle Grinders",
+      "KRT-A125"
+    ],
+    "longTailKeywords": [
+      "angle grinder for metal cutting and grinding preparation"
+    ],
+    "aliases": [
+      "KRT-A125",
+      "BrushlessAngleGrinder"
+    ],
+    "industries": [
+      "metal fabrication",
+      "construction",
+      "maintenance"
+    ],
+    "applicationScenarios": [
+      "metal cutting and grinding preparation"
+    ],
+    "buyerRoles": [
+      "industrial distributors",
+      "contractors",
+      "technical procurement teams"
+    ],
+    "painPoints": [
+      "matching a confirmed configuration to material, site conditions and destination-market requirements"
+    ],
+    "selectionFactors": [
+      "material",
+      "site condition",
+      "power availability",
+      "voltage and plug",
+      "consumables",
+      "local safety requirements"
+    ],
+    "approvedFactSources": [
+      "data/legacyProducts.json#BrushlessAngleGrinder"
+    ],
+    "prohibitedClaims": [
+      "Do not state unverified specifications, certifications, availability or performance claims."
+    ]
+  }
+]

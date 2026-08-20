@@ -1,0 +1,5685 @@
+[
+  {
+    "id": "www-mining-com",
+    "name": "www.mining.com",
+    "domain": "www.mining.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningmagazine-com",
+    "name": "www.miningmagazine.com",
+    "domain": "www.miningmagazine.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningweekly-com",
+    "name": "www.miningweekly.com",
+    "domain": "www.miningweekly.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-im-mining-com",
+    "name": "www.im-mining.com",
+    "domain": "www.im-mining.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mining-technology-com",
+    "name": "www.mining-technology.com",
+    "domain": "www.mining-technology.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-e-mj-com",
+    "name": "www.e-mj.com",
+    "domain": "www.e-mj.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-canadianminingjournal-com",
+    "name": "www.canadianminingjournal.com",
+    "domain": "www.canadianminingjournal.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-australianmining-com-au",
+    "name": "www.australianmining.com.au",
+    "domain": "www.australianmining.com.au",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningreview-com",
+    "name": "www.miningreview.com",
+    "domain": "www.miningreview.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mining-journal-com",
+    "name": "www.mining-journal.com",
+    "domain": "www.mining-journal.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-pitandquarry-com",
+    "name": "www.pitandquarry.com",
+    "domain": "www.pitandquarry.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-aggregatemanager-com",
+    "name": "www.aggregatemanager.com",
+    "domain": "www.aggregatemanager.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-aggbusiness-com",
+    "name": "www.aggbusiness.com",
+    "domain": "www.aggbusiness.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-quarrymagazine-com-au",
+    "name": "www.quarrymagazine.com.au",
+    "domain": "www.quarrymagazine.com.au",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-rockproducts-com",
+    "name": "www.rockproducts.com",
+    "domain": "www.rockproducts.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-sandandgravel-com",
+    "name": "www.sandandgravel.com",
+    "domain": "www.sandandgravel.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-crushingandscreening-com",
+    "name": "www.crushingandscreening.com",
+    "domain": "www.crushingandscreening.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-saimm-co-za",
+    "name": "www.saimm.co.za",
+    "domain": "www.saimm.co.za",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-smenet-org",
+    "name": "www.smenet.org",
+    "domain": "www.smenet.org",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ausimm-com",
+    "name": "www.ausimm.com",
+    "domain": "www.ausimm.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mineralsprocessing-com",
+    "name": "www.mineralsprocessing.com",
+    "domain": "www.mineralsprocessing.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mineralsengineering-com",
+    "name": "www.mineralsengineering.com",
+    "domain": "www.mineralsengineering.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-metallurgy-news-com",
+    "name": "www.metallurgy-news.com",
+    "domain": "www.metallurgy-news.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-globalminingreview-com",
+    "name": "www.globalminingreview.com",
+    "domain": "www.globalminingreview.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningfuture-com",
+    "name": "www.miningfuture.com",
+    "domain": "www.miningfuture.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningmx-com",
+    "name": "www.miningmx.com",
+    "domain": "www.miningmx.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningglobal-com",
+    "name": "www.miningglobal.com",
+    "domain": "www.miningglobal.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningnews-net",
+    "name": "www.miningnews.net",
+    "domain": "www.miningnews.net",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningbusinessafrica-co-za",
+    "name": "www.miningbusinessafrica.co.za",
+    "domain": "www.miningbusinessafrica.co.za",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-africanmining-co-za",
+    "name": "www.africanmining.co.za",
+    "domain": "www.africanmining.co.za",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-latammining-com",
+    "name": "www.latammining.com",
+    "domain": "www.latammining.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-steelguru-com",
+    "name": "www.steelguru.com",
+    "domain": "www.steelguru.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-metalbulletin-com",
+    "name": "www.metalbulletin.com",
+    "domain": "www.metalbulletin.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-fastmarkets-com",
+    "name": "www.fastmarkets.com",
+    "domain": "www.fastmarkets.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-northernminer-com",
+    "name": "www.northernminer.com",
+    "domain": "www.northernminer.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningreviewafrica-com",
+    "name": "www.miningreviewafrica.com",
+    "domain": "www.miningreviewafrica.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-northamericanmining-com",
+    "name": "www.northamericanmining.com",
+    "domain": "www.northamericanmining.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-agg-net-com",
+    "name": "www.agg-net.com",
+    "domain": "www.agg-net.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-heavyequipmentguide-ca-mining",
+    "name": "www.heavyequipmentguide.ca/mining",
+    "domain": "www.heavyequipmentguide.ca/mining",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mineralpedia-com",
+    "name": "www.mineralpedia.com",
+    "domain": "www.mineralpedia.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningequipment-news-com",
+    "name": "www.miningequipment-news.com",
+    "domain": "www.miningequipment-news.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningtech-org",
+    "name": "www.miningtech.org",
+    "domain": "www.miningtech.org",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningclarity-com",
+    "name": "www.miningclarity.com",
+    "domain": "www.miningclarity.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningbulletin-com",
+    "name": "www.miningbulletin.com",
+    "domain": "www.miningbulletin.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningperu-com",
+    "name": "www.miningperu.com",
+    "domain": "www.miningperu.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningchile-com",
+    "name": "www.miningchile.com",
+    "domain": "www.miningchile.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningindonesia-com",
+    "name": "www.miningindonesia.com",
+    "domain": "www.miningindonesia.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-miningforum-net",
+    "name": "www.miningforum.net",
+    "domain": "www.miningforum.net",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mineralforum-com",
+    "name": "www.mineralforum.com",
+    "domain": "www.mineralforum.com",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-mining",
+    "name": "www.reddit.com/r/mining",
+    "domain": "www.reddit.com/r/mining",
+    "sourceGroup": "Mining, Quarrying & Aggregates",
+    "industryTags": [
+      "Mining, Quarrying & Aggregates"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-constructionweekonline-com",
+    "name": "www.constructionweekonline.com",
+    "domain": "www.constructionweekonline.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-constructionenquirer-com",
+    "name": "www.constructionenquirer.com",
+    "domain": "www.constructionenquirer.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "rss"
+    ],
+    "tier": "B",
+    "active": true,
+    "robotsAllowed": true,
+    "lastCheckedAt": "2026-08-20T06:39:00.000Z",
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Verified 2026-08-20: public RSS returned 200 application/rss+xml and robots.txt allows the public feed.",
+    "rssUrl": "https://www.constructionenquirer.com/feed/",
+    "trustLevel": "high"
+  },
+  {
+    "id": "www-protoolreviews-com",
+    "name": "www.protoolreviews.com",
+    "domain": "www.protoolreviews.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-toolguyd-com",
+    "name": "www.toolguyd.com",
+    "domain": "www.toolguyd.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-equipmentworld-com",
+    "name": "www.equipmentworld.com",
+    "domain": "www.equipmentworld.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-heavyequipmentguide-ca",
+    "name": "www.heavyequipmentguide.ca",
+    "domain": "www.heavyequipmentguide.ca",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-contractormag-com",
+    "name": "www.contractormag.com",
+    "domain": "www.contractormag.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-buildings-com",
+    "name": "www.buildings.com",
+    "domain": "www.buildings.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-constructionexec-com",
+    "name": "www.constructionexec.com",
+    "domain": "www.constructionexec.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-enr-com",
+    "name": "www.enr.com",
+    "domain": "www.enr.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-forconstructionpros-com",
+    "name": "www.forconstructionpros.com",
+    "domain": "www.forconstructionpros.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-constructionnews-co-uk",
+    "name": "www.constructionnews.co.uk",
+    "domain": "www.constructionnews.co.uk",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ecmweb-com",
+    "name": "www.ecmweb.com",
+    "domain": "www.ecmweb.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ebmag-com",
+    "name": "www.ebmag.com",
+    "domain": "www.ebmag.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-plumbingandhvac-ca",
+    "name": "www.plumbingandhvac.ca",
+    "domain": "www.plumbingandhvac.ca",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-theprowarehouse-com",
+    "name": "www.theprowarehouse.com",
+    "domain": "www.theprowarehouse.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-toolboxtalks-com",
+    "name": "www.toolboxtalks.com",
+    "domain": "www.toolboxtalks.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-builderonline-com",
+    "name": "www.builderonline.com",
+    "domain": "www.builderonline.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-housingzone-com",
+    "name": "www.housingzone.com",
+    "domain": "www.housingzone.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-finehomebuilding-com",
+    "name": "www.finehomebuilding.com",
+    "domain": "www.finehomebuilding.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-thisoldhouse-com",
+    "name": "www.thisoldhouse.com",
+    "domain": "www.thisoldhouse.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-diyweek-net",
+    "name": "www.diyweek.net",
+    "domain": "www.diyweek.net",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-hhtoday-com",
+    "name": "www.hhtoday.com",
+    "domain": "www.hhtoday.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-hardwaremerchandiser-com",
+    "name": "www.hardwaremerchandiser.com",
+    "domain": "www.hardwaremerchandiser.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ironage-com",
+    "name": "www.ironage.com",
+    "domain": "www.ironage.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-concreteconstruction-net",
+    "name": "www.concreteconstruction.net",
+    "domain": "www.concreteconstruction.net",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-concretecontractor-com",
+    "name": "www.concretecontractor.com",
+    "domain": "www.concretecontractor.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-masonrymagazine-com",
+    "name": "www.masonrymagazine.com",
+    "domain": "www.masonrymagazine.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-wallsandceilings-com",
+    "name": "www.wallsandceilings.com",
+    "domain": "www.wallsandceilings.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-wconline-com",
+    "name": "www.wconline.com",
+    "domain": "www.wconline.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-demolitionnews-com",
+    "name": "www.demolitionnews.com",
+    "domain": "www.demolitionnews.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-demolitionandrecycling-com",
+    "name": "www.demolitionandrecycling.com",
+    "domain": "www.demolitionandrecycling.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-pavementpro-com",
+    "name": "www.pavementpro.com",
+    "domain": "www.pavementpro.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-roadsandbridges-com",
+    "name": "www.roadsandbridges.com",
+    "domain": "www.roadsandbridges.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-asphaltpro-com",
+    "name": "www.asphaltpro.com",
+    "domain": "www.asphaltpro.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-equipmenttoday-com",
+    "name": "www.equipmenttoday.com",
+    "domain": "www.equipmenttoday.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-oemoffhighway-com",
+    "name": "www.oemoffhighway.com",
+    "domain": "www.oemoffhighway.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-compactequip-com",
+    "name": "www.compactequip.com",
+    "domain": "www.compactequip.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-heavyequipmentmarket-com",
+    "name": "www.heavyequipmentmarket.com",
+    "domain": "www.heavyequipmentmarket.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-machineryline-com",
+    "name": "www.machineryline.com",
+    "domain": "www.machineryline.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-constructionequipment-com",
+    "name": "www.constructionequipment.com",
+    "domain": "www.constructionequipment.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-worldhighways-com",
+    "name": "www.worldhighways.com",
+    "domain": "www.worldhighways.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-tunnelsandtunnelling-com",
+    "name": "www.tunnelsandtunnelling.com",
+    "domain": "www.tunnelsandtunnelling.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-geodrillinginternational-com",
+    "name": "www.geodrillinginternational.com",
+    "domain": "www.geodrillinginternational.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-drillingcontractor-org",
+    "name": "www.drillingcontractor.org",
+    "domain": "www.drillingcontractor.org",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-international-construction-com",
+    "name": "www.international-construction.com",
+    "domain": "www.international-construction.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-khl-com",
+    "name": "www.khl.com",
+    "domain": "www.khl.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-buildingenclosureonline-com",
+    "name": "www.buildingenclosureonline.com",
+    "domain": "www.buildingenclosureonline.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-architecturalrecord-com",
+    "name": "www.architecturalrecord.com",
+    "domain": "www.architecturalrecord.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-gbdmagazine-com",
+    "name": "www.gbdmagazine.com",
+    "domain": "www.gbdmagazine.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-constructconnect-com",
+    "name": "www.constructconnect.com",
+    "domain": "www.constructconnect.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-buildingdesignconstruction-com",
+    "name": "www.buildingdesignconstruction.com",
+    "domain": "www.buildingdesignconstruction.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-facilitiesnet-com",
+    "name": "www.facilitiesnet.com",
+    "domain": "www.facilitiesnet.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-electricalcontractor-com",
+    "name": "www.electricalcontractor.com",
+    "domain": "www.electricalcontractor.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ecmag-com",
+    "name": "www.ecmag.com",
+    "domain": "www.ecmag.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-achrnews-com",
+    "name": "www.achrnews.com",
+    "domain": "www.achrnews.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-hpac-com",
+    "name": "www.hpac.com",
+    "domain": "www.hpac.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-contractingbusiness-com",
+    "name": "www.contractingbusiness.com",
+    "domain": "www.contractingbusiness.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mechanicalbusiness-com",
+    "name": "www.mechanicalbusiness.com",
+    "domain": "www.mechanicalbusiness.com",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-tools",
+    "name": "www.reddit.com/r/tools",
+    "domain": "www.reddit.com/r/tools",
+    "sourceGroup": "Power Tools & Construction",
+    "industryTags": [
+      "Power Tools & Construction"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recyclingtoday-com",
+    "name": "www.recyclingtoday.com",
+    "domain": "www.recyclingtoday.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-waste360-com",
+    "name": "www.waste360.com",
+    "domain": "www.waste360.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-waste-management-world-com",
+    "name": "www.waste-management-world.com",
+    "domain": "www.waste-management-world.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recycling-magazine-com",
+    "name": "www.recycling-magazine.com",
+    "domain": "www.recycling-magazine.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-resource-recycling-com",
+    "name": "www.resource-recycling.com",
+    "domain": "www.resource-recycling.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-scrapmonster-com",
+    "name": "www.scrapmonster.com",
+    "domain": "www.scrapmonster.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recyclinginternational-com",
+    "name": "www.recyclinginternational.com",
+    "domain": "www.recyclinginternational.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-wastetodaymagazine-com",
+    "name": "www.wastetodaymagazine.com",
+    "domain": "www.wastetodaymagazine.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recyclinginside-com",
+    "name": "www.recyclinginside.com",
+    "domain": "www.recyclinginside.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-e-scrapnews-com",
+    "name": "www.e-scrapnews.com",
+    "domain": "www.e-scrapnews.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-plasticsrecycling-com",
+    "name": "www.plasticsrecycling.com",
+    "domain": "www.plasticsrecycling.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recyclingproductnews-com",
+    "name": "www.recyclingproductnews.com",
+    "domain": "www.recyclingproductnews.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-wastedive-com",
+    "name": "www.wastedive.com",
+    "domain": "www.wastedive.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-letsrecycle-com",
+    "name": "www.letsrecycle.com",
+    "domain": "www.letsrecycle.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mrw-co-uk",
+    "name": "www.mrw.co.uk",
+    "domain": "www.mrw.co.uk",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-scrap-org",
+    "name": "www.scrap.org",
+    "domain": "www.scrap.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-isri-org",
+    "name": "www.isri.org",
+    "domain": "www.isri.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-euric-recycling-org",
+    "name": "www.euric-recycling.org",
+    "domain": "www.euric-recycling.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-bir-org",
+    "name": "www.bir.org",
+    "domain": "www.bir.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-scrapmetalforum-com",
+    "name": "www.scrapmetalforum.com",
+    "domain": "www.scrapmetalforum.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-autorecyclingworld-com",
+    "name": "www.autorecyclingworld.com",
+    "domain": "www.autorecyclingworld.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-steelrecycling-org",
+    "name": "www.steelrecycling.org",
+    "domain": "www.steelrecycling.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-weee-forum-org",
+    "name": "www.weee-forum.org",
+    "domain": "www.weee-forum.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-plasticsrecycling-org",
+    "name": "www.plasticsrecycling.org",
+    "domain": "www.plasticsrecycling.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-tire-recycling-com",
+    "name": "www.tire-recycling.com",
+    "domain": "www.tire-recycling.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-construction-waste-com",
+    "name": "www.construction-waste.com",
+    "domain": "www.construction-waste.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-glassrecycling-org",
+    "name": "www.glassrecycling.org",
+    "domain": "www.glassrecycling.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-organicsrecycling-com",
+    "name": "www.organicsrecycling.com",
+    "domain": "www.organicsrecycling.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-sorting-solutions-com",
+    "name": "www.sorting-solutions.com",
+    "domain": "www.sorting-solutions.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-waste-sorting-com",
+    "name": "www.waste-sorting.com",
+    "domain": "www.waste-sorting.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-circular-economy-news-com",
+    "name": "www.circular-economy-news.com",
+    "domain": "www.circular-economy-news.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recycling-de",
+    "name": "www.recycling.de",
+    "domain": "www.recycling.de",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recycling-nl",
+    "name": "www.recycling.nl",
+    "domain": "www.recycling.nl",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recycling-co-uk",
+    "name": "www.recycling.co.uk",
+    "domain": "www.recycling.co.uk",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recycling-org-au",
+    "name": "www.recycling.org.au",
+    "domain": "www.recycling.org.au",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-canadianrecycling-ca",
+    "name": "www.canadianrecycling.ca",
+    "domain": "www.canadianrecycling.ca",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-scrapmetalboard-com",
+    "name": "www.scrapmetalboard.com",
+    "domain": "www.scrapmetalboard.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-waste-management-forum-com",
+    "name": "www.waste-management-forum.com",
+    "domain": "www.waste-management-forum.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-greenrecyclingnews-com",
+    "name": "www.greenrecyclingnews.com",
+    "domain": "www.greenrecyclingnews.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-shreddertech-com",
+    "name": "www.shreddertech.com",
+    "domain": "www.shreddertech.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-batteryrecycling-com",
+    "name": "www.batteryrecycling.com",
+    "domain": "www.batteryrecycling.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-metalrecycling-org",
+    "name": "www.metalrecycling.org",
+    "domain": "www.metalrecycling.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-car-recycling-com",
+    "name": "www.car-recycling.com",
+    "domain": "www.car-recycling.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-wasteprep-com",
+    "name": "www.wasteprep.com",
+    "domain": "www.wasteprep.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-waste-processing-com",
+    "name": "www.waste-processing.com",
+    "domain": "www.waste-processing.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recyclingtimes-com",
+    "name": "www.recyclingtimes.com",
+    "domain": "www.recyclingtimes.com",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-recyclingworld-org",
+    "name": "www.recyclingworld.org",
+    "domain": "www.recyclingworld.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-zero-waste-org",
+    "name": "www.zero-waste.org",
+    "domain": "www.zero-waste.org",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-recycling",
+    "name": "www.reddit.com/r/recycling",
+    "domain": "www.reddit.com/r/recycling",
+    "sourceGroup": "Recycling & Waste Management",
+    "industryTags": [
+      "Recycling & Waste Management"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-gim-international-com",
+    "name": "www.gim-international.com",
+    "domain": "www.gim-international.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-xyht-com",
+    "name": "www.xyht.com",
+    "domain": "www.xyht.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-pobonline-com",
+    "name": "www.pobonline.com",
+    "domain": "www.pobonline.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-geoconnexions-com",
+    "name": "www.geoconnexions.com",
+    "domain": "www.geoconnexions.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-spatialsource-com-au",
+    "name": "www.spatialsource.com.au",
+    "domain": "www.spatialsource.com.au",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-lidarmag-com",
+    "name": "www.lidarmag.com",
+    "domain": "www.lidarmag.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-laserfocusworld-com",
+    "name": "www.laserfocusworld.com",
+    "domain": "www.laserfocusworld.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-photonics-com",
+    "name": "www.photonics.com",
+    "domain": "www.photonics.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-optics-org",
+    "name": "www.optics.org",
+    "domain": "www.optics.org",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-opticsandphotonics-com",
+    "name": "www.opticsandphotonics.com",
+    "domain": "www.opticsandphotonics.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-sensorsmag-com",
+    "name": "www.sensorsmag.com",
+    "domain": "www.sensorsmag.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-sensor-tips-com",
+    "name": "www.sensor-tips.com",
+    "domain": "www.sensor-tips.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-testandmeasurementtips-com",
+    "name": "www.testandmeasurementtips.com",
+    "domain": "www.testandmeasurementtips.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-evaluationengineering-com",
+    "name": "www.evaluationengineering.com",
+    "domain": "www.evaluationengineering.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-qualitydigest-com",
+    "name": "www.qualitydigest.com",
+    "domain": "www.qualitydigest.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-qualitymag-com",
+    "name": "www.qualitymag.com",
+    "domain": "www.qualitymag.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-metrology-news",
+    "name": "www.metrology.news",
+    "domain": "www.metrology.news",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-metrologyworld-com",
+    "name": "www.metrologyworld.com",
+    "domain": "www.metrologyworld.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-coordinate-metrology-com",
+    "name": "www.coordinate-metrology.com",
+    "domain": "www.coordinate-metrology.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ndt-net",
+    "name": "www.ndt.net",
+    "domain": "www.ndt.net",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-asnt-org",
+    "name": "www.asnt.org",
+    "domain": "www.asnt.org",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-inspectioneering-com",
+    "name": "www.inspectioneering.com",
+    "domain": "www.inspectioneering.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-materials-testing-com",
+    "name": "www.materials-testing.com",
+    "domain": "www.materials-testing.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-surveyinggroup-com",
+    "name": "www.surveyinggroup.com",
+    "domain": "www.surveyinggroup.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-geospatialworld-net",
+    "name": "www.geospatialworld.net",
+    "domain": "www.geospatialworld.net",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-geospatial-solutions-com",
+    "name": "www.geospatial-solutions.com",
+    "domain": "www.geospatial-solutions.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-gpsworld-com",
+    "name": "www.gpsworld.com",
+    "domain": "www.gpsworld.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-positioningmag-com",
+    "name": "www.positioningmag.com",
+    "domain": "www.positioningmag.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-instrumentationmag-biz",
+    "name": "www.instrumentationmag.biz",
+    "domain": "www.instrumentationmag.biz",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-processinstrumentation-com",
+    "name": "www.processinstrumentation.com",
+    "domain": "www.processinstrumentation.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-controlglobal-com",
+    "name": "www.controlglobal.com",
+    "domain": "www.controlglobal.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-controleng-com",
+    "name": "www.controleng.com",
+    "domain": "www.controleng.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-automation-com",
+    "name": "www.automation.com",
+    "domain": "www.automation.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-automationsolutions-com",
+    "name": "www.automationsolutions.com",
+    "domain": "www.automationsolutions.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-isa-org",
+    "name": "www.isa.org",
+    "domain": "www.isa.org",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-engineering-com-measurement",
+    "name": "www.engineering.com/measurement",
+    "domain": "www.engineering.com/measurement",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-surveying",
+    "name": "www.reddit.com/r/surveying",
+    "domain": "www.reddit.com/r/surveying",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-lasers",
+    "name": "www.reddit.com/r/lasers",
+    "domain": "www.reddit.com/r/lasers",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-metrologyforum-com",
+    "name": "www.metrologyforum.com",
+    "domain": "www.metrologyforum.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-surveyorconnect-com",
+    "name": "www.surveyorconnect.com",
+    "domain": "www.surveyorconnect.com",
+    "sourceGroup": "Measuring & Laser Technology",
+    "industryTags": [
+      "Measuring & Laser Technology"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-powderbulksolids-com",
+    "name": "www.powderbulksolids.com",
+    "domain": "www.powderbulksolids.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-bmh-magazine-com",
+    "name": "www.bmh-magazine.com",
+    "domain": "www.bmh-magazine.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-bulk-online-com",
+    "name": "www.bulk-online.com",
+    "domain": "www.bulk-online.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-powderandbulk-com",
+    "name": "www.powderandbulk.com",
+    "domain": "www.powderandbulk.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-processingmagazine-com",
+    "name": "www.processingmagazine.com",
+    "domain": "www.processingmagazine.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-processengineering-co-uk",
+    "name": "www.processengineering.co.uk",
+    "domain": "www.processengineering.co.uk",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-bulkhandlingworld-com",
+    "name": "www.bulkhandlingworld.com",
+    "domain": "www.bulkhandlingworld.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-conveyortech-com",
+    "name": "www.conveyortech.com",
+    "domain": "www.conveyortech.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-solids-processing-com",
+    "name": "www.solids-processing.com",
+    "domain": "www.solids-processing.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-powder-technology-com",
+    "name": "www.powder-technology.com",
+    "domain": "www.powder-technology.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-globalcement-com",
+    "name": "www.globalcement.com",
+    "domain": "www.globalcement.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-cemnet-com",
+    "name": "www.cemnet.com",
+    "domain": "www.cemnet.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-cement-org",
+    "name": "www.cement.org",
+    "domain": "www.cement.org",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-worldcement-com",
+    "name": "www.worldcement.com",
+    "domain": "www.worldcement.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-glass-international-com",
+    "name": "www.glass-international.com",
+    "domain": "www.glass-international.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ceramic-industry-com",
+    "name": "www.ceramic-industry.com",
+    "domain": "www.ceramic-industry.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-chemengonline-com",
+    "name": "www.chemengonline.com",
+    "domain": "www.chemengonline.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-chemicalprocessing-com",
+    "name": "www.chemicalprocessing.com",
+    "domain": "www.chemicalprocessing.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-chemicalengineeringworld-com",
+    "name": "www.chemicalengineeringworld.com",
+    "domain": "www.chemicalengineeringworld.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-filtration-separation-com",
+    "name": "www.filtration-separation.com",
+    "domain": "www.filtration-separation.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-foodprocessing-com",
+    "name": "www.foodprocessing.com",
+    "domain": "www.foodprocessing.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-foodqualityandsafety-com",
+    "name": "www.foodqualityandsafety.com",
+    "domain": "www.foodqualityandsafety.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-foodengineeringmag-com",
+    "name": "www.foodengineeringmag.com",
+    "domain": "www.foodengineeringmag.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-foodmanufacture-co-uk",
+    "name": "www.foodmanufacture.co.uk",
+    "domain": "www.foodmanufacture.co.uk",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-foodsafetytech-com",
+    "name": "www.foodsafetytech.com",
+    "domain": "www.foodsafetytech.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-grainnet-com",
+    "name": "www.grainnet.com",
+    "domain": "www.grainnet.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-world-grain-com",
+    "name": "www.world-grain.com",
+    "domain": "www.world-grain.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-millingandgrain-com",
+    "name": "www.millingandgrain.com",
+    "domain": "www.millingandgrain.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-feedstrategy-com",
+    "name": "www.feedstrategy.com",
+    "domain": "www.feedstrategy.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-pharmtech-com",
+    "name": "www.pharmtech.com",
+    "domain": "www.pharmtech.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-pharmaceutical-technology-com",
+    "name": "www.pharmaceutical-technology.com",
+    "domain": "www.pharmaceutical-technology.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-cleanroom-technology-com",
+    "name": "www.cleanroom-technology.com",
+    "domain": "www.cleanroom-technology.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-plasticstoday-com",
+    "name": "www.plasticstoday.com",
+    "domain": "www.plasticstoday.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-plasticsnews-com",
+    "name": "www.plasticsnews.com",
+    "domain": "www.plasticsnews.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-injection-molding-news-com",
+    "name": "www.injection-molding-news.com",
+    "domain": "www.injection-molding-news.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-industrial-minerals-com",
+    "name": "www.industrial-minerals.com",
+    "domain": "www.industrial-minerals.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-refractories-news-com",
+    "name": "www.refractories-news.com",
+    "domain": "www.refractories-news.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-asphalt-news-com",
+    "name": "www.asphalt-news.com",
+    "domain": "www.asphalt-news.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-lime-association-org",
+    "name": "www.lime-association.org",
+    "domain": "www.lime-association.org",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-dust-collection-news-com",
+    "name": "www.dust-collection-news.com",
+    "domain": "www.dust-collection-news.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-pneumatic-conveying-com",
+    "name": "www.pneumatic-conveying.com",
+    "domain": "www.pneumatic-conveying.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-silo-technology-com",
+    "name": "www.silo-technology.com",
+    "domain": "www.silo-technology.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-particle-size-com",
+    "name": "www.particle-size.com",
+    "domain": "www.particle-size.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-fluid-handling-com",
+    "name": "www.fluid-handling.com",
+    "domain": "www.fluid-handling.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-piping-world-com",
+    "name": "www.piping-world.com",
+    "domain": "www.piping-world.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-fertilizer-tech-com",
+    "name": "www.fertilizer-tech.com",
+    "domain": "www.fertilizer-tech.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-sugarindustry-com",
+    "name": "www.sugarindustry.com",
+    "domain": "www.sugarindustry.com",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-allaboutfeed-net",
+    "name": "www.allaboutfeed.net",
+    "domain": "www.allaboutfeed.net",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-bulk-online-com-forum",
+    "name": "www.bulk-online.com/forum",
+    "domain": "www.bulk-online.com/forum",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-chemicalengineering",
+    "name": "www.reddit.com/r/chemicalengineering",
+    "domain": "www.reddit.com/r/chemicalengineering",
+    "sourceGroup": "Bulk Materials, Powder & Cement",
+    "industryTags": [
+      "Bulk Materials, Powder & Cement"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-magneticsmag-com",
+    "name": "www.magneticsmag.com",
+    "domain": "www.magneticsmag.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-magnetism-journal-com",
+    "name": "www.magnetism-journal.com",
+    "domain": "www.magnetism-journal.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-ieee-magnetics-org",
+    "name": "www.ieee-magnetics.org",
+    "domain": "www.ieee-magnetics.org",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-permanentmagnets-org",
+    "name": "www.permanentmagnets.org",
+    "domain": "www.permanentmagnets.org",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-coils-and-transformers-com",
+    "name": "www.coils-and-transformers.com",
+    "domain": "www.coils-and-transformers.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-power-electronics-magnetics-com",
+    "name": "www.power-electronics-magnetics.com",
+    "domain": "www.power-electronics-magnetics.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-thomasnet-com-news",
+    "name": "www.thomasnet.com/news",
+    "domain": "www.thomasnet.com/news",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-directindustry-com-journal",
+    "name": "www.directindustry.com/journal",
+    "domain": "www.directindustry.com/journal",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-plantengineering-com",
+    "name": "www.plantengineering.com",
+    "domain": "www.plantengineering.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-maintworld-com",
+    "name": "www.maintworld.com",
+    "domain": "www.maintworld.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-machinerylubrication-com",
+    "name": "www.machinerylubrication.com",
+    "domain": "www.machinerylubrication.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-industrial-equipment-news-com",
+    "name": "www.industrial-equipment-news.com",
+    "domain": "www.industrial-equipment-news.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-manufacturing-net",
+    "name": "www.manufacturing.net",
+    "domain": "www.manufacturing.net",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-industryweek-com",
+    "name": "www.industryweek.com",
+    "domain": "www.industryweek.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-designnews-com",
+    "name": "www.designnews.com",
+    "domain": "www.designnews.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-machinedesign-com",
+    "name": "www.machinedesign.com",
+    "domain": "www.machinedesign.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-engineerlive-com",
+    "name": "www.engineerlive.com",
+    "domain": "www.engineerlive.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-engineering-com",
+    "name": "www.engineering.com",
+    "domain": "www.engineering.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-eurekamagazine-co-uk",
+    "name": "www.eurekamagazine.co.uk",
+    "domain": "www.eurekamagazine.co.uk",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-maintenance-engineering-com",
+    "name": "www.maintenance-engineering.com",
+    "domain": "www.maintenance-engineering.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reliabilityweb-com",
+    "name": "www.reliabilityweb.com",
+    "domain": "www.reliabilityweb.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-drives-and-controls-com",
+    "name": "www.drives-and-controls.com",
+    "domain": "www.drives-and-controls.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-motion-control-news-com",
+    "name": "www.motion-control-news.com",
+    "domain": "www.motion-control-news.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-material-handling-trends-com",
+    "name": "www.material-handling-trends.com",
+    "domain": "www.material-handling-trends.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-motors-and-drives-com",
+    "name": "www.motors-and-drives.com",
+    "domain": "www.motors-and-drives.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-powertransmission-com",
+    "name": "www.powertransmission.com",
+    "domain": "www.powertransmission.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-bearing-news-com",
+    "name": "www.bearing-news.com",
+    "domain": "www.bearing-news.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-fastenertechnotes-com",
+    "name": "www.fastenertechnotes.com",
+    "domain": "www.fastenertechnotes.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-cuttingtoolengineering-com",
+    "name": "www.cuttingtoolengineering.com",
+    "domain": "www.cuttingtoolengineering.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-modernmachineshop-com",
+    "name": "www.modernmachineshop.com",
+    "domain": "www.modernmachineshop.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-manufacturingtomorrow-com",
+    "name": "www.manufacturingtomorrow.com",
+    "domain": "www.manufacturingtomorrow.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-smartindustry-com",
+    "name": "www.smartindustry.com",
+    "domain": "www.smartindustry.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-inddist-com",
+    "name": "www.inddist.com",
+    "domain": "www.inddist.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-industrialpackaging-com",
+    "name": "www.industrialpackaging.com",
+    "domain": "www.industrialpackaging.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-supplychainbrain-com",
+    "name": "www.supplychainbrain.com",
+    "domain": "www.supplychainbrain.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-logisticsmgmt-com",
+    "name": "www.logisticsmgmt.com",
+    "domain": "www.logisticsmgmt.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-mhi-org",
+    "name": "www.mhi.org",
+    "domain": "www.mhi.org",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "A",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-eng-tips-com",
+    "name": "www.eng-tips.com",
+    "domain": "www.eng-tips.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-physicsforums-com",
+    "name": "www.physicsforums.com",
+    "domain": "www.physicsforums.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-machinist-forum-com",
+    "name": "www.machinist-forum.com",
+    "domain": "www.machinist-forum.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-industrial-engineers-org-forum",
+    "name": "www.industrial-engineers.org/forum",
+    "domain": "www.industrial-engineers.org/forum",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-maintenance-forum-com",
+    "name": "www.maintenance-forum.com",
+    "domain": "www.maintenance-forum.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-engineering",
+    "name": "www.reddit.com/r/engineering",
+    "domain": "www.reddit.com/r/engineering",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-machinists",
+    "name": "www.reddit.com/r/machinists",
+    "domain": "www.reddit.com/r/machinists",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-reddit-com-r-plc",
+    "name": "www.reddit.com/r/plc",
+    "domain": "www.reddit.com/r/plc",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-quora-com-topic-power-tools",
+    "name": "www.quora.com/topic/power-tools",
+    "domain": "www.quora.com/topic/power-tools",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-quora-com-topic-magnetic-separation",
+    "name": "www.quora.com/topic/magnetic-separation",
+    "domain": "www.quora.com/topic/magnetic-separation",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "discovery-only",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-rareearthnews-com",
+    "name": "www.rareearthnews.com",
+    "domain": "www.rareearthnews.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-applied-magnetics-com",
+    "name": "www.applied-magnetics.com",
+    "domain": "www.applied-magnetics.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  },
+  {
+    "id": "www-electronics-weekly-com",
+    "name": "www.electronics-weekly.com",
+    "domain": "www.electronics-weekly.com",
+    "sourceGroup": "Motors, Magnetics & Manufacturing",
+    "industryTags": [
+      "Motors, Magnetics & Manufacturing"
+    ],
+    "discoveryMethod": [
+      "public-page"
+    ],
+    "tier": "B",
+    "active": false,
+    "robotsAllowed": null,
+    "lastCheckedAt": null,
+    "lastUsedAt": null,
+    "useCount": 0,
+    "notes": "Imported input. Activate only after public-access and robots review."
+  }
+]

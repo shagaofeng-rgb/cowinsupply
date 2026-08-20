@@ -1,0 +1,914 @@
+[
+  {
+    "id": "product-kft-q450brushlessjigsaw",
+    "slug": "KFT-Q450BrushlessJigSaw",
+    "category": "Jig Saws & Curve Saws",
+    "series": "",
+    "productName": "KFT-Q450 800W AC Brushless Jig Saw",
+    "model": "KFT-Q450",
+    "currentUrl": "/product/KFT-Q450BrushlessJigSaw.html",
+    "shortDescription": "An 800W AC brushless jig saw for controlled curved cuts, shaped openings and finishing work in wood, plastic and thin metal sheet.",
+    "existingSpecifications": {
+      "Rated power": "800W",
+      "Speed settings": "6 settings",
+      "Cutting depth": "45 mm",
+      "Rated speed": "1500-3800 r/min",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz",
+      "Net weight": "2 kg"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/4f66967b6c3b722944491096106e7e3f.jpg",
+        "alt": "KFT-Q450 800W AC Brushless Jig Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/31424df96a2649c5ec699d6299ed54c4.png",
+        "alt": "KFT-Q450 800W AC Brushless Jig Saw",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Furniture and joinery work",
+      "Interior decoration and trim cutting",
+      "Shaped openings in wood and plastic",
+      "Thin metal sheet cutting"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#KFT-Q450BrushlessJigSaw",
+      "lib/productTechnicalData.js#KFT-Q450BrushlessJigSaw"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-6000wsolttingmachine",
+    "slug": "6000wsolttingmachine",
+    "category": "Wall Chasers",
+    "series": "",
+    "productName": "KFT-K230 6000W AC Brushless Wall Chaser",
+    "model": "KFT-K230",
+    "currentUrl": "/product/6000wsolttingmachine.html",
+    "shortDescription": "A 6000W AC brushless wall chaser for controlled slotting and cutting in concrete, brick and stone wall materials.",
+    "existingSpecifications": {
+      "Rated power": "6000W",
+      "Blade diameter": "230 mm",
+      "Maximum cutting depth": "80 mm",
+      "Rated speed": "7200 r/min",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz",
+      "Net weight": "3.5 kg"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/c9f850d524bdde2ef70c6b603be2478d.jpg",
+        "alt": "KFT-K230 6000W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/39311349ffb77a746c645e5f4b27d675.jpg",
+        "alt": "KFT-K230 6000W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/cd2f098f453ce050b55a6efd1877af2e.jpg",
+        "alt": "KFT-K230 6000W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/b1e4dc713174a89dfbaae9e85a0111f8.jpg",
+        "alt": "KFT-K230 6000W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Electrical cable route preparation",
+      "Pipe and conduit channel planning",
+      "Concrete and brick renovation work",
+      "Building services installation"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#6000wsolttingmachine",
+      "lib/productTechnicalData.js#6000wsolttingmachine"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-heavycuttingmachine",
+    "slug": "HeavyCuttingMachine",
+    "category": "Wall Chasers",
+    "series": "",
+    "productName": "KFT-K210 5500W AC Brushless Wall Chaser",
+    "model": "KFT-K210",
+    "currentUrl": "/product/HeavyCuttingMachine.html",
+    "shortDescription": "A 5500W AC brushless wall chaser for planned cable and pipe channels in concrete, brick and stone wall materials.",
+    "existingSpecifications": {
+      "Rated power": "5500W",
+      "Blade diameter": "210 mm",
+      "Maximum cutting depth": "80 mm",
+      "Rated speed": "7200 r/min",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz",
+      "Net weight": "3.5 kg"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/1cde0629130ed67fef150393353c59c6.png",
+        "alt": "KFT-K210 5500W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/8f3dba6c18b68826673a94c8f262ad06.png",
+        "alt": "KFT-K210 5500W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/fbc7019ed1f379631183234403dace3f.jpg",
+        "alt": "KFT-K210 5500W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/9c4fe5b7385563482624439309f1a384.png",
+        "alt": "KFT-K210 5500W AC Brushless Wall Chaser",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Electrical installation channels",
+      "Pipe route preparation",
+      "Concrete wall renovation",
+      "Building services fit-out"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#HeavyCuttingMachine",
+      "lib/productTechnicalData.js#HeavyCuttingMachine"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-cuttingmachine",
+    "slug": "CuttingMachine",
+    "category": "Wall Chasers",
+    "series": "",
+    "productName": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+    "model": "KFT-K190",
+    "currentUrl": "/product/CuttingMachine.html",
+    "shortDescription": "A 2800W AC brushless wall slotting machine for controlled channels in concrete, brick, stone and marble walls.",
+    "existingSpecifications": {
+      "Rated power": "2800W",
+      "Blade diameter": "190 mm",
+      "Maximum cutting depth": "55 mm",
+      "Rated speed": "7200 r/min",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz",
+      "Net weight": "3.5 kg"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/9e661051c14c7c903ecaefc9349dd4b1.png",
+        "alt": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/6c2cebe833d0af6018cdbb1a79f73bdf.png",
+        "alt": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Concealed electrical cable channels",
+      "Pipe and conduit routing",
+      "Masonry renovation",
+      "Building services installation"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#CuttingMachine",
+      "lib/productTechnicalData.js#CuttingMachine"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-lasermeasuringdevicwithmultifunction",
+    "slug": "LaserMeasuringDevicwithMultiFunction",
+    "category": "Laser Distance Meters",
+    "series": "",
+    "productName": "Handheld Laser Distance Meter",
+    "model": "",
+    "currentUrl": "/product/LaserMeasuringDevicwithMultiFunction.html",
+    "shortDescription": "Unit Conversion Function – Easily switch between different measurement units. Durable Housing – Strong body design for daily jobsite use. Energy Efficient – Low power consumption with long battery lif",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/9e420affba201f7ae8741d43f3b095b3.png",
+        "alt": "Handheld Laser Distance Meter",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/80c5415da953f2173e71c4e29eb0c1d7.png",
+        "alt": "Handheld Laser Distance Meter",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#LaserMeasuringDevicwithMultiFunction"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-measuringtapewithdigitaldisplay",
+    "slug": "MeasuringTapewithDigitalDisplay",
+    "category": "Laser Measuring Tapes",
+    "series": "",
+    "productName": "3-in-1 Laser Measuring Tape (40m/60m Listing)",
+    "model": "",
+    "currentUrl": "/product/MeasuringTapewithDigitalDisplay.html",
+    "shortDescription": "Cross Line Laser Guide – Helps align measurements with higher precision. Auto Lock Tape Function – Smooth and convenient tape operation during measuring. Multi-Unit Conversion – Supports ft / in / m f",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/031aee838d9875c4b47566624bb89388.png",
+        "alt": "3-in-1 Laser Measuring Tape (40m/60m Listing)",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/49be7255026c378d3ea2b8a0a2377824.png",
+        "alt": "3-in-1 Laser Measuring Tape (40m/60m Listing)",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#MeasuringTapewithDigitalDisplay"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-screwdriverforelectronics",
+    "slug": "ScrewdriverforElectronics",
+    "category": "Electric Screwdrivers",
+    "series": "",
+    "productName": "Handheld Precision Electric Screwdriver",
+    "model": "",
+    "currentUrl": "/product/ScrewdriverforElectronics.html",
+    "shortDescription": "Cordless Convenience – No cable restrictions, easy to use anywhere. 280RPM Fast Rotation – Improves working efficiency for quick screw driving. Dual Function Mode – Electric mode for speed, manual mod",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/c9fdf1ad7232d752488979974393cd10.png",
+        "alt": "Handheld Precision Electric Screwdriver",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/456fb63090720767dbf51bad130e084c.png",
+        "alt": "Handheld Precision Electric Screwdriver",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#ScrewdriverforElectronics"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-rechargeablebrushlessanglegrinder",
+    "slug": "RechargeableBrushlessAngleGrinder",
+    "category": "Angle Grinders",
+    "series": "",
+    "productName": "Rechargeable Brushless Angle Grinder",
+    "model": "",
+    "currentUrl": "/product/RechargeableBrushlessAngleGrinder.html",
+    "shortDescription": "Lithium Battery Powered – Long runtime with fast charging support. High Efficiency Cutting & Grinding – Ideal for metal, tile, marble, and stone.",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/730bd1cff288536caec10e09cb3a1a0b.png",
+        "alt": "Rechargeable Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/496f40c88b7b34f49b075446d73ded54.png",
+        "alt": "Rechargeable Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/2284d7cb83d9cd727aa7d7b33aee998c.png",
+        "alt": "Rechargeable Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/6b32a1d844f4040ddf46e5a6ae54e916.png",
+        "alt": "Rechargeable Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/3c4c034368670bc4f7b7698f2929eda6.png",
+        "alt": "Rechargeable Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/686fcc6f47291c38d638006a1c5388d2.png",
+        "alt": "Rechargeable Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/1ea7f980db35aec3deac7257e0a904fd.png",
+        "alt": "Rechargeable Brushless Angle Grinder",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#RechargeableBrushlessAngleGrinder"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-brushlesslithiumioncordlessdrill",
+    "slug": "BrushlessLithiumIonCordlessDrill",
+    "category": "Cordless Drills",
+    "series": "",
+    "productName": "Brushless Lithium-Ion Cordless Drill",
+    "model": "",
+    "currentUrl": "/product/BrushlessLithiumIonCordlessDrill.html",
+    "shortDescription": "Multi-Purpose Tool – Ideal for repair, installation, and DIY jobs. Efficient Performance – Saves time and improves work efficiency.",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/0dbcb501b469e3f397f1595d6a5c58fc.png",
+        "alt": "Brushless Lithium-Ion Cordless Drill",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/cdf50a1fc21f26eb207ec2c63be076d1.png",
+        "alt": "Brushless Lithium-Ion Cordless Drill",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#BrushlessLithiumIonCordlessDrill"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-brushlesslithium",
+    "slug": "BrushlessLithium",
+    "category": "Cordless Drills",
+    "series": "",
+    "productName": "Cordless Brushless Lithium Battery Drill",
+    "model": "",
+    "currentUrl": "/product/BrushlessLithium.html",
+    "shortDescription": "Powerful Brushless Motor – Delivers strong performance with longer lifespan. Cordless Convenience – No cables, easy to use anywhere.",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/b126392a7197b795333ba8d2f6065d67.png",
+        "alt": "Cordless Brushless Lithium Battery Drill",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/e2ccd1af9148f355dc63301c84f4a332.png",
+        "alt": "Cordless Brushless Lithium Battery Drill",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#BrushlessLithium"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-acbrushlesscurvesaw",
+    "slug": "ACBrushlesscurvesaw",
+    "category": "Jig Saws & Curve Saws",
+    "series": "",
+    "productName": "AC Brushless Curve Saw",
+    "model": "",
+    "currentUrl": "/product/ACBrushlesscurvesaw.html",
+    "shortDescription": "Metal Cutting Saw Concrete Cutting Machine Tile Cutting Machine Steel Cutting Machine Pipe Cutting Machine Wood Cutting Machine Vertical Cutting Machine",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/3fe516d5c79b3cbdf489c913bb60d351.png",
+        "alt": "AC Brushless Curve Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/3201e8ca0252dff532714b1166a8940e.png",
+        "alt": "AC Brushless Curve Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/af597700ec1d751c3150aa91a22b0215.png",
+        "alt": "AC Brushless Curve Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/d8745e23ea967828cd34a7e29ee1cc05.png",
+        "alt": "AC Brushless Curve Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/01f999dca8c25493cec7a20c29e35035.png",
+        "alt": "AC Brushless Curve Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/6756f8b118361fe325a5d668a725209c.png",
+        "alt": "AC Brushless Curve Saw",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#ACBrushlesscurvesaw"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-acbrushlesswallpolishingmachine",
+    "slug": "ACBrushlesswallpolishingmachine",
+    "category": "Wall Polishing Machines",
+    "series": "",
+    "productName": "KFT-W215 1000W Variable-Speed AC Brushless Wall Polishing Machine",
+    "model": "KFT-W215",
+    "currentUrl": "/product/ACBrushlesswallpolishingmachine.html",
+    "shortDescription": "A 1000W variable-speed AC brushless wall polishing machine for sanding, leveling and surface preparation on concrete, gypsum board and brick walls.",
+    "existingSpecifications": {
+      "Rated power": "1000W",
+      "Grinding disc diameter": "215 mm",
+      "Sanding disc diameter": "215 mm",
+      "Rated speed": "900-2300 r/min",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz",
+      "Net weight": "2.4 kg"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/796ae11aaf90d1fefaaab3ebd14bc218.jpg",
+        "alt": "KFT-W215 1000W Variable-Speed AC Brushless Wall Polishing Machine",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Concrete wall surface preparation",
+      "Gypsum board sanding",
+      "Putty layer trimming",
+      "Old coating removal"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#ACBrushlesswallpolishingmachine",
+      "lib/productTechnicalData.js#ACBrushlesswallpolishingmachine"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-acbrushlesscoldcuttingsaw",
+    "slug": "ACBrushlesscoldcuttingsaw",
+    "category": "Cold Cutting Saws",
+    "series": "",
+    "productName": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+    "model": "KFT-L190",
+    "currentUrl": "/product/ACBrushlesscoldcuttingsaw.html",
+    "shortDescription": "A 2200W AC brushless cold cutting saw for steel bar, steel pipe and alloy profile cutting in fabrication, installation and maintenance work.",
+    "existingSpecifications": {
+      "Rated power": "2200W",
+      "Blade diameter": "190 mm",
+      "Maximum cutting depth": "32 mm",
+      "Rated speed": "2100 r/min",
+      "Switch position": "Rear switch",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/5bd5cfdd4876c37b7fd799bac3e10c38.jpg",
+        "alt": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/8bcb904da7a6f41dc985042878771d4a.png",
+        "alt": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/ad94bc08db749cf2fd46ecc1de2faa57.png",
+        "alt": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/873f92f815babafec92a8292aee3abbb.png",
+        "alt": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/2c9271c9d8d3e17a7363cabd336c3c3e.png",
+        "alt": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/5eb51957bb3c351f78acf84209b96b11.png",
+        "alt": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/3212ba5795086d14e8fc25f7f16b0201.png",
+        "alt": "KFT-L190 2200W AC Brushless Cold Cutting Saw",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Steel structure fabrication",
+      "Pipe installation",
+      "Workshop metal cutting",
+      "Mechanical maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#ACBrushlesscoldcuttingsaw",
+      "lib/productTechnicalData.js#ACBrushlesscoldcuttingsaw"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-brushlessannularcutter",
+    "slug": "brushlessannularcutter",
+    "category": "needs_confirmation",
+    "series": "",
+    "productName": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+    "model": "KFT-Y370",
+    "currentUrl": "/product/brushlessannularcutter.html",
+    "shortDescription": "A historical KFT-Y370 large-diameter ring saw-style cutting equipment record pending final product-category, blade and safety-configuration confirmation.",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/e423586c36bbe1661b29fc7bedb713fb.png",
+        "alt": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/85d44dd60108e10193ec3b4353d9ba35.png",
+        "alt": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/5eb6faab5b9a50845d60cd37abd1d7fa.png",
+        "alt": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/dd98ff57b64827856dd2373e8405dde3.png",
+        "alt": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/a87b25fcc9f884ffe0b01cdc85c3a0bf.png",
+        "alt": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/c5b55ba0b86633baf1f15e4471ec1147.png",
+        "alt": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/5e94e676e12523c14cebbe36e179af6d.png",
+        "alt": "KFT-Y370 Large-Diameter Ring Saw Cutting Equipment",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set",
+      "final product category, blade range and safety configuration"
+    ],
+    "dataConfidence": "partial",
+    "sourceEvidence": [
+      "data/legacyProducts.json#brushlessannularcutter",
+      "lib/productTechnicalData.js#brushlessannularcutter"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-acbrushlesswaterdrillingrig",
+    "slug": "ACBrushlesswaterdrillingrig",
+    "category": "Core Drills",
+    "series": "",
+    "productName": "KFT-S218 6000W AC Brushless Water Drilling Rig",
+    "model": "KFT-S218",
+    "currentUrl": "/product/ACBrushlesswaterdrillingrig.html",
+    "shortDescription": "A 6000W AC brushless water drilling rig for drilling concrete, brick, stone and ceramic tile in construction, installation and municipal work.",
+    "existingSpecifications": {
+      "Rated power": "6000W",
+      "Maximum drilling diameter": "218 mm",
+      "Rated speed": "2200 r/min",
+      "Speed adjustment": "3-speed adjustment",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz",
+      "Net weight": "16 kg"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/ae497893fa2df02bc35f6c169c7327cf.png",
+        "alt": "KFT-S218 6000W AC Brushless Water Drilling Rig",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/b68dd787c165d5fe1e80f6f3e9696015.png",
+        "alt": "KFT-S218 6000W AC Brushless Water Drilling Rig",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/2c54693f2924b792b92964be19cb716a.png",
+        "alt": "KFT-S218 6000W AC Brushless Water Drilling Rig",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/640bb1dacfdddc401be22bc058989ce2.png",
+        "alt": "KFT-S218 6000W AC Brushless Water Drilling Rig",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/3547b54e0c32dd2507e8c2a4011b1b5e.png",
+        "alt": "KFT-S218 6000W AC Brushless Water Drilling Rig",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Utility and pipe opening work",
+      "Air-conditioning installation",
+      "Ventilation and fire-protection installation",
+      "Concrete and masonry drilling"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#ACBrushlesswaterdrillingrig",
+      "lib/productTechnicalData.js#ACBrushlesswaterdrillingrig"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-40",
+    "slug": "40",
+    "category": "Wall Chasers",
+    "series": "",
+    "productName": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+    "model": "KFT-K190",
+    "currentUrl": "/product/40.html",
+    "shortDescription": "A historical KFT-K190 listing for controlled wall channels in concrete, brick, stone and marble.",
+    "existingSpecifications": {
+      "Rated power": "2800W",
+      "Blade diameter": "190 mm",
+      "Maximum cutting depth": "55 mm",
+      "Rated speed": "7200 r/min",
+      "Rated voltage": "220V",
+      "Rated frequency": "50Hz",
+      "Net weight": "3.5 kg"
+    },
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/346af56869017412c543b6ec55ebbbd1.jpg",
+        "alt": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/36028e36b2dbadbec221e70cacd6a597.png",
+        "alt": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/e647a900086a7bbecd56235b88e6b3e4.png",
+        "alt": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/b31d7667280dff459a133247b8c43bdf.png",
+        "alt": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/fd1ea452e580f4ce2c7dd6a075099f10.png",
+        "alt": "KFT-K190 2800W AC Brushless Wall Slotting Machine",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Concealed electrical cable channels",
+      "Pipe and conduit routing",
+      "Masonry renovation",
+      "Building services installation"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "duplicate record resolution"
+    ],
+    "dataConfidence": "verified",
+    "sourceEvidence": [
+      "data/legacyProducts.json#40",
+      "lib/productTechnicalData.js#40"
+    ],
+    "duplicateOf": "CuttingMachine",
+    "urlAction": "needs-review"
+  },
+  {
+    "id": "product-brushlessanglegrinde",
+    "slug": "BrushlessAngleGrinde",
+    "category": "Angle Grinders",
+    "series": "",
+    "productName": "KRT-A125B Brushless Angle Grinder",
+    "model": "KRT-A125B",
+    "currentUrl": "/product/BrushlessAngleGrinde.html",
+    "shortDescription": "High torque output for fast cutting and efficient grinding Stable speed control ensures smooth and accurate operation Suitable for metal, concrete, stone, and masonry",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/0a983b566834a0ba56d5146a5029ba81.jpg",
+        "alt": "KRT-A125B Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/d4b0f16e08077e4dc5f223f1342b959f.png",
+        "alt": "KRT-A125B Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/f0ef96477c60ebfa8bcc9f7966bef00f.png",
+        "alt": "KRT-A125B Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/ca99a29fff703a160a8667f030726124.png",
+        "alt": "KRT-A125B Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/ce614f050870b3e030eb2f646f65122f.jpg",
+        "alt": "KRT-A125B Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/04cea8ee367191992b3297dc12c55800.jpg",
+        "alt": "KRT-A125B Brushless Angle Grinder",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set",
+      "KRT/KFT model-prefix confirmation"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#BrushlessAngleGrinde"
+    ],
+    "urlAction": "keep"
+  },
+  {
+    "id": "product-brushlessanglegrinder",
+    "slug": "BrushlessAngleGrinder",
+    "category": "Angle Grinders",
+    "series": "",
+    "productName": "KRT-A125 Brushless Angle Grinder",
+    "model": "KRT-A125",
+    "currentUrl": "/product/BrushlessAngleGrinder.html",
+    "shortDescription": "Brushless Angle Grinder Brushless Electric Angle Grinder Cordless Brushless Angle Grinder Electric Angle Grinder Tool Professional Angle Grinder",
+    "existingSpecifications": {},
+    "existingImages": [
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/947b66fe29a0c12b7c79d2542bf66cdd.jpg",
+        "alt": "KRT-A125 Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/04cea8ee367191992b3297dc12c55800.jpg",
+        "alt": "KRT-A125 Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/ce614f050870b3e030eb2f646f65122f.jpg",
+        "alt": "KRT-A125 Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/e547f337013503fb54dc3417304c1913.png",
+        "alt": "KRT-A125 Brushless Angle Grinder",
+        "ownership": "owned"
+      },
+      {
+        "src": "https://cdn.fuwucms.com/a/375612959223/files/f8726e8de0b82c32b294cfbbe167dda7.png",
+        "alt": "KRT-A125 Brushless Angle Grinder",
+        "ownership": "owned"
+      }
+    ],
+    "visibleApplications": [
+      "Professional construction",
+      "Workshop operations",
+      "Industrial maintenance"
+    ],
+    "visibleIndustries": [],
+    "missingFields": [
+      "verified parameter set",
+      "KRT/KFT model-prefix confirmation"
+    ],
+    "dataConfidence": "placeholder",
+    "sourceEvidence": [
+      "data/legacyProducts.json#BrushlessAngleGrinder"
+    ],
+    "urlAction": "keep"
+  }
+]

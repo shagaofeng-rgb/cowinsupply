@@ -12,7 +12,7 @@ export default async function AdminNewsPage({ searchParams }) {
   const [allNews, dashboard] = await Promise.all([getCmsItems("news", { includeInactive: true }), getNewsAutomationDashboard()]);
   const result = paginateItems(allNews, params);
   return <>
-    <header className="admin-page-head"><div><h1>新闻管理</h1><p>News 自动运营采用来源、原创度、产品关联、版权、SEO 与 48 小时频率门禁。Blog 自动发布没有被启用。</p></div></header>
+    <header className="admin-page-head"><div><h1>新闻管理</h1><p>News 自动运营每日最多发布 1 篇，并采用来源、原创度、产品关联、版权、SEO 与前台可见性门禁。Blog 自动发布保持关闭。</p></div></header>
     <NewsAutomationPanel dashboard={dashboard} />
     <AdminListControls action="/admin/news" keyword={params?.q} status={params?.status} pageSize={result.pageSize} statusOptions={[{ value: "published", label: "已发布" }, { value: "offline", label: "已下线" }, { value: "draft", label: "草稿" }]} />
     <section className="admin-two-col"><div><ContentTable items={result.items} type="news" /><Pagination basePath="/admin/news" page={result.page} pageSize={result.pageSize} total={result.total} query={params} /></div>

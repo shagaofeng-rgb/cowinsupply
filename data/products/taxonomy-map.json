@@ -1,0 +1,21 @@
+{
+  "version": "2026-08-20",
+  "canonicalCategories": [
+    "Wall Chasers & Concrete Cutting",
+    "Cutting Tools",
+    "Drilling Tools",
+    "Surface Finishing Tools",
+    "Measuring Tools",
+    "Precision Tools"
+  ],
+  "mappings": {
+    "Brushless Saws": "Jig Saws & Curve Saws",
+    "Laser Measuring Tools": "Measuring Tools",
+    "diastimeter": "Measuring Tools"
+  },
+  "needs_confirmation": [
+    "KFT-Y370 category, blade range and safety configuration",
+    "KRT-A125/KRT-A125B versus KFT-A125/KFT-A125B model prefix conflict",
+    "KFT-K190 legacy duplicate record"
+  ]
+}

@@ -1,16 +1,8 @@
-# News Automation Audit Before Rebuild
+# News automation audit before daily-policy migration
 
-Date: 2026-08-08 (Asia/Shanghai)
-
-## Starting state
-
-- The prior News automation implementation and its Vercel Cron route were removed in commit `5cff7e4`.
-- Existing published News content, News routes, sitemap generation, product records and Blog content remain in the CMS store.
-- Blog webhook remains verification-only and does not create or publish Blog articles.
-- PostgreSQL/Neon is the production persistence layer. The new automation uses independent `news-automation-v2-*` storage keys and a persistent lock.
-
-## Safety baseline
-
-- No existing News or Blog content is deleted by this rebuild.
-- Legacy job/audit/source configuration keys are cleared only on first production initialization; published CMS articles are not touched.
-- No source passwords, API keys or database credentials are written into source code or this report.
+- Site: `cowinsupply-primary` at `https://www.cowinsupply.com`.
+- News and Blog already use separate public routes, CMS types and sitemap paths.
+- The pre-migration production configuration used two 12-hour Vercel triggers and a 48-hour successful-publication gate.
+- The pre-migration source list contained a legacy source outside the supplied catalog. It is superseded, not used by the new daily policy.
+- Published News and Blog records are retained. No historical articles, products or URLs were deleted by this migration.
+- Product audit baseline: `data/audits/product-audit.{json,csv,md}`. Known manual-review items are KFT-K190 duplicate records, KFT-Y370 category/safety status and KRT/KFT A125 prefix conflict.

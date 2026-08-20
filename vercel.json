@@ -12,12 +12,8 @@
       "schedule": "10 18 * * *"
     },
     {
-      "path": "/api/cron/news-ingest",
-      "schedule": "0 */12 * * *"
-    },
-    {
-      "path": "/api/cron/news",
-      "schedule": "20 */12 * * *"
+      "path": "/api/cron/news-daily",
+      "schedule": "10 0 * * *"
     },
     {
       "path": "/api/cron/google-sitemap-submit",

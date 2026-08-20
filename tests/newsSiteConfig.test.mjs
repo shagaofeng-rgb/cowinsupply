@@ -6,7 +6,7 @@ test("CowinSupply News configuration is complete and keeps Blog automation disab
   const site = getNewsSiteConfig();
   assert.equal(validateNewsSiteConfig(site).valid, true);
   assert.equal(site.news.ingestIntervalHours, 12);
-  assert.equal(site.news.publishIntervalHours, 48);
+  assert.equal(site.news.publishIntervalHours, 24);
   assert.equal(site.news.maxInternalProductLinks, 1);
   assert.equal(site.blog.allowNewsAutomation, false);
 });
