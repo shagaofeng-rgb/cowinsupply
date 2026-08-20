@@ -11,6 +11,13 @@ const VERIFIED_SOURCE_OVERRIDES = {
     rssUrl: "https://www.constructionenquirer.com/feed/",
     trustLevel: "high",
     notes: "Verified 2026-08-20: public RSS returned 200 application/rss+xml and robots.txt allows the public feed."
+  },
+  "www-toolguyd-com": {
+    active: true,
+    robotsAllowed: true,
+    rssUrl: "https://toolguyd.com/feed/",
+    trustLevel: "medium",
+    notes: "Verified 2026-08-20: public RSS returned 200 application/rss+xml and robots.txt permits the public feed for this crawler."
   }
 };
 const tierFor = (domain) => /reddit|quora|forum|board/i.test(domain) ? "discovery-only" : /\.org$|association|institute|ieee|asnt|isa|smenet/i.test(domain) ? "A" : "B";

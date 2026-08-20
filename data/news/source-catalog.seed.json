@@ -1017,15 +1017,17 @@
       "Power Tools & Construction"
     ],
     "discoveryMethod": [
-      "public-page"
+      "rss"
     ],
     "tier": "B",
-    "active": false,
-    "robotsAllowed": null,
-    "lastCheckedAt": null,
+    "active": true,
+    "robotsAllowed": true,
+    "lastCheckedAt": "2026-08-20T06:39:00.000Z",
     "lastUsedAt": null,
     "useCount": 0,
-    "notes": "Imported input. Activate only after public-access and robots review."
+    "notes": "Verified 2026-08-20: public RSS returned 200 application/rss+xml and robots.txt permits the public feed for this crawler.",
+    "rssUrl": "https://toolguyd.com/feed/",
+    "trustLevel": "medium"
   },
   {
     "id": "www-equipmentworld-com",

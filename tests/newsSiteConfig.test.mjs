@@ -8,6 +8,7 @@ test("CowinSupply News configuration is complete and keeps Blog automation disab
   assert.equal(site.news.ingestIntervalHours, 12);
   assert.equal(site.news.publishIntervalHours, 24);
   assert.equal(site.news.maxInternalProductLinks, 1);
+  assert.equal(site.news.rssRoute, "/news/rss.xml");
   assert.equal(site.blog.allowNewsAutomation, false);
 });
 

@@ -57,3 +57,24 @@
 
 - Code rollback: redeploy the prior Vercel production deployment `dpl_8mCe4XC4Z6ADDAPJ3ikw4ML5Up2b` or revert commit `ca00e1e`.
 - Data rollback: migration does not delete content. The prior persistent News configuration is preserved in the platform's backup/history; restoring it should be followed by a deploy and a scheduled-task review.
+
+## Follow-up implementation audit - 2026-08-20
+
+The latest implementation audit found and closed four production-control gaps without deleting any content:
+
+- The former `/api/cron/news` and `/api/cron/news-ingest` endpoints now return `410 Gone`. Only the authenticated `/api/cron/news-daily` orchestrator can run the News workflow.
+- Runtime source selection is reconstructed from `data/news/source-catalog.seed.json`. An admin payload can select or blacklist known catalog IDs only; it cannot label an arbitrary endpoint as verified.
+- Source-to-product eligibility, 14-day source-domain rotation, a maximum of two consecutive source-group citations and a 0.35 three-word-shingle similarity threshold are hard publication gates. Any failure becomes `needs_review` rather than a published article.
+- `/news/rss.xml` is now a public RSS route alongside the existing API feed. The Google sitemap submission Cron is now `0 4 */2 * *` UTC, the latest requested two-day cadence.
+
+### Source verification update
+
+- `www.constructionenquirer.com/feed/`: 200 `application/rss+xml`; its public robots policy allows the feed.
+- `toolguyd.com/feed/`: 200 `application/rss+xml`; `toolguyd.com/robots.txt` permits the CowinSupply News crawler outside `/cgi-bin/` and `/tmp/`.
+- The catalog contains 299 unique sources in six source groups and 23 discovery-only discussion sources. Only the two verified Power Tools & Construction RSS sources are enabled. Other catalog entries remain inactive until their specific public access and robots evidence is recorded; no Cloudflare challenge, login barrier or rate limit was bypassed.
+
+### Remaining operational constraints
+
+- A daily publication remains conditional. The system does not manufacture a News item when no fresh, relevant and non-duplicate candidate passes all gates. This is intentional and is recorded as `needs_review` or `rejected`.
+- A live automatic publication is still awaiting the next authenticated Vercel Cron window. The production secret was not exposed or bypassed to force a run. Success is only recorded after the new item is visible on both `/news` and its public detail page.
+- More eligible, independently verified RSS/API sources are needed before uninterrupted daily publication can be expected while preserving the 14-day domain and source-group rotation rules.
