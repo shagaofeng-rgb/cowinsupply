@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { apiError, requireAdminApi } from "@/lib/adminApi";
-import { appendAuditLog, updateInquiryStatus } from "@/lib/cmsStore";
+import { appendAuditLog, appendInquiryActivity, updateInquiryStatus } from "@/lib/cmsStore";
 
 const allowedStatuses = new Set(["new", "contacted", "quoted", "closed", "invalid", "archived"]);
 
@@ -16,7 +16,9 @@ export async function POST(request) {
     return apiError("Invalid inquiry status request", 400);
   }
 
-  await updateInquiryStatus(id, status);
+  const updated = await updateInquiryStatus(id, status);
+  if (!updated) return apiError("Inquiry not found", 404);
+  await appendInquiryActivity({ inquiryId: id, type: "status_changed", actor: "admin", summary: `Status changed to ${status}` });
   await appendAuditLog({ action: "update_status", module: "inquiry", target: id });
   redirect("/admin/inquiries");
 }

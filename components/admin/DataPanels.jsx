@@ -59,11 +59,11 @@ export function SyncStrip({ sync }) {
   const lastRun = sync?.lastRun;
   return (
     <div className="sync-strip">
-      <strong>30 分钟自动同步已配置</strong>
+      <strong>数据链路状态</strong>
       <span>
-        前端刷新：已接入；Cron 最近执行：
-        {lastRun ? new Date(lastRun.createdAt).toLocaleString("zh-CN") : "暂无记录"}；
-        状态：{lastRun?.status || "等待首次数据"}
+        访客路径：{sync?.trackingState === "active" ? `最新 ${new Date(sync.trackingLastEvent).toLocaleString("zh-CN")}` : "等待首个真实访问"}；
+        后台任务：{sync?.cronConfigured ? (lastRun ? `最近 ${new Date(lastRun.createdAt).toLocaleString("zh-CN")}` : "已配置，等待首条运行记录") : "未配置"}；
+        状态：{lastRun?.status || "可用"}
       </span>
     </div>
   );

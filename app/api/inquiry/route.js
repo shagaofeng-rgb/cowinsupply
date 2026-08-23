@@ -1,5 +1,5 @@
 import { apiError, apiOk } from "@/lib/adminApi";
-import { saveInquiry } from "@/lib/cmsStore";
+import { recordInquiryNotification, saveInquiry } from "@/lib/cmsStore";
 import { sendAdminInquiryEmail } from "@/lib/emailService";
 import { allowInquiry } from "@/lib/inquiryRateLimit";
 
@@ -36,6 +36,11 @@ export async function POST(request) {
   } catch (error) {
     console.error("[inquiry] Email notification failed:", error?.message || error);
     notification = { sent: false, reason: "email-send-failed" };
+  }
+  try {
+    await recordInquiryNotification({ inquiryId: inquiry.id, ...notification });
+  } catch (error) {
+    console.error("[inquiry] Notification audit logging failed:", error?.message || error);
   }
 
   if (!isJson) {
