@@ -13,7 +13,7 @@
     },
     {
       "path": "/api/cron/news-daily",
-      "schedule": "10 * * * *"
+      "schedule": "30 * * * *"
     },
     {
       "path": "/api/cron/google-sitemap-submit",
