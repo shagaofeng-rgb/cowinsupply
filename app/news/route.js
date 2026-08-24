@@ -19,6 +19,8 @@ export async function GET(request) {
     options: newsFilterOptions(news, products),
     pagination
   }), {
-    headers: { "content-type": "text/html; charset=utf-8", "cache-control": "s-maxage=300, stale-while-revalidate=3600" }
+    // News is backed by the operational content store. Do not serve an hour of stale
+    // list data after an automated publication has passed all other checks.
+    headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=0, must-revalidate" }
   });
 }

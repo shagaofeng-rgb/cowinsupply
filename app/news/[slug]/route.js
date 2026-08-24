@@ -19,7 +19,9 @@ export async function GET(request, { params }) {
   const article = news.find((item) => item.slug === cleanSlug);
   if (article) {
     return new Response(renderNewsDetailHtml({ article, products, relatedNews: news }), {
-      headers: { "content-type": "text/html; charset=utf-8", "cache-control": "s-maxage=300, stale-while-revalidate=3600" }
+      // A newly published article must be visible immediately to the front-end
+      // verification step and to visitors. The database remains the source of truth.
+      headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=0, must-revalidate" }
     });
   }
   return publicHtmlResponse(`news/${slug}`, { canonicalPath: new URL(request.url).pathname });
