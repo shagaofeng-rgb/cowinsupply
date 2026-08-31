@@ -38,7 +38,7 @@ export default async function AdminLoginPage({ searchParams }) {
         <form className="admin-login-form" action="/api/admin/login" method="post">
           <label>
             登录邮箱
-            <input name="email" type="email" defaultValue={getConfiguredAdminEmail()} required />
+            <input name="email" type="email" autoComplete="username" defaultValue={getConfiguredAdminEmail()} required />
           </label>
           <PasswordField />
           <label className="admin-check-row">

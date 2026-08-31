@@ -9,7 +9,7 @@ export default function PasswordField() {
     <label>
       登录密码
       <span className="admin-password-field">
-        <input name="password" type={visible ? "text" : "password"} required />
+        <input name="password" type={visible ? "text" : "password"} autoComplete="current-password" required />
         <button
           aria-label={visible ? "隐藏密码" : "显示密码"}
           type="button"
