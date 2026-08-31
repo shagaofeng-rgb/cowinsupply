@@ -14,8 +14,8 @@ const pages = await mapWithConcurrency(publicPaths, 4, inspectPage);
 const internalLinks = [...new Set(pages.flatMap((page) => page.internalLinks))];
 const imageUrls = [...new Set(pages.flatMap((page) => page.images))];
 const [linkChecks, imageChecks] = await Promise.all([
-  mapWithConcurrency(internalLinks, 6, inspectInternalLink),
-  mapWithConcurrency(imageUrls, 6, inspectImage)
+  mapWithConcurrency(internalLinks, 4, inspectInternalLink),
+  mapWithConcurrency(imageUrls, 4, inspectImage)
 ]);
 
 const [products, news, blog, protectedChecks, compatibilityChecks] = await Promise.all([
@@ -99,12 +99,12 @@ async function inspectPage(path) {
 }
 
 async function inspectInternalLink(url) {
-  const response = await fetch(url, { method: "HEAD", redirect: "follow" });
+  const response = await fetchWithRetry(url, { method: "HEAD", redirect: "follow" });
   return { url, status: response.status, ok: response.status >= 200 && response.status < 400 };
 }
 
 async function inspectImage(url) {
-  const response = await fetch(url, { method: "GET", headers: { range: "bytes=0-32" }, redirect: "follow" });
+  const response = await fetchWithRetry(url, { method: "GET", headers: { range: "bytes=0-32" }, redirect: "follow" });
   const type = response.headers.get("content-type") || "";
   return { url, status: response.status, ok: response.ok && (type.startsWith("image/") || url.includes("/api/news/cover/")) };
 }
@@ -153,6 +153,19 @@ async function timedFetch(path) {
   const started = Date.now();
   const response = await fetch(`${baseUrl}${path}`, { redirect: "follow" });
   return { response, ms: Date.now() - started };
+}
+
+async function fetchWithRetry(url, options, attempts = 2) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return await fetch(url, options);
+    } catch (error) {
+      lastError = error;
+      if (attempt + 1 < attempts) await new Promise((resolve) => setTimeout(resolve, 200 * (attempt + 1)));
+    }
+  }
+  throw lastError;
 }
 
 async function readText(path) {
