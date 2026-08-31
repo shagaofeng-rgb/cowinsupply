@@ -26,7 +26,10 @@ assert.ok(body.data?.id, "tracking response did not include an event id");
 const unauthorized = await fetch(`${baseUrl}/api/admin/inquiries/not-a-real-id`);
 assert.equal(unauthorized.status, 401, "inquiry detail API must require an admin session");
 
-const loginForm = new URLSearchParams({ email: "admin@cowinsupply.com", password: "CowinSupply@2026" });
+const adminEmail = process.env.ADMIN_VERIFY_EMAIL || process.env.ADMIN_EMAIL || "";
+const adminPassword = process.env.ADMIN_VERIFY_PASSWORD || process.env.ADMIN_PASSWORD || "";
+assert.ok(adminEmail && adminPassword, "ADMIN_VERIFY_EMAIL and ADMIN_VERIFY_PASSWORD are required for admin verification");
+const loginForm = new URLSearchParams({ email: adminEmail, password: adminPassword });
 const login = await fetch(`${baseUrl}/api/admin/login`, { method: "POST", body: loginForm, redirect: "manual" });
 assert.equal(login.status, 303, "local admin login failed");
 const cookie = login.headers.getSetCookie?.().at(0) || login.headers.get("set-cookie");

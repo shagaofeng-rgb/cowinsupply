@@ -11,6 +11,8 @@
     "sitemap:generate": "node tools/sitemap-generate.mjs",
     "seo:audit": "node tools/indexability-audit.mjs",
     "structured-data:audit": "node tools/structured-data-audit.mjs",
+    "audit:full": "node tools/full-site-audit.mjs",
+    "audit:database": "node tools/database-integrity-audit.mjs",
     "news:sources:build": "node tools/build-news-source-catalog.mjs",
     "self-check": "node tools/site-self-check.mjs",
     "test:news": "node --test tests/newsQuery.test.mjs tests/newsSiteConfig.test.mjs tests/newsHumanizer.test.mjs tests/newsReliability.test.mjs"
