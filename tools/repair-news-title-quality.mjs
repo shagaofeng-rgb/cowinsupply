@@ -4,6 +4,7 @@ import { newsSeoTitle } from "../lib/newsReliability.js";
 const TITLE_REPAIR_VERSION = "news-title-quality-v1";
 const titleBySlug = new Map([
   ["2026-08-30-buyer-briefing-kft-k190-2800w-ac-brushless-wall-slotting-machine-for-material-c", "KFT-K190 Wall Slotting Machine Buyer Briefing"],
+  ["2026-08-31-buyer-briefing-kft-w215-1000w-variable-speed-ac-brushless-wall-polishing-machin", "KFT-W215 Wall Polishing Machine Buyer Briefing"],
   ["metro-mayors-given-power-to-override-councils-on-big-schemes-what-it-means-for-constructio", "UK Metro Planning Powers: Construction Tool Workflow Context"],
   ["construction-update-a-practical-view-for-kft-q450-800w-ac-brushless-jig-saw-buyers-4", "California High-Speed Rail Funding: Tool Buyer Context"],
   ["construction-update-a-practical-view-for-kft-q450-800w-ac-brushless-jig-saw-buyers-3", "Skanska DBE Changes: Contractor Tool Supply Context"],
@@ -23,9 +24,14 @@ if (!backup) {
     createdAt: new Date().toISOString(),
     items: current.filter((item) => titleBySlug.has(item?.slug))
   };
-  await setPersistentValue(`${TITLE_REPAIR_VERSION}-backup`, {
-    ...backup
-  });
+  await setPersistentValue(`${TITLE_REPAIR_VERSION}-backup`, backup);
+} else {
+  const backedUpSlugs = new Set((backup.items || []).map((item) => item.slug));
+  const missing = current.filter((item) => titleBySlug.has(item?.slug) && !backedUpSlugs.has(item.slug));
+  if (missing.length) {
+    backup = { ...backup, items: [...(backup.items || []), ...missing] };
+    await setPersistentValue(`${TITLE_REPAIR_VERSION}-backup`, backup);
+  }
 }
 
 const changed = [];

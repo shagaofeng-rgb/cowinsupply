@@ -1,5 +1,6 @@
 import crypto, { timingSafeEqual } from "node:crypto";
 import { appendAuditLog, getCmsItems, saveCmsItem, slugify } from "@/lib/cmsStore";
+import { normalizeCowinArticleLinks, seoTitleFor } from "@/lib/contentQuality";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -39,7 +40,7 @@ export async function POST(request) {
       webhookSource: "custom-framework-webhook",
       status: "published",
       publishedAt: new Date().toISOString(),
-      seoTitle: `${article.title} | Cowin Supply`.slice(0, 155),
+      seoTitle: seoTitleFor(article.title),
       seoDescription: article.summary.slice(0, 155),
       canonicalUrl: `https://www.cowinsupply.com/blog/${slug}`,
       primaryKeyword: article.title
@@ -82,11 +83,13 @@ function normalizeArticle(input) {
 }
 
 function sanitizeArticleHtml(value) {
-  return String(value || "")
+  return normalizeCowinArticleLinks(String(value || "")
     .replace(/<\/?(script|style|iframe|object|embed|form)[^>]*>/gi, "")
+    .replace(/<h1\b([^>]*)>/gi, "<h2$1>")
+    .replace(/<\/h1\s*>/gi, "</h2>")
     .replace(/\son\w+\s*=\s*(["']).*?\1/gi, "")
     .replace(/\s(href|src)\s*=\s*(["'])\s*javascript:[\s\S]*?\2/gi, "")
-    .replace(/javascript:/gi, "");
+    .replace(/javascript:/gi, ""));
 }
 
 function stripHtml(value) {
