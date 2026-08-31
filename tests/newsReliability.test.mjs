@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { countCandidateReasons, cronPublicationSucceeded, NEWS_POLICY_VERSION, publicationHttpStatus } from "../lib/newsReliability.js";
+import { compactNewsTitle, countCandidateReasons, cronPublicationSucceeded, newsSeoTitle, NEWS_POLICY_VERSION, publicationHttpStatus } from "../lib/newsReliability.js";
 
 test("reports the exact reasons that block or defer publication", () => {
   assert.deepEqual(countCandidateReasons([
@@ -21,4 +21,14 @@ test("cron is healthy only after a publication or a verified same-day limit", ()
 
 test("uses the reliable daily publication policy version", () => {
   assert.equal(NEWS_POLICY_VERSION, "v5");
+});
+
+test("keeps generated News and SEO titles concise without cutting a word", () => {
+  const title = compactNewsTitle("KFT-K190 2800W AC Brushless Wall Slotting Machine for Material Cutting and Access Preparation Buyer Briefing");
+  const seoTitle = newsSeoTitle(title);
+  assert.ok(title.length <= 78);
+  assert.ok(title.endsWith("…"));
+  assert.ok(!title.endsWith(" slotti"));
+  assert.ok(seoTitle.length <= 70);
+  assert.ok(seoTitle.endsWith(" | Cowin Supply"));
 });

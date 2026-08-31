@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import PasswordField from "@/components/admin/PasswordField";
-import { getConfiguredAdminEmail, localAdminHint } from "@/lib/adminAccountStore";
+import { getConfiguredAdminEmail } from "@/lib/adminAccountStore";
 import { isAdminAuthConfigured } from "@/lib/adminAuth";
 
 export const dynamic = "force-dynamic";
 export const metadata = {
-  title: "后台登录 | Cowin Supply"
+  title: "后台登录 | Cowin Supply",
+  robots: { index: false, follow: false }
 };
 
 const errorMessages = {
@@ -18,7 +19,6 @@ const errorMessages = {
 export default async function AdminLoginPage({ searchParams }) {
   const params = await searchParams;
   const configured = isAdminAuthConfigured();
-  const hint = localAdminHint();
   const error = params?.error;
 
   return (
@@ -33,7 +33,6 @@ export default async function AdminLoginPage({ searchParams }) {
         <p className="admin-login-copy">登录后可以查看询盘、管理产品与新闻内容。</p>
 
         {!configured ? <div className="admin-alert">生产环境还没有配置后台密码。</div> : null}
-        {hint ? <div className="admin-alert good">本地验收账号：{hint.email} / {hint.password}</div> : null}
         {error ? <div className="admin-alert">{errorMessages[error] || "登录失败。"}</div> : null}
 
         <form className="admin-login-form" action="/api/admin/login" method="post">
