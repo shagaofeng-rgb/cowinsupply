@@ -1,4 +1,5 @@
 import { getCmsItems } from "@/lib/cmsStore";
+import { canonicalProductSlug, isCanonicalProductRecord } from "@/lib/catalogTaxonomy";
 import { renderProductDetailHtml } from "@/lib/productRendering";
 
 export const dynamic = "force-dynamic";
@@ -13,7 +14,9 @@ export async function GET(request, { params }) {
     return Response.redirect(new URL(`/product/${encodeURIComponent(rawSlug)}.html`, request.url), 301);
   }
   const slug = rawSlug.replace(/\.html$/i, "");
-  const products = await getCmsItems("product");
+  const canonicalSlug = canonicalProductSlug(slug);
+  if (canonicalSlug !== slug) return Response.redirect(new URL(`/product/${encodeURIComponent(canonicalSlug)}.html`, request.url), 301);
+  const products = (await getCmsItems("product")).filter(isCanonicalProductRecord);
   const product = products.find((item) => item.slug === slug);
   if (!product) return new Response("Not found", { status: 404 });
   return new Response(renderProductDetailHtml({ product, relatedProducts: products.filter((item) => item.slug !== slug && item.category === product.category).slice(0, 3) }), {
