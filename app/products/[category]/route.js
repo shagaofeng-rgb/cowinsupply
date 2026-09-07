@@ -1,5 +1,5 @@
 import { getCmsItems } from "@/lib/cmsStore";
-import { categoryPath, getTaxonomyItem, LEGACY_CATEGORY_REDIRECTS } from "@/lib/catalogTaxonomy";
+import { categoryPath, getTaxonomyItem, isCanonicalProductRecord, LEGACY_CATEGORY_REDIRECTS } from "@/lib/catalogTaxonomy";
 import { renderProductListHtml } from "@/lib/productRendering";
 
 export const dynamic = "force-dynamic";
@@ -11,7 +11,7 @@ export async function GET(request, { params }) {
   const config = getTaxonomyItem(category);
   if (!config) return new Response("Not found", { status: 404 });
   const path = categoryPath(category);
-  const products = await getCmsItems("product");
+  const products = (await getCmsItems("product")).filter(isCanonicalProductRecord);
   const selected = products.filter((item) => item.categorySlug === category || getTaxonomyItem(item.categorySlug)?.parent === category);
   return new Response(renderProductListHtml({
     products: selected,
