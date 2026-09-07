@@ -18,8 +18,9 @@ The generator uses fully qualified production URLs, XML escaping, UTF-8 output, 
 
 - Admin product/news changes call `refreshSitemap()` after save, publish, offline, or delete.
 - Vercel Cron calls `/api/cron/sitemap` daily to refresh sitemap data without sending a Google submission.
-- Vercel Cron calls `/api/cron/google-sitemap-submit` every three calendar days to submit the current sitemap to Google Search Console.
-- Vercel Cron calls `/api/cron/news` every six hours to collect and quality-check News candidates. The persistent publication gate allows at most one News article every 48 hours.
+- Vercel Cron calls `/api/cron/google-sitemap-submit` every two calendar days at `04:00 UTC` to submit the current sitemap to Google Search Console.
+- Vercel Cron calls `/api/cron/indexing-audit` daily at `04:20 UTC`. It inspects ten sitemap URLs, rotates through the sitemap, and retains the sanitized verdicts and failures for operational review.
+- Vercel Cron calls `/api/cron/news-daily` at minute 50 of every hour. The persistent publication gate allows at most one successful article per Asia/Shanghai calendar day.
 - `/api/cron/sync-legacy-products` remains a protected, manual recovery endpoint only; it is not scheduled because it performs a full legacy catalog replacement.
 
 ## Manual command
@@ -30,7 +31,7 @@ npm run sitemap:generate -- --force
 npm run sitemap:generate -- --submit
 ```
 
-`--dry-run` prints the run result without writing cache/log files. `--submit` uses the Google Search Console Sitemaps API and only reports success when the API request succeeds.
+`--dry-run` prints the run result without writing cache/log files. `--submit` uses the Google Search Console Sitemaps API and only reports success when the API request succeeds. API acceptance is a discovery signal, not a guarantee that Google will crawl or index every URL; the inspection audit records the later outcome.
 
 ## Environment variables
 
