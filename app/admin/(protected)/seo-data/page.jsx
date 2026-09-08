@@ -1,10 +1,13 @@
-import { DataTable, EmptyPanel, MetricCard, RangeBox } from "@/components/admin/DataPanels";
+import { DataTable, EmptyPanel, MetricCard } from "@/components/admin/DataPanels";
+import RangeBox from "@/components/admin/RangeBox";
+import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getSeoReport } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
-export default async function SeoDataPage() {
-  const report = await getSeoReport();
+export default async function SeoDataPage({ searchParams }) {
+  const range = getAdminDateRange(await searchParams);
+  const report = await getSeoReport(range);
 
   return (
     <>

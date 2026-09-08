@@ -1,14 +1,17 @@
 import AdminListControls from "@/components/admin/AdminListControls";
 import ContentTable from "@/components/admin/ContentTable";
 import Pagination from "@/components/admin/Pagination";
+import RangeBox from "@/components/admin/RangeBox";
+import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getCmsItems, paginateItems } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminProductsPage({ searchParams }) {
   const params = await searchParams;
+  const range = getAdminDateRange(params);
   const allProducts = await getCmsItems("product", { includeInactive: true });
-  const result = paginateItems(allProducts, params);
+  const result = paginateItems(allProducts, { ...params, ...range });
 
   return (
     <>
@@ -17,6 +20,7 @@ export default async function AdminProductsPage({ searchParams }) {
           <h1>产品管理</h1>
           <p>管理真实产品数据、发布状态、SEO 与待确认参数。删除为软删除，产品 URL 不会被立即移除。</p>
         </div>
+        <RangeBox />
       </header>
 
       <AdminListControls
@@ -24,6 +28,7 @@ export default async function AdminProductsPage({ searchParams }) {
         keyword={params?.q}
         status={params?.status}
         pageSize={result.pageSize}
+        range={range}
         statusOptions={[
           { value: "published", label: "已发布" },
           { value: "offline", label: "已下线" },

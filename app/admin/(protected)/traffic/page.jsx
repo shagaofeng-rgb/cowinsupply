@@ -21,10 +21,10 @@ export default async function TrafficPage({ searchParams }) {
       </header>
       <SyncStrip sync={sync} />
       <section className="metric-grid">
-        <MetricCard label="平均停留" value="0s" hint="页面参与度" />
-        <MetricCard label="跳出率" value="0%" hint="估算值" />
-        <MetricCard label="国家地区" value={analytics.countries.length} hint="活跃市场" />
-        <MetricCard label="设备类型" value={analytics.devices.length} hint="访问设备" />
+        <MetricCard label="页面浏览" value={analytics.pv} hint="所选时间范围" />
+        <MetricCard label="独立访客" value={analytics.uv} hint="按访客标识去重" />
+        <MetricCard label="客户询盘" value={analytics.inquiries} hint="真实表单提交" />
+        <MetricCard label="转化率" value={`${analytics.conversionRate}%`} hint="询盘 / 独立访客" />
       </section>
       <section className="data-panel">
         <small>每日趋势</small>
@@ -41,7 +41,7 @@ export default async function TrafficPage({ searchParams }) {
       </section>
       <section className="data-grid-four">
         <DataTable columns={["渠道", "访问量"]} rows={analytics.sources.map((item) => ({ cells: [item.key, item.count] }))} empty="暂无渠道数据。" />
-        <DataTable columns={["平台", "访问量"]} rows={analytics.sources.map((item) => ({ cells: [item.key, item.count] }))} empty="暂无平台数据。" />
+        <DataTable columns={["重点页面", "访问量"]} rows={analytics.topPages.map((item) => ({ cells: [item.key, item.count] }))} empty="暂无页面数据。" />
         <DataTable columns={["国家 / 地区", "访问量"]} rows={analytics.countries.map((item) => ({ cells: [item.key || "未知", item.count] }))} empty="暂无国家地区数据。" />
         <DataTable columns={["设备", "访问量"]} rows={analytics.devices.map((item) => ({ cells: [item.key, item.count] }))} empty="暂无设备数据。" />
       </section>

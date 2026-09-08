@@ -1,10 +1,13 @@
-import { DataTable, MetricCard, RangeBox } from "@/components/admin/DataPanels";
+import { DataTable, MetricCard } from "@/components/admin/DataPanels";
+import RangeBox from "@/components/admin/RangeBox";
+import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getPagePerformance } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
-export default async function PagesPage() {
-  const pages = await getPagePerformance();
+export default async function PagesPage({ searchParams }) {
+  const range = getAdminDateRange(await searchParams);
+  const pages = await getPagePerformance(range);
   const pv = pages.reduce((sum, item) => sum + item.pv, 0);
   return (
     <>

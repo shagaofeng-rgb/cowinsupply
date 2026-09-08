@@ -97,7 +97,7 @@ export default function InquiryWorkspace({ items = [] }) {
 }
 
 function InquiryDetail({ detail, saving, onStatusChange }) {
-  const { inquiry, journey = [], summary = {}, activities = [], notifications = [] } = detail;
+  const { inquiry, customer = {}, relatedInquiries = [], journey = [], summary = {}, activities = [], notifications = [] } = detail;
   const sourceRows = [
     ["提交页面", inquiry.pageUrl], ["首次落地页", inquiry.landingPage], ["来源", inquiry.referrer],
     ["UTM", [inquiry.utmSource, inquiry.utmMedium, inquiry.utmCampaign, inquiry.utmTerm, inquiry.utmContent].filter(Boolean).join(" / ")],
@@ -114,6 +114,17 @@ function InquiryDetail({ detail, saving, onStatusChange }) {
       <div><small>浏览记录</small><strong>{summary.pageViews || 0} 次 / {summary.uniquePages || 0} 页</strong></div>
       <div><small>最后活动</small><strong>{summary.lastSeenAt ? formatTime(summary.lastSeenAt) : "未记录"}</strong></div>
     </section>
+    <section className="lead-section">
+      <div className="lead-section-title"><small>客户归属</small><h2>同一客户的全量记录</h2></div>
+      <dl className="lead-fields">
+        <div><dt>客户标识</dt><dd>{customer.identity || "暂未识别"}</dd></div>
+        <div><dt>关联询盘</dt><dd>{relatedInquiries.length || 1} 条</dd></div>
+        <div><dt>累计访问</dt><dd>{customer.totalVisits || summary.totalVisits || journey.length || 0} 次</dd></div>
+        <div><dt>首次访问</dt><dd>{formatTime(customer.firstSeenAt || summary.firstSeenAt)}</dd></div>
+        <div><dt>最近访问</dt><dd>{formatTime(customer.lastSeenAt || summary.lastSeenAt)}</dd></div>
+        <div><dt>访问页面</dt><dd>{customer.uniquePaths || summary.uniquePaths || 0} 个</dd></div>
+      </dl>
+    </section>
     <section className="lead-section lead-actions-section">
       <div className="lead-section-title"><small>线索状态</small><h2>{labelForStatus(inquiry.status)}</h2></div>
       <select value={inquiry.status || "new"} onChange={(event) => onStatusChange(event.target.value)} disabled={saving} aria-label="更新线索状态">
@@ -128,7 +139,8 @@ function InquiryDetail({ detail, saving, onStatusChange }) {
     <DataSection title="客户与采购需求" rows={demandRows} />
     <section className="lead-section"><div className="lead-section-title"><small>客户留言</small><h2>原始询盘内容</h2></div><p className="lead-message">{inquiry.message || "客户未填写留言。"}</p></section>
     <DataSection title="来源与访问上下文" rows={sourceRows} />
-    <Timeline title="浏览路径" empty="此历史询盘没有可靠的访客关联记录。" items={journey} render={(event) => <><strong>{event.path}</strong><span>{event.title || "未记录页面标题"}</span><small>{event.source || "直接访问"} · {event.device || "未知设备"} · {event.country || "未知地区"}</small></>} />
+    <Timeline title="同一客户的全部浏览路径" empty="此历史询盘没有可靠的访客关联记录。" items={journey} render={(event) => <><strong>{event.path}</strong><span>{event.title || "未记录页面标题"}</span><small>{event.source || "直接访问"} · {event.device || "未知设备"} · {event.country || "未知地区"}</small></>} />
+    <Timeline title="关联询盘" empty="暂无其他关联询盘。" items={relatedInquiries} render={(related) => <><strong>{related.product || related.subject || "网站询盘"}</strong><span>{related.company || related.email || related.name || "未填写客户信息"}</span><small>{formatTime(related.createdAt)} · {labelForStatus(related.status)}</small></>} />
     <Timeline title="系统与跟进记录" empty="暂时没有后续操作记录。" items={[...notifications, ...activities].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))} render={(event) => <><strong>{activityLabel(event)}</strong><span>{event.summary || event.reason || "系统已处理该记录"}</span><small>{event.actor || event.provider || "系统"}</small></>} />
   </div>;
 }

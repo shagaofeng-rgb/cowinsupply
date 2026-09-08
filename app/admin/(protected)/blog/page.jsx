@@ -1,22 +1,26 @@
 import AdminListControls from "@/components/admin/AdminListControls";
 import ContentTable from "@/components/admin/ContentTable";
 import Pagination from "@/components/admin/Pagination";
+import RangeBox from "@/components/admin/RangeBox";
+import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getCmsItems, paginateItems } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminBlogPage({ searchParams }) {
   const params = await searchParams;
-  const result = paginateItems(await getCmsItems("blog", { includeInactive: true }), params);
+  const range = getAdminDateRange(params);
+  const result = paginateItems(await getCmsItems("blog", { includeInactive: true }), { ...params, ...range });
 
   return (
     <>
-      <header className="admin-page-head"><div><h1>Blog 管理</h1><p>管理插件发布和人工创建的真实 Blog 文章。前台仅显示已发布内容。</p></div></header>
+      <header className="admin-page-head"><div><h1>Blog 管理</h1><p>管理插件发布和人工创建的真实 Blog 文章。前台仅显示已发布内容。</p></div><RangeBox /></header>
       <AdminListControls
         action="/admin/blog"
         keyword={params?.q}
         status={params?.status}
         pageSize={result.pageSize}
+        range={range}
         statusOptions={[{ value: "published", label: "已发布" }, { value: "offline", label: "已下线" }, { value: "draft", label: "草稿" }]}
       />
       <section className="admin-two-col"><div><ContentTable items={result.items} type="blog" /><Pagination basePath="/admin/blog" page={result.page} pageSize={result.pageSize} total={result.total} query={params} /></div>

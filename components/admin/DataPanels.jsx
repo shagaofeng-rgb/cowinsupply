@@ -1,18 +1,4 @@
-export function RangeBox() {
-  return (
-    <div className="range-box">
-      <small>时间范围</small>
-      <span>当前查看：今日，2026-07-08 至 2026-07-08</span>
-      <div>
-        <button className="is-active" type="button">日</button>
-        <button type="button">周</button>
-        <button type="button">月</button>
-        <button type="button">自定义</button>
-      </div>
-      <button className="range-refresh" type="button">刷新当前范围</button>
-    </div>
-  );
-}
+export { default as RangeBox } from "./RangeBox";
 
 export function MetricCard({ label, value, hint }) {
   return (

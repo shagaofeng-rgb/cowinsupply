@@ -4,7 +4,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState, useTransition } from "react";
 import { getAdminDateRange, getAdminRangeLabel } from "@/lib/adminDateRange";
 
-const RANGE_LABELS = { day: "日", week: "周", month: "月", custom: "自定义" };
+const RANGE_LABELS = { day: "今天", week: "本周", month: "本月", custom: "自定义" };
 
 export default function RangeBox() {
   const pathname = usePathname();
@@ -40,6 +40,7 @@ export default function RangeBox() {
             type="button"
             aria-pressed={selected.range === range}
             key={range}
+            disabled={isPending}
             onClick={() => updateRange(range, range === "custom" ? { from: customFrom, to: customTo } : {})}
           >
             {label}
