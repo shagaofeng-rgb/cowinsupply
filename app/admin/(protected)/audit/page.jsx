@@ -1,12 +1,16 @@
 import Pagination from "@/components/admin/Pagination";
+import AdminListControls from "@/components/admin/AdminListControls";
+import RangeBox from "@/components/admin/RangeBox";
+import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getAuditLogs, paginateItems } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminAuditPage({ searchParams }) {
   const params = await searchParams;
+  const range = getAdminDateRange(params);
   const logs = await getAuditLogs();
-  const result = paginateItems(logs, params);
+  const result = paginateItems(logs, { ...params, ...range });
 
   return (
     <>
@@ -14,8 +18,10 @@ export default async function AdminAuditPage({ searchParams }) {
         <div>
           <h1>操作日志</h1>
           <p>记录 Cowin Supply 后台的登录、内容管理、询盘处理和导出操作。</p>
-        </div>
+        </div><RangeBox />
       </header>
+
+      <AdminListControls action="/admin/audit" keyword={params?.q} pageSize={result.pageSize} range={range} />
 
       <div className="admin-table-card">
         <table className="admin-table">
