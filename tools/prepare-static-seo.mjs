@@ -36,16 +36,19 @@ async function addFile(relativePath, canonicalPath) {
   }
 
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
+  const homepageDesign = /\bhome-v1\b/.test(html);
+  const firstTagIndent = homepageDesign ? "  " : "        ";
+  const followingTagIndent = homepageDesign ? "  " : "    ";
   const tags = [
     `<link rel="canonical" href="${escapeAttr(canonicalUrl)}">`,
     '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
     `<meta property="og:url" content="${escapeAttr(canonicalUrl)}">`
-  ].join("\n    ");
+  ].join(`\n${followingTagIndent}`);
   const cleaned = html
     .replace(/[ \t]*<link\b[^>]*\brel=["']canonical["'][^>]*>\s*/gi, "")
     .replace(/[ \t]*<meta\b[^>]*\bname=["']robots["'][^>]*>\s*/gi, "")
     .replace(/[ \t]*<meta\b[^>]*\bproperty=["']og:url["'][^>]*>\s*/gi, "");
-  const next = /<\/head>/i.test(cleaned) ? cleaned.replace(/<\/head>/i, `        ${tags}\n</head>`) : cleaned;
+  const next = /<\/head>/i.test(cleaned) ? cleaned.replace(/<\/head>/i, `${firstTagIndent}${tags}\n</head>`) : cleaned;
   const withRelatedNews = injectRelatedNews(next, relativePath);
   const withSharedChrome = injectSharedChrome(withRelatedNews, canonicalPath);
   if (withSharedChrome !== html) await fs.writeFile(filePath, withSharedChrome, "utf8");
@@ -62,6 +65,9 @@ function injectRelatedNews(html, relativePath) {
 
 function injectSharedChrome(html, canonicalPath) {
   if (!/<header\b/i.test(html) || !/<footer\b/i.test(html)) return html;
+  // The homepage uses a deliberately different, image-led navigation and footer.
+  // Keep that design intact while the build still injects its canonical/robots tags.
+  if (/\bhome-v1\b/.test(html) || /class=["']home-header["']/.test(html)) return html;
   const activePath = ["/product", "/news", "/about", "/contact"].find((pathName) => canonicalPath === pathName || canonicalPath.startsWith(`${pathName}/`)) || "";
   const navItems = [["/product", "Products"], ["/news", "News"], ["/blog", "Blog"], ["/about", "About"], ["/contact", "Contact"]];
   const navLinks = navItems.map(([href, label]) => `<a href="${href}"${href === activePath ? ' class="is-active" aria-current="page"' : ""}>${label}</a>`).join("");
