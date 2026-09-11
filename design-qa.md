@@ -36,6 +36,26 @@ Focused comparison covered the hero/navigation, product-family row, and mobile h
 - Category and product cards point to existing catalog/product routes.
 - Mobile menu opens, changes to the “Close navigation” state, and exposes all navigation items.
 
+## Fidelity correction — 2026-09-11
+
+The earlier build preserved the section order but not the reference's precise composition. The correction pass treated the source image as the visual contract and rebuilt the affected surfaces.
+
+**Findings and fixes**
+
+- [P1] Hero composition: the previous headline wrapped into five equal-size lines and the image used a different composition. Fixed with a three-line display hierarchy, reference-aligned left margin, icon-led trust row, and a dedicated 1672 × 941 WebP hero asset.
+- [P1] Product-family density: the previous cards were too short and used mismatched product crops. Fixed with six equal cards, 232px image slots, source-matched category copy density, and six dedicated 1448 × 1086 WebP category images.
+- [P1] Manufacturing and product sections: the previous image proportions and card heights did not follow the reference. Fixed with a 585px factory frame, partner badge/stat strip, four 268px catalog image slots, and four dedicated product images.
+- [P2] Editorial, application, CTA, and footer copy/layout: aligned the titles, item density, dates, actions, and footer hierarchy to the chosen visual source while retaining the existing destination routes and inquiry/WhatsApp behavior.
+
+**Final evidence**
+
+- Source visual truth: `/Users/apple/.codex/generated_images/01a05276-cfe2-7aa1-9907-e5381b01628b/exec-a6ecb443-61b9-49ca-9599-cc0a318ba68f.png` (741 × 2121).
+- Implementation: `http://localhost:3002/`, in-app browser, desktop default state at 1280 × 720 CSS px, device scale factor 1. The rendered first viewport was captured after the correction pass; its hero image, three-line type hierarchy, navigation, CTA pair, and icon strip were compared against the source.
+- Focused checks: hero/navigation, six-card product-family grid, manufacturing split frame, four-product grid, three application cards, news row, CTA, and footer.
+- Responsive implementation: 3-column category grid under 1050px; 2-column product grid under 900px; single-column card stacks and menu toggle at 720px and below.
+- Image delivery: 12 generated images are rendered as WebP (about 2.1 MB total); hero is preloaded and below-the-fold images use native lazy loading.
+- Primary links, quote CTAs, WhatsApp, category routes, and product routes remained active. Browser console was clean; lint and production build passed.
+
 ## Final result
 
 passed
