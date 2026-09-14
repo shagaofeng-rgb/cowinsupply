@@ -283,6 +283,8 @@ p { line-height: 1.7; }
   background: var(--white);
 }
 .contact-item strong { display: block; margin-bottom: 6px; }
+.company-map { display: block; width: 100%; height: clamp(300px, 50vw, 450px); margin-top: 24px; border: 1px solid var(--line, #d9e1ea); border-radius: 8px; }
+.company-map-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 .lead-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
