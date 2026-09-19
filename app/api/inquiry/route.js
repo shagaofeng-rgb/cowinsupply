@@ -2,6 +2,9 @@ import { apiError, apiOk } from "@/lib/adminApi";
 import { recordInquiryNotification, saveInquiry } from "@/lib/cmsStore";
 import { sendAdminInquiryEmail } from "@/lib/emailService";
 import { allowInquiry } from "@/lib/inquiryRateLimit";
+import { after } from "next/server";
+
+export const maxDuration = 60;
 
 function validEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || ""));
@@ -10,9 +13,14 @@ function validEmail(value) {
 export async function POST(request) {
   const contentType = request.headers.get("content-type") || "";
   const isJson = contentType.includes("application/json");
-  const body = isJson
-    ? await request.json()
-    : Object.fromEntries((await request.formData()).entries());
+  let body;
+  try {
+    body = isJson ? await request.json() : Object.fromEntries((await request.formData()).entries());
+  } catch {
+    return apiError("Unable to read the submission. Please try again.", 400);
+  }
+  if (!body || typeof body !== "object" || Array.isArray(body)) return apiError("Invalid submission.", 400);
+  for (const key of ["name", "email", "message"]) body[key] = String(body[key] || "").trim();
 
   if (body.website || !body.name || !validEmail(body.email) || !body.message) {
     return apiError("Name, valid email and message are required.", 400);
@@ -29,6 +37,7 @@ export async function POST(request) {
     userAgent: request.headers.get("user-agent") || "",
     visitorCountry: request.headers.get("x-vercel-ip-country") || ""
   });
+  after(async () => {
   let notification = { sent: false };
 
   try {
@@ -42,9 +51,10 @@ export async function POST(request) {
   } catch (error) {
     console.error("[inquiry] Notification audit logging failed:", error?.message || error);
   }
+  });
 
   if (!isJson) {
     return Response.redirect(new URL("/message?success=1", request.url), 303);
   }
-  return apiOk({ inquiry, notification }, { status: 201 });
+  return apiOk({ inquiry: { id: inquiry.id }, notification: { status: "pending" } }, { status: 201 });
 }
