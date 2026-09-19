@@ -17,7 +17,7 @@ const pages = await pooled(urls, async url => {
   const response = await get(base+new URL(url).pathname);
   const html = await response.text();
   for(const match of html.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/g)) images.add(new URL(decode(match[1]),url).href);
-  return {url,status:response.status,header:html.includes('class="cowin-header"'),footer:html.includes('class="cowin-footer"'),form:html.includes('action="/api/inquiry"')};
+  return {url,status:response.status,header:html.includes('class="cowin-header"'),footer:html.includes('class="cowin-footer"'),form:/<form\b[^>]*action="\/api\/inquiry"/.test(html)};
 });
 const media = await pooled([...images],async url => {
   const response=await get(url.startsWith(origin)?base+new URL(url).pathname:url);
