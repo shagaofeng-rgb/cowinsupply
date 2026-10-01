@@ -8,7 +8,7 @@ export async function GET(request) {
   const unauthorized = requireCronSecret(request);
   if (unauthorized) return unauthorized;
 
-  // Sitemap content still refreshes daily; Google submission has its own three-day cron.
+  // Refresh daily; Google submission runs Mondays at 12:00 Asia/Shanghai.
   const run = await refreshSitemap({ trigger: "vercel_sitemap_refresh", submit: false });
   return apiOk(run, { status: run.errors?.length ? 500 : 200 });
 }
