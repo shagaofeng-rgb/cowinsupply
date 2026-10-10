@@ -1,5 +1,6 @@
 import { requireAdminApi } from "@/lib/adminApi";
 import { appendAuditLog, getInquiries } from "@/lib/cmsStore";
+import { getAdminDateRange } from "@/lib/adminDateRange";
 
 const columns = [
   ["createdAt", "提交时间"],
@@ -27,11 +28,20 @@ const columns = [
   ["sessionId", "会话ID"]
 ];
 
-export async function GET() {
+export async function GET(request) {
   const unauthorized = await requireAdminApi();
   if (unauthorized) return unauthorized;
 
-  const inquiries = await getInquiries();
+  const params = new URL(request.url).searchParams;
+  const filtered = params.has("range") || params.has("from") || params.has("q") || params.has("status");
+  const range = filtered ? getAdminDateRange(Object.fromEntries(params.entries())) : null;
+  const keyword = String(params.get("q") || "").trim().toLowerCase();
+  const status = String(params.get("status") || "").trim();
+  const inquiries = (await getInquiries()).filter((item) => {
+    const day = shanghaiDate(item.createdAt);
+    const text = [item.name, item.company, item.email, item.phone, item.product, item.message, item.country].join(" ").toLowerCase();
+    return (!range || (day >= range.from && day <= range.to)) && (!status || item.status === status) && (!keyword || text.includes(keyword));
+  });
   const rows = [
     columns.map(([, label]) => csvCell(label)).join(","),
     ...inquiries.map((item) => columns.map(([key]) => csvCell(item[key] || "")).join(","))
@@ -48,5 +58,13 @@ export async function GET() {
 }
 
 function csvCell(value) {
-  return `"${String(value).replaceAll('"', '""')}"`;
+  const text = String(value);
+  const safe = /^[=+\-@\t\r]/.test(text) ? `'${text}` : text;
+  return `"${safe.replaceAll('"', '""')}"`;
+}
+
+function shanghaiDate(value) {
+  const parts = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date(value));
+  const date = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${date.year}-${date.month}-${date.day}`;
 }

@@ -18,18 +18,19 @@ export default async function SyncPage({ searchParams }) {
         <div>
           <small>数据同步</small>
           <h1>数据同步</h1>
-          <p>查看前端采集、Search Console、访问分析和后台任务同步状态。</p>
+          <p>查看访问采集、Search Console 与后台任务的配置及历史记录。手动检查只重新读取状态，不导入或修改业务数据。</p>
         </div>
-        <div className="admin-head-actions"><RangeBox /><form action="/api/admin/sync" method="post"><button className="admin-button" type="submit">手动执行同步</button></form></div>
+        <div className="admin-head-actions"><RangeBox /><form action="/api/admin/sync" method="post"><button className="admin-button" type="submit">重新检查状态</button></form></div>
       </header>
       <section className="metric-grid">
-        <MetricCard label="前端采集" value={sync.trackingConfigured ? "已接入" : "未接入"} hint="访问事件" />
+        <MetricCard label="前端采集" value={sync.trackingState === "active" ? "有访问记录" : "等待首条记录"} hint="站内访问事件" />
         <MetricCard label="GSC" value={sync.gscConfigured ? "已配置" : "未配置"} hint="搜索表现" />
-        <MetricCard label="GA" value={sync.gaConfigured ? "已配置" : "未配置"} hint="分析数据" />
-        <MetricCard label="Cron" value={sync.cronConfigured ? "已配置" : "未配置"} hint="后台任务" />
+        <MetricCard label="GA 属性" value={sync.gaConfigured ? "已配置" : "未配置"} hint="仅表示环境变量状态" />
+        <MetricCard label="Cron 密钥" value={sync.cronConfigured ? "已配置" : "未配置"} hint="仅表示环境变量状态" />
       </section>
       <DataTable
-        columns={["时间", "数据源", "状态", "处理量", "说明"]}
+        title="检查与同步历史"
+        columns={["时间", "来源", "状态", "处理量", "说明"]}
         rows={runs.items.map((item) => ({ cells: [new Date(item.createdAt).toLocaleString("zh-CN", { hour12: false, timeZone: "Asia/Shanghai" }), item.source, item.status, item.processed, item.message] }))}
         empty="暂无同步日志。"
       />

@@ -21,16 +21,17 @@ export default async function SeoDataPage({ searchParams }) {
       </header>
 
       <div className={report.gscConnected ? "status-pill good" : "status-pill warn"}>
-        {report.gscConnected ? "GSC 已连接" : report.gscConfigured ? "GSC 已配置但未连通" : "GSC 尚未配置"}
+        {report.gscConnected ? "GSC 已连接" : report.gscUnavailable ? "所选日期暂无可用 GSC 数据" : report.gscConfigured ? "GSC 已配置但未连通" : "GSC 尚未配置"}
       </div>
 
       {report.gscError ? <div className="admin-alert">Search Console 状态：{statusText(report.gscError)}</div> : null}
+      {report.gscConnected ? <p className="admin-data-footnote">实际可用数据范围：{report.gscStartDate} 至 {report.gscEndDate}。Search Console 数据存在更新延迟，因此可能不包含今天。</p> : null}
 
       <section className="metric-grid">
-        <MetricCard label="点击量" value={report.clicks} hint="GSC 指标" />
-        <MetricCard label="曝光量" value={report.impressions} hint="GSC 指标" />
-        <MetricCard label="点击率" value={`${report.ctr}%`} hint="平均值" />
-        <MetricCard label="排名位置" value={report.position} hint="平均值" />
+        <MetricCard label="点击量" value={report.clicks} hint="GSC · 实际可用范围" />
+        <MetricCard label="曝光量" value={report.impressions} hint="GSC · 实际可用范围" />
+        <MetricCard label="点击率" value={report.ctr === null ? null : `${report.ctr}%`} hint="GSC 平均值" />
+        <MetricCard label="排名位置" value={report.position} hint="GSC 平均值" />
       </section>
 
       <section className="data-grid-two">
@@ -87,6 +88,7 @@ function statusText(value) {
   const map = {
     "service-account-no-search-console-permission": "服务账号还没有 Search Console 权限",
     "google-api-network-error": "Google API 网络连接失败",
+    "gsc-data-not-yet-available": "所选日期尚无可用搜索数据，请查看较早日期",
     "not-configured": "未配置服务账号凭证"
   };
   return map[value] || value;

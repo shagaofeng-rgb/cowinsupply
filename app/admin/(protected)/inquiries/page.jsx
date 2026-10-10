@@ -21,6 +21,9 @@ export default async function AdminInquiriesPage({ searchParams }) {
   const params = await searchParams;
   const range = getAdminDateRange(params);
   const result = await getInquiriesPage({ ...params, ...range });
+  const exportQuery = new URLSearchParams({ range: range.range, from: range.from, to: range.to });
+  if (params?.q) exportQuery.set("q", String(params.q));
+  if (params?.status) exportQuery.set("status", String(params.status));
 
   return <>
     <header className="admin-page-head lead-page-head">
@@ -29,7 +32,7 @@ export default async function AdminInquiriesPage({ searchParams }) {
         <h1>询盘工作台</h1>
         <p>集中查看客户需求、来源、浏览路径、邮件通知与跟进状态。</p>
       </div>
-      <div className="admin-head-actions"><RangeBox /><Link className="admin-button" href="/api/admin/inquiries/export">导出 CSV</Link></div>
+      <div className="admin-head-actions"><RangeBox /><Link className="admin-button" href={`/api/admin/inquiries/export?${exportQuery.toString()}`}>导出当前筛选 CSV</Link></div>
     </header>
     <AdminListControls action="/admin/inquiries" keyword={params?.q} status={params?.status} pageSize={result.pageSize} statusOptions={statuses} range={range} />
     <InquiryWorkspace items={result.items} />

@@ -39,7 +39,7 @@ export default async function AdminSystemPage() {
             <Row label="数据层" value={status.dataStore} />
             <Row label="操作日志" value={`${status.counts.auditLogs} 条`} />
           </div>
-          <p className="admin-muted">当前数据层可支撑后台功能演示和轻量运营；正式长期运营建议接入 PostgreSQL 持久数据库。</p>
+          <p className="admin-muted">{status.persistentStoreConfigured ? "当前使用 PostgreSQL 持久化存储。上述计数来自当前数据库与站点素材。" : "当前未连接 PostgreSQL 持久化存储；若部署在 Vercel，询盘和访问统计不能作为长期可靠记录。"}</p>
         </div>
       </section>
     </>

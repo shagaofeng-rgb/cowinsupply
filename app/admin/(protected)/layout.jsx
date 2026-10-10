@@ -1,5 +1,6 @@
 import AdminShell from "@/components/admin/AdminShell";
 import { requireAdminSession } from "@/lib/adminAuth";
+import "./admin-design.css";
 
 export const dynamic = "force-dynamic";
 

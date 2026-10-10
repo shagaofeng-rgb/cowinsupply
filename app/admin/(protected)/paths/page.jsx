@@ -4,12 +4,14 @@ import AdminListControls from "@/components/admin/AdminListControls";
 import RangeBox from "@/components/admin/RangeBox";
 import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getVisitPaths } from "@/lib/cmsStore";
+import { hasPersistentStore } from "@/lib/persistentStore";
 
 export const dynamic = "force-dynamic";
 
 export default async function PathsPage({ searchParams }) {
   const params = await searchParams;
   const range = getAdminDateRange(params);
+  const reliable = hasPersistentStore() || !process.env.VERCEL;
   const result = await getVisitPaths({ ...params, ...range });
   const paths = result.items;
   return (
@@ -23,18 +25,18 @@ export default async function PathsPage({ searchParams }) {
         <RangeBox />
       </header>
       <section className="metric-grid">
-        <MetricCard label="会话数" value={result.total} hint="访问路径" />
-        <MetricCard label="最长路径" value={paths.reduce((max, item) => Math.max(max, item.paths.length), 0)} hint="页面数" />
-        <MetricCard label="入口页" value={paths.length ? paths[0].paths[0] : 0} hint="最近路径" />
-        <MetricCard label="路径完整度" value={paths.length ? "已采集" : "等待数据"} hint="事件链路" />
+        <MetricCard label="会话数" value={reliable ? result.total : null} hint="当前筛选结果" />
+        <MetricCard label="本页最长路径" value={reliable && paths.length ? paths.reduce((max, item) => Math.max(max, item.paths.length), 0) : null} hint="当前页 · 页面数" />
+        <MetricCard label="最近会话入口页" value={reliable && paths.length ? paths[0].paths[0] : null} hint="当前页第一个会话" />
       </section>
       <AdminListControls action="/admin/paths" keyword={params?.q} pageSize={result.pageSize} range={range} />
       <DataTable
         columns={["会话", "访问路径"]}
-        rows={paths.map((item) => ({ cells: [item.sessionId.slice(0, 10), item.paths.join(" → ")] }))}
-        empty="暂无访问路径数据。"
+        rows={reliable ? paths.map((item) => ({ cells: [item.sessionId.slice(0, 10), item.paths.join(" → ")] })) : []}
+        empty={reliable ? "暂无访问路径数据。" : "生产环境未配置持久化数据库，无法提供可靠的访问路径。"}
       />
-      <Pagination basePath="/admin/paths" page={result.page} pageSize={result.pageSize} total={result.total} query={params} />
+      {reliable ? <Pagination basePath="/admin/paths" page={result.page} pageSize={result.pageSize} total={result.total} query={params} /> : null}
+      <p className="admin-data-footnote">访问路径由实际事件按会话标识整理。数据库模式目前使用最近 5,000 条事件，较早路径可能不在当前列表中。</p>
     </>
   );
 }

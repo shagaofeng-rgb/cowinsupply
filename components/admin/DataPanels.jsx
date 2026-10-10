@@ -1,13 +1,17 @@
+import Link from "next/link";
+import { IconChartBar } from "@tabler/icons-react";
+
 export { default as RangeBox } from "./RangeBox";
 
-export function MetricCard({ label, value, hint }) {
+export function MetricCard({ label, value, hint, icon: Icon = IconChartBar, href }) {
+  const content = <>
+    <span className="metric-card-icon"><Icon size={22} stroke={1.8} aria-hidden="true" /></span>
+    <span className="metric-card-label">{label}</span>
+    <strong>{value === null || value === undefined ? "—" : value}</strong>
+    <small>{hint}</small>
+  </>;
   return (
-    <section className="metric-card">
-      <i />
-      <span>{label}</span>
-      <strong>{value}</strong>
-      <small>{hint}</small>
-    </section>
+    href ? <Link className="metric-card metric-card-link" href={href}>{content}</Link> : <section className="metric-card">{content}</section>
   );
 }
 
@@ -21,9 +25,10 @@ export function EmptyPanel({ title, eyebrow, children = "暂无可展示数据�
   );
 }
 
-export function DataTable({ columns, rows, empty = "暂无数据。" }) {
+export function DataTable({ columns, rows, empty = "暂无数据。", title, href }) {
   return (
     <div className="data-table-wrap">
+      {title ? <div className="data-table-heading"><h2>{title}</h2>{href ? <Link href={href}>查看全部</Link> : null}</div> : null}
       <table className="admin-table">
         <thead>
           <tr>{columns.map((column) => <th key={column}>{column}</th>)}</tr>
@@ -34,7 +39,7 @@ export function DataTable({ columns, rows, empty = "暂无数据。" }) {
               {row.cells.map((cell, cellIndex) => <td key={cellIndex}>{cell}</td>)}
             </tr>
           ))}
-          {!rows.length ? <tr><td colSpan={columns.length}>{empty}</td></tr> : null}
+          {!rows.length ? <tr><td className="admin-table-empty" colSpan={columns.length}>{empty}</td></tr> : null}
         </tbody>
       </table>
     </div>
@@ -45,11 +50,10 @@ export function SyncStrip({ sync }) {
   const lastRun = sync?.lastRun;
   return (
     <div className="sync-strip">
-      <strong>数据链路状态</strong>
+      <strong>数据状态</strong>
       <span>
-        访客路径：{sync?.trackingState === "active" ? `最新 ${new Date(sync.trackingLastEvent).toLocaleString("zh-CN")}` : "等待首个真实访问"}；
-        后台任务：{sync?.cronConfigured ? (lastRun ? `最近 ${new Date(lastRun.createdAt).toLocaleString("zh-CN")}` : "已配置，等待首条运行记录") : "未配置"}；
-        状态：{lastRun?.status || "可用"}
+        访问事件：{sync?.trackingState === "active" ? `最近 ${new Date(sync.trackingLastEvent).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false })}` : "尚无访问记录"}；
+        同步日志：{lastRun ? `最近 ${new Date(lastRun.createdAt).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false })} · ${lastRun.status}` : "暂无运行记录"}
       </span>
     </div>
   );

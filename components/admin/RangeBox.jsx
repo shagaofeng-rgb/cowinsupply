@@ -4,7 +4,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState, useTransition } from "react";
 import { getAdminDateRange, getAdminRangeLabel } from "@/lib/adminDateRange";
 
-const RANGE_LABELS = { day: "今天", week: "本周", month: "本月", custom: "自定义" };
+const RANGE_LABELS = { day: "今天", week: "本周", month: "本月", ninety: "90天", custom: "自定义" };
 
 export default function RangeBox() {
   const pathname = usePathname();
@@ -14,6 +14,7 @@ export default function RangeBox() {
   const selected = getAdminDateRange(Object.fromEntries(searchParams.entries()));
   const [customFrom, setCustomFrom] = useState(selected.from);
   const [customTo, setCustomTo] = useState(selected.to);
+  const [showCustom, setShowCustom] = useState(selected.range === "custom");
 
   function updateRange(range, values = {}) {
     const next = getAdminDateRange({ range, ...values });
@@ -21,6 +22,7 @@ export default function RangeBox() {
     params.set("range", next.range);
     params.set("from", next.from);
     params.set("to", next.to);
+    params.delete("page");
     startTransition(() => router.replace(`${pathname}?${params.toString()}`, { scroll: false }));
   }
 
@@ -29,10 +31,19 @@ export default function RangeBox() {
     if (customFrom && customTo && customFrom <= customTo) updateRange("custom", { from: customFrom, to: customTo });
   }
 
+  function selectRange(range) {
+    if (range === "custom") {
+      setShowCustom(true);
+      return;
+    }
+    setShowCustom(false);
+    updateRange(range);
+  }
+
   return (
     <section className="range-box" aria-label="时间范围">
       <small>时间范围</small>
-      <span>当前查看：{getAdminRangeLabel(selected)}</span>
+      <span>当前查看：{getAdminRangeLabel(selected)}（北京时间）</span>
       <div className="range-options">
         {Object.entries(RANGE_LABELS).map(([range, label]) => (
           <button
@@ -41,16 +52,16 @@ export default function RangeBox() {
             aria-pressed={selected.range === range}
             key={range}
             disabled={isPending}
-            onClick={() => updateRange(range, range === "custom" ? { from: customFrom, to: customTo } : {})}
+            onClick={() => selectRange(range)}
           >
             {label}
           </button>
         ))}
       </div>
-      {selected.range === "custom" ? (
+      {showCustom ? (
         <form className="range-custom" onSubmit={submitCustom}>
-          <label>开始<input type="date" value={customFrom} max={customTo} onChange={(event) => setCustomFrom(event.target.value)} /></label>
-          <label>结束<input type="date" value={customTo} min={customFrom} onChange={(event) => setCustomTo(event.target.value)} /></label>
+          <label>开始<input type="date" value={customFrom} max={customTo} required onChange={(event) => setCustomFrom(event.target.value)} /></label>
+          <label>结束<input type="date" value={customTo} min={customFrom} max={getAdminDateRange().to} required onChange={(event) => setCustomTo(event.target.value)} /></label>
           <button type="submit">应用</button>
         </form>
       ) : null}

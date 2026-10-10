@@ -1,70 +1,30 @@
-"use client";
-
-import { useState } from "react";
-
 export default function NewsAutomationPanel({ dashboard }) {
-  const [data, setData] = useState(dashboard);
-  const [message, setMessage] = useState("");
-  const [busy, setBusy] = useState(false);
-  const [timezone, setTimezone] = useState(dashboard.config.timezone);
-  const [scheduleHour, setScheduleHour] = useState(String(dashboard.config.scheduleHour));
-  const [sources, setSources] = useState(JSON.stringify(dashboard.config.sourceWhitelist, null, 2));
-  const [blacklist, setBlacklist] = useState((dashboard.config.sourceBlacklist || []).join("\n"));
+  const metrics = dashboard.metrics || {};
+  const runs = dashboard.runs || [];
 
-  async function call(action, extra = {}) {
-    setBusy(true);
-    setMessage("");
-    try {
-      const response = await fetch("/api/admin/news/automation", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ action, ...extra })
-      });
-      const payload = await response.json();
-      if (!response.ok || !payload.success) throw new Error(payload.error || "Operation failed");
-      const fresh = await fetch("/api/admin/news/automation", { cache: "no-store" }).then((item) => item.json());
-      if (fresh.success) setData(fresh.data);
-      setMessage(action === "dry-run" ? "模拟完成，未创建或发布文章。" : "操作已完成。");
-    } catch (error) {
-      setMessage(`操作失败：${error.message}`);
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  function saveConfig() {
-    let sourceWhitelist;
-    try {
-      sourceWhitelist = JSON.parse(sources);
-      if (!Array.isArray(sourceWhitelist)) throw new Error("来源必须是 JSON 数组");
-    } catch (error) {
-      setMessage(`来源配置格式错误：${error.message}`);
-      return;
-    }
-    call("config", {
-      config: {
-        enabled: data.config.enabled,
-        timezone,
-        scheduleHour: Number(scheduleHour),
-        publishIntervalHours: 24,
-        sourceWhitelist,
-        sourceBlacklist: blacklist.split("\n").map((item) => item.trim()).filter(Boolean)
-      }
-    });
-  }
-
-  const health = data.health || {};
-  const latestRun = health.latestPublish || health.latestIngest;
   return <section className="admin-card news-automation-panel">
-    <div className="news-automation-heading"><div><h2>News 自动运营 v4</h2><p>仅 News 启用自动抓取、核验与发布；Blog 自动发布保持关闭。每个上海自然日最多成功发布 1 篇，任何门禁失败均不会发布。</p></div><span className={data.config.enabled ? "status-good" : "status-muted"}>{data.config.enabled ? "已启用" : "已暂停"}</span></div>
-    <div className="admin-kpis"><div><strong>{data.metrics.publishedByV2}</strong><span>自动发布</span></div><div><strong>{data.metrics.needsReview}</strong><span>待复核</span></div><div><strong>{data.metrics.duplicateBlocked}</strong><span>重复拦截</span></div><div><strong>{data.metrics.lastSuccessfulPublishAt ? new Date(data.metrics.lastSuccessfulPublishAt).toLocaleString("zh-CN") : "尚无"}</strong><span>最近成功发布</span></div></div>
-    <section className="news-run-health" aria-label="News automation health"><div><span>可发布候选</span><strong>{health.readyCandidates || 0}</strong></div><div><span>轮换等待</span><strong>{health.deferredByRotation || 0}</strong></div><div><span>重试队列</span><strong>{health.retryPending || 0}</strong></div><div><span>当前动作</span><p>{health.nextAction || "正在读取运行状态。"}</p></div></section>
-    <p className={`admin-notice ${latestRun?.status === "failed" ? "admin-notice-error" : ""}`}>最近执行：{latestRun ? `${new Date(latestRun.completedAt).toLocaleString("zh-CN")}，${latestRun.phase === "publish" ? "发布" : "抓取"}，${latestRun.publishResult?.published ? `前台已发布 ${latestRun.publishResult.slug}` : latestRun.reason || latestRun.publishResult?.reason || latestRun.status}` : "尚无运行记录"}</p>
-    {health.latestIngest?.sourceResults?.length ? <section className="news-source-health"><h3>最近一次来源抓取</h3><ul>{health.latestIngest.sourceResults.slice(0, 8).map((item) => <li key={item.sourceId}><strong>{item.sourceId}</strong><span>{item.error ? `失败：${item.error}` : `已抓取 ${item.fetched || 0} 条，合格候选 ${item.accepted || 0} 条`}</span></li>)}</ul></section> : null}
-    <div className="admin-actions"><button type="button" disabled={busy} onClick={() => call("dry-run")}>模拟运行</button><button type="button" disabled={busy} onClick={() => call("run")}>立即执行一次</button><button type="button" disabled={busy} onClick={() => call("config", { config: { ...data.config, enabled: !data.config.enabled } })}>{data.config.enabled ? "暂停自动化" : "启用自动化"}</button></div>
-    <section className="admin-form admin-card"><h3>调度与来源配置</h3><p>已导入 {data.sourceCatalog?.total || 0} 个来源；其中 {data.sourceCatalog?.eligible || 0} 个已通过公开访问与 robots 核验，可用于自动发布。论坛与讨论区仅用于发现，不能独立作为事实来源。</p><label>运营时区<select value={timezone} onChange={(event) => setTimezone(event.target.value)}><option value="Asia/Shanghai">Asia/Shanghai</option><option value="UTC">UTC</option></select></label><label>计划发布小时（仅用于运营记录）<input type="number" min="0" max="23" value={scheduleHour} onChange={(event) => setScheduleHour(event.target.value)} /></label><label>来源白名单（仅允许已验证目录条目）<textarea rows="10" value={sources} onChange={(event) => setSources(event.target.value)} spellCheck="false" /></label><label>来源黑名单（每行一个来源 ID）<textarea rows="3" value={blacklist} onChange={(event) => setBlacklist(event.target.value)} /></label><button type="button" disabled={busy} onClick={saveConfig}>保存运营配置</button></section>
-    {message ? <p className="admin-notice">{message}</p> : null}
-    <div className="admin-table-wrap"><h3>候选新闻池</h3><table className="admin-table"><thead><tr><th>状态</th><th>来源</th><th>关联产品</th><th>质量结果</th><th>操作</th></tr></thead><tbody>{data.candidates.slice(0, 12).map((item) => <tr key={item.id}><td>{item.status}</td><td><a href={item.sourceUrl} target="_blank" rel="noreferrer">{item.source?.publisher || "来源"}</a><br />{item.sourceTitle}</td><td>{item.productSlugs?.join(", ") || "无"}</td><td>{item.rejectionReasons?.length ? item.rejectionReasons.join("；") : item.availabilityReasons?.length ? `质量已通过；${item.availabilityReasons.join("；")}` : "已通过，等待发布窗口"}</td><td>{item.status !== "published" ? <button type="button" disabled={busy} onClick={() => call("archive", { id: item.id })}>归档</button> : item.articleSlug ? <button type="button" disabled={busy} onClick={() => call("withdraw", { slug: item.articleSlug })}>撤回</button> : null}</td></tr>)}</tbody></table></div>
-    <div className="admin-table-wrap"><h3>最近执行日志</h3><table className="admin-table"><thead><tr><th>时间</th><th>触发</th><th>状态</th><th>结果</th></tr></thead><tbody>{data.runs.slice(0, 10).map((item) => <tr key={item.id}><td>{new Date(item.completedAt).toLocaleString("zh-CN")}</td><td>{item.trigger}</td><td>{item.status}</td><td>{item.publishResult?.published ? `已发布 ${item.publishResult.slug}` : item.reason || item.publishResult?.reason || "已完成"}</td></tr>)}</tbody></table></div>
+    <div className="news-automation-heading">
+      <div><h2>自动新闻历史记录</h2><p>自动抓取、撰写与发布程序已停用。这里仅保留既有结果和运行记录供核对；人工新闻管理与 Blog 插件发布不受影响。</p></div>
+      <span className="status-muted">已停用</span>
+    </div>
+    <div className="admin-kpis">
+      <div><strong>{metrics.publishedByV2 ?? 0}</strong><span>历史自动发布</span></div>
+      <div><strong>{metrics.needsReview ?? 0}</strong><span>历史待复核候选</span></div>
+      <div><strong>{metrics.duplicateBlocked ?? 0}</strong><span>历史重复拦截</span></div>
+      <div><strong>{metrics.lastSuccessfulPublishAt ? formatTime(metrics.lastSuccessfulPublishAt) : "暂无记录"}</strong><span>最近成功发布</span></div>
+    </div>
+    <div className="admin-table-wrap">
+      <h3>最近运行记录</h3>
+      <div className="data-table-wrap">
+        <table className="admin-table"><thead><tr><th>时间</th><th>触发方式</th><th>状态</th><th>结果</th></tr></thead>
+          <tbody>{runs.slice(0, 10).map((item) => <tr key={item.id}><td>{formatTime(item.completedAt)}</td><td>{item.trigger || "—"}</td><td>{item.status || "—"}</td><td>{item.publishResult?.published ? `已发布 ${item.publishResult.slug}` : item.reason || item.publishResult?.reason || "无发布结果"}</td></tr>)}
+            {!runs.length ? <tr><td colSpan="4" className="admin-table-empty">暂无历史运行记录。</td></tr> : null}
+          </tbody></table>
+      </div>
+    </div>
   </section>;
+}
+
+function formatTime(value) {
+  return value ? new Date(value).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false }) : "—";
 }
