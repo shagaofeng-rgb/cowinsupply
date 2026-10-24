@@ -40,7 +40,9 @@ async function checkUrl(page) {
   const started = Date.now();
   const url = `${baseUrl}${page.path}`;
   try {
-    const response = await fetch(url, { redirect: "manual" });
+    // A verbatim repeated News item remains in the API for editorial history,
+    // while its public URL permanently redirects to the stable canonical page.
+    const response = await fetch(url, { redirect: page.name === "news-detail" ? "follow" : "manual" });
     const contentType = response.headers.get("content-type") || "";
     const text = await response.text();
     const issues = [];

@@ -119,10 +119,10 @@ function InquiryDetail({ detail, saving, onStatusChange }) {
       <dl className="lead-fields">
         <div><dt>客户标识</dt><dd>{customer.identity || "暂未识别"}</dd></div>
         <div><dt>关联询盘</dt><dd>{relatedInquiries.length || 1} 条</dd></div>
-        <div><dt>累计访问</dt><dd>{customer.totalVisits || summary.totalVisits || journey.length || 0} 次</dd></div>
+        <div><dt>累计访问</dt><dd>{customer.pageViews ?? summary.pageViews ?? journey.length} 次</dd></div>
         <div><dt>首次访问</dt><dd>{formatTime(customer.firstSeenAt || summary.firstSeenAt)}</dd></div>
         <div><dt>最近访问</dt><dd>{formatTime(customer.lastSeenAt || summary.lastSeenAt)}</dd></div>
-        <div><dt>访问页面</dt><dd>{customer.uniquePaths || summary.uniquePaths || 0} 个</dd></div>
+        <div><dt>访问页面</dt><dd>{customer.uniquePages ?? summary.uniquePages ?? 0} 个</dd></div>
       </dl>
     </section>
     <section className="lead-section lead-actions-section">

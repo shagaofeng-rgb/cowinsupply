@@ -1,3 +1,5 @@
+import { uniqueNews } from "../lib/newsDuplicates.js";
+
 const baseUrl = (process.argv[2] || "https://www.cowinsupply.com").replace(/\/$/, "");
 const origin = new URL(baseUrl).origin;
 const issues = [];
@@ -41,7 +43,7 @@ const blogItems = blog.body?.data?.items || [];
 checkContent("product", productItems, publicPaths.filter((path) => path.startsWith("/product/")).length);
 checkContent("news", newsItems, publicPaths.filter((path) => path.startsWith("/news/")).length);
 checkContent("blog", blogItems, publicPaths.filter((path) => path.startsWith("/blog/")).length);
-checkNewsTitles(newsItems);
+checkNewsTitles(uniqueNews(newsItems));
 
 for (const page of pages) issues.push(...page.issues);
 for (const link of linkChecks) if (!link.ok) issues.push({ severity: "P1", area: "link", target: link.url, foundOn: pages.filter((page) => page.internalLinks.includes(link.url)).map((page) => page.path).slice(0, 8), issue: `HTTP ${link.status}` });
@@ -119,7 +121,7 @@ function checkSecurityHeaders(headers) {
 }
 
 function checkContent(type, items, sitemapCount) {
-  const indexableItems = items.filter((item) => item.seoIndexable !== false);
+  const indexableItems = (type === "news" ? uniqueNews(items) : items).filter((item) => item.seoIndexable !== false);
   if (indexableItems.length !== sitemapCount) issues.push({ severity: "P1", area: "data-sync", target: type, issue: `API has ${indexableItems.length} indexable published records; sitemap has ${sitemapCount}` });
   const duplicateSlugs = duplicateValues(items.map((item) => item.slug));
   if (duplicateSlugs.length) issues.push({ severity: "P1", area: "data", target: type, issue: `Duplicate slugs: ${duplicateSlugs.join(", ")}` });
