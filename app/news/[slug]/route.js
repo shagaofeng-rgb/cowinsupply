@@ -3,6 +3,7 @@ import { getCmsItems, getSeoGoneUrls } from "@/lib/cmsStore";
 import { isCanonicalProductRecord } from "@/lib/catalogTaxonomy";
 import { renderNewsDetailHtml } from "@/lib/newsRendering";
 import { LEGACY_NEWS_REDIRECTS } from "@/lib/seoContentPolicy";
+import { canonicalNewsBySlug, uniqueNews } from "@/lib/newsDuplicates";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +20,9 @@ export async function GET(request, { params }) {
   const [news, products] = await Promise.all([getCmsItems("news"), getCmsItems("product")]);
   const article = news.find((item) => item.slug === cleanSlug);
   if (article) {
-    return new Response(renderNewsDetailHtml({ article, products: products.filter(isCanonicalProductRecord), relatedNews: news }), {
+    const canonicalSlug = canonicalNewsBySlug(news).get(cleanSlug);
+    if (canonicalSlug && canonicalSlug !== cleanSlug) return Response.redirect(new URL(`/news/${encodeURIComponent(canonicalSlug)}`, request.url), 301);
+    return new Response(renderNewsDetailHtml({ article, products: products.filter(isCanonicalProductRecord), relatedNews: uniqueNews(news) }), {
       // A newly published article must be visible immediately to the front-end
       // verification step and to visitors. The database remains the source of truth.
       headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=0, must-revalidate" }

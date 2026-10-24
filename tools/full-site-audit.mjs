@@ -25,7 +25,8 @@ const [products, news, blog, protectedChecks, compatibilityChecks] = await Promi
   Promise.all([
     expectStatus("/api/admin/summary", 401),
     expectStatus("/api/admin/content/products", 401),
-    expectStatus("/api/cron/news-daily", 401),
+    // Automated News publication is intentionally retired and returns Gone.
+    expectStatus("/api/cron/news-daily", 410),
     expectStatus("/api/cron/sitemap", 401)
   ]),
   Promise.all([
@@ -43,7 +44,7 @@ checkContent("blog", blogItems, publicPaths.filter((path) => path.startsWith("/b
 checkNewsTitles(newsItems);
 
 for (const page of pages) issues.push(...page.issues);
-for (const link of linkChecks) if (!link.ok) issues.push({ severity: "P1", area: "link", target: link.url, issue: `HTTP ${link.status}` });
+for (const link of linkChecks) if (!link.ok) issues.push({ severity: "P1", area: "link", target: link.url, foundOn: pages.filter((page) => page.internalLinks.includes(link.url)).map((page) => page.path).slice(0, 8), issue: `HTTP ${link.status}` });
 for (const image of imageChecks) if (!image.ok) issues.push({ severity: "P1", area: "image", target: image.url, issue: `HTTP ${image.status}` });
 
 const report = {
@@ -93,7 +94,7 @@ async function inspectPage(path) {
   if (!canonical) pageIssues.push({ severity: "P2", area: "seo", target: path, issue: "Missing canonical" });
   if (canonical && new URL(canonical, origin).pathname !== path) pageIssues.push({ severity: "P2", area: "seo", target: path, issue: `Canonical points to ${canonical}` });
   if (missingAlt) pageIssues.push({ severity: "P2", area: "accessibility", target: path, issue: `${missingAlt} images are missing alt attributes` });
-  if (/href=["'][^"']*index\.html/i.test(html)) pageIssues.push({ severity: "P2", area: "seo", target: path, issue: "Legacy index.html internal link remains" });
+  if (internalLinks.some((url) => new URL(url).pathname.endsWith("/index.html"))) pageIssues.push({ severity: "P2", area: "seo", target: path, issue: "Legacy index.html internal link remains" });
 
   return { path, status: response.status, ms: Date.now() - started, title, canonical, internalLinks, images, issues: pageIssues };
 }

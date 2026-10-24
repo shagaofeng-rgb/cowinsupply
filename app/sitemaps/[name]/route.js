@@ -9,7 +9,7 @@ export async function GET(_request, { params }) {
   return new Response(xml, {
     headers: {
       "content-type": "application/xml; charset=utf-8",
-      "cache-control": "s-maxage=900, stale-while-revalidate=3600"
+      "cache-control": "s-maxage=300, stale-while-revalidate=60"
     }
   });
 }
