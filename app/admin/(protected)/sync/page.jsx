@@ -4,13 +4,15 @@ import Pagination from "@/components/admin/Pagination";
 import RangeBox from "@/components/admin/RangeBox";
 import { getAdminDateRange } from "@/lib/adminDateRange";
 import { getSyncStatus, paginateItems } from "@/lib/cmsStore";
+import { getSitemapRuns } from "@/lib/sitemapService";
 
 export const dynamic = "force-dynamic";
 
 export default async function SyncPage({ searchParams }) {
   const params = await searchParams;
   const range = getAdminDateRange(params);
-  const sync = await getSyncStatus(range);
+  const [sync, sitemapRuns] = await Promise.all([getSyncStatus(range), getSitemapRuns()]);
+  const latestGoogleRun = sitemapRuns.findLast((run) => run.gscSubmit?.attempted);
   const runs = paginateItems(sync.runs, { ...params, from: "", to: "" });
   return (
     <>
@@ -27,6 +29,11 @@ export default async function SyncPage({ searchParams }) {
         <MetricCard label="GSC" value={sync.gscConfigured ? "已配置" : "未配置"} hint="搜索表现" />
         <MetricCard label="GA 属性" value={sync.gaConfigured ? "已配置" : "未配置"} hint="仅表示环境变量状态" />
         <MetricCard label="Cron 密钥" value={sync.cronConfigured ? "已配置" : "未配置"} hint="仅表示环境变量状态" />
+        <MetricCard
+          label="Google Sitemap 提交"
+          value={latestGoogleRun ? latestGoogleRun.gscSubmit.success ? "成功" : "失败" : "暂无运行记录"}
+          hint={latestGoogleRun ? `${new Date(latestGoogleRun.completedAt).toLocaleString("zh-CN", { hour12: false, timeZone: "Asia/Shanghai" })} · ${latestGoogleRun.gscSubmit.success ? latestGoogleRun.trigger : latestGoogleRun.gscSubmit.error || latestGoogleRun.gscSubmit.reason || latestGoogleRun.trigger}` : "计划每周一 12:00（北京时间）"}
+        />
       </section>
       <DataTable
         title="检查与同步历史"
