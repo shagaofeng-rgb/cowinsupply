@@ -1,7 +1,8 @@
-import { publicHtmlResponse } from "@/lib/staticHtml";
+import { renderAbout } from "@/lib/interiorInfo";
+import { htmlResponse } from "@/lib/interiorRendering";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(request) {
-  return publicHtmlResponse("about/index.html", { canonicalPath: new URL(request.url).pathname });
+export function GET() {
+  return htmlResponse(renderAbout(), { "cache-control": "public, max-age=0, must-revalidate" });
 }

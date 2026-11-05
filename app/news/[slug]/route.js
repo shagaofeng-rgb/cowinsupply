@@ -1,6 +1,7 @@
 import { publicHtmlResponse } from "@/lib/staticHtml";
 import { getCmsItems, getSeoGoneUrls } from "@/lib/cmsStore";
 import { isCanonicalProductRecord } from "@/lib/catalogTaxonomy";
+import { notFoundResponse } from "@/lib/interiorRendering";
 import { renderNewsDetailHtml } from "@/lib/newsRendering";
 import { LEGACY_NEWS_REDIRECTS } from "@/lib/seoContentPolicy";
 import { canonicalNewsBySlug, uniqueNews } from "@/lib/newsDuplicates";
@@ -28,5 +29,6 @@ export async function GET(request, { params }) {
       headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=0, must-revalidate" }
     });
   }
-  return publicHtmlResponse(`news/${slug}`, { canonicalPath: new URL(request.url).pathname });
+  const legacy = await publicHtmlResponse(`news/${slug}`, { canonicalPath: new URL(request.url).pathname });
+  return legacy.status === 404 ? notFoundResponse() : legacy;
 }
