@@ -30,3 +30,6 @@
 .home-v1 .fa-globe::before{content:"\f0ac"}
 .home-v1 .fa-bars::before{content:"\f0c9"}
 .home-v1 .fa-search::before{content:"\f002"}
+
+/* The narrower source uses the same crop and focal point as the full image. */
+@media(max-width:720px){.home-v1 .home-hero{background-image:image-set(url('/cowin-assets/storefront/home-hero-mobile-aacd3c02d4b4.avif') type('image/avif'),url('/cowin-assets/home-v1-hero.webp') type('image/webp'))}}
