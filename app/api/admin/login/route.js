@@ -22,6 +22,6 @@ export async function POST(request) {
   await clearAdminLoginFailures(request, email);
   await appendAuditLog({ actor: email, action: "login_success", module: "auth" });
   const response = NextResponse.redirect(new URL("/admin", request.url), 303);
-  response.cookies.set(ADMIN_COOKIE_NAME, createAdminSession(email), adminCookieOptions());
+  response.cookies.set(ADMIN_COOKIE_NAME, createAdminSession(email), adminCookieOptions({ remember: form.get("remember") === "on" }));
   return response;
 }

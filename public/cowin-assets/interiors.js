@@ -34,8 +34,8 @@
       });
     }
     zoom.addEventListener('click', () => {
-      if (!photo.naturalWidth) return;
-      dialogPhoto.src = photo.currentSrc || photo.src;
+      if (!photo.getAttribute('src') || photo.closest('.cw-media').hasAttribute('data-media-missing')) return;
+      dialogPhoto.src = photo.src;
       dialogPhoto.alt = photo.alt;
       dialog.showModal();
     });
@@ -73,13 +73,4 @@
     inquiry.addEventListener('focusout', () => requestAnimationFrame(sync));
   }
 
-  const header = page.querySelector('.cowin-header');
-  if (header) {
-    document.addEventListener('keydown', event => {
-      if (event.key !== 'Escape' || !header.contains(document.activeElement)) return;
-      const toggle = header.querySelector('.cowin-toggle[aria-expanded="true"]');
-      const trigger = header.querySelector('.cowin-dropdown > button[aria-expanded="true"]');
-      (toggle || trigger)?.focus();
-    });
-  }
 })();

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { DataTable, MetricCard } from "@/components/admin/DataPanels";
 import Pagination from "@/components/admin/Pagination";
 import AdminListControls from "@/components/admin/AdminListControls";
@@ -26,17 +27,20 @@ export default async function PathsPage({ searchParams }) {
       </header>
       <section className="metric-grid">
         <MetricCard label="会话数" value={reliable ? result.total : null} hint="当前筛选结果" />
-        <MetricCard label="本页最长路径" value={reliable && paths.length ? paths.reduce((max, item) => Math.max(max, item.paths.length), 0) : null} hint="当前页 · 页面数" />
+        <MetricCard label="本页最长路径" value={reliable && paths.length ? paths.reduce((max, item) => Math.max(max, item.pathCount), 0) : null} hint="当前页 · 访问步数" />
         <MetricCard label="最近会话入口页" value={reliable && paths.length ? paths[0].paths[0] : null} hint="当前页第一个会话" />
       </section>
       <AdminListControls action="/admin/paths" keyword={params?.q} pageSize={result.pageSize} range={range} />
       <DataTable
-        columns={["会话", "访问路径"]}
-        rows={reliable ? paths.map((item) => ({ cells: [item.sessionId.slice(0, 10), item.paths.join(" → ")] })) : []}
+        columns={["会话", "访问路径", "查看"]}
+        rows={reliable ? paths.map((item) => ({
+          id: item.identity,
+          cells: [item.sessionId.slice(0, 10), item.paths.join(" → ") + (item.pathCount > item.paths.length ? ` …（共 ${item.pathCount} 步）` : ""), <Link key={item.identity} className="lead-detail-button" href={`/admin/visitors/${encodeURIComponent(item.identity)}`}>路径详情</Link>]
+        })) : []}
         empty={reliable ? "暂无访问路径数据。" : "生产环境未配置持久化数据库，无法提供可靠的访问路径。"}
       />
       {reliable ? <Pagination basePath="/admin/paths" page={result.page} pageSize={result.pageSize} total={result.total} query={params} /> : null}
-      <p className="admin-data-footnote">访问路径由实际事件按会话标识整理。数据库模式目前使用最近 5,000 条事件，较早路径可能不在当前列表中。</p>
+      <p className="admin-data-footnote">{hasPersistentStore() ? "会话统计覆盖所选日期内的全部已记录事件。列表预览前 12 步，详情可分页查看完整记录。" : "本地模式使用保留的最近 5,000 条事件。"}</p>
     </>
   );
 }

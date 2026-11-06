@@ -1,4 +1,4 @@
-import { getCmsItems } from "@/lib/cmsStore";
+import { getCmsCollections } from "@/lib/cmsStore";
 import { isCanonicalProductRecord } from "@/lib/catalogTaxonomy";
 import { notFoundResponse } from "@/lib/interiorRendering";
 import { filterNews, newsFilterOptions, paginateNews } from "@/lib/newsQuery";
@@ -16,7 +16,7 @@ export async function GET(request) {
     url.searchParams.delete("page");
     return Response.redirect(url, 301);
   }
-  const [news, products] = await Promise.all([getCmsItems("news"), getCmsItems("product")]);
+  const { product: products, news } = await getCmsCollections(["product", "news"]);
   const canonicalProducts = products.filter(isCanonicalProductRecord);
   const filters = Object.fromEntries(["q", "category", "product", "source", "language", "tag", "period", "page", "pageSize"].flatMap(key =>
     url.searchParams.has(key) ? [[key, (url.searchParams.get(key) || "").trim().slice(0, 160)]] : []

@@ -39,7 +39,7 @@ export default async function VisitorsPage({ searchParams }) {
         empty={reliable ? "当前时间范围内没有访客记录。" : "生产环境未配置持久化数据库，无法提供可靠的访客记录。"}
       />
       {reliable ? <Pagination basePath="/admin/visitors" page={customers.page} pageSize={customers.pageSize} total={customers.total} query={params} /> : null}
-      <p className="admin-data-footnote">访客目录由实际询盘与访问事件关联；访问事件最多取最近 5,000 条，较早的访客路径可能不完整。</p>
+      <p className="admin-data-footnote">按访客标识关联实际询盘和已记录的访问事件。范围：{analytics.coverage}。地区缺失时显示未知。</p>
     </>
   );
 }

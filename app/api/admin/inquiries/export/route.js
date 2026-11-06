@@ -51,6 +51,7 @@ export async function GET(request) {
 
   return new Response(`\uFEFF${rows.join("\n")}`, {
     headers: {
+      "cache-control": "private, no-store",
       "content-type": "text/csv; charset=utf-8",
       "content-disposition": `attachment; filename="cowinsupply-inquiries-${new Date().toISOString().slice(0, 10)}.csv"`
     }

@@ -2,14 +2,21 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCustomerDetail } from "@/lib/cmsStore";
 import { MetricCard } from "@/components/admin/DataPanels";
+import Pagination from "@/components/admin/Pagination";
 
 export const dynamic = "force-dynamic";
 
-export default async function VisitorDetailPage({ params }) {
+export default async function VisitorDetailPage({ params, searchParams }) {
   const { identity } = await params;
-  const detail = await getCustomerDetail(decodeURIComponent(identity));
+  const query = await searchParams;
+  const detail = await getCustomerDetail(identity);
   if (!detail) notFound();
   const { customer, inquiries, journey } = detail;
+  const pageSize = 20;
+  const requestedPage = Number(query?.page);
+  const page = Math.min(Math.max(1, Math.ceil(journey.length / pageSize)), Number.isSafeInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1);
+  const offset = (page - 1) * pageSize;
+  const visibleJourney = journey.slice(offset, offset + pageSize);
 
   return <>
     <header className="admin-page-head lead-page-head">
@@ -30,7 +37,8 @@ export default async function VisitorDetailPage({ params }) {
 
     <section className="data-panel visitor-detail-panel">
       <small>访问路径</small><h2>同一客户已保留的浏览记录</h2>
-      {journey.length ? <ol className="journey-timeline">{journey.map((event) => <li key={event.id}><time>{formatTime(event.createdAt)}</time><div><strong>{event.path}</strong><p>{event.title || "未记录页面标题"}</p><span>{event.source || "直接访问"} · {event.device || "未知设备"} · {event.country || "未知地区"}</span>{event.referrer ? <small>来源页：{event.referrer}</small> : null}</div></li>)}</ol> : <div className="empty-line">尚未找到与该访客标识关联的浏览事件。</div>}
+      {visibleJourney.length ? <ol className="journey-timeline" start={offset + 1}>{visibleJourney.map((event) => <li key={event.id}><time>{formatTime(event.createdAt)}</time><div><strong>{event.path}</strong><p>{event.title || "未记录页面标题"}</p><span>{event.source || "未知来源"} · {event.device || "未知设备"} · {event.country || "未知地区"}</span>{event.referrer ? <small>来源页：{event.referrer}</small> : null}</div></li>)}</ol> : <div className="empty-line">尚未找到与该访客标识关联的浏览事件。</div>}
+      {journey.length > pageSize ? <Pagination basePath={`/admin/visitors/${encodeURIComponent(identity)}`} page={page} pageSize={pageSize} total={journey.length} /> : null}
     </section>
 
     <section className="data-panel visitor-detail-panel">

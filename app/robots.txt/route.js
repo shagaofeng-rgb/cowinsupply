@@ -6,7 +6,6 @@ export async function GET() {
     "Allow: /",
     "Disallow: /admin/",
     "Disallow: /api/",
-    "Disallow: /tag/",
     "Disallow: /message/",
     `Sitemap: ${SITE_URL}/sitemap.xml`
   ].join("\n");

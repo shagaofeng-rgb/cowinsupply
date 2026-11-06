@@ -12,7 +12,7 @@ export const metadata = {
 
 const errorMessages = {
   invalid: "邮箱或密码不正确。",
-  "not-configured": "后台密码还没有配置，请先设置 ADMIN_PASSWORD 或 ADMIN_PASSWORD_HASH。",
+  "not-configured": "当前无法登录，请联系管理员。",
   "rate-limited": "登录尝试过于频繁，请稍后再试。"
 };
 
@@ -32,7 +32,7 @@ export default async function AdminLoginPage({ searchParams }) {
         <h1>后台登录</h1>
         <p className="admin-login-copy">登录后可以查看询盘、管理产品与新闻内容。</p>
 
-        {!configured ? <div className="admin-alert">生产环境还没有配置后台密码。</div> : null}
+        {!configured ? <div className="admin-alert">当前无法登录，请联系管理员。</div> : null}
         {error ? <div className="admin-alert">{errorMessages[error] || "登录失败。"}</div> : null}
 
         <form className="admin-login-form" action="/api/admin/login" method="post">
@@ -46,7 +46,7 @@ export default async function AdminLoginPage({ searchParams }) {
             记住登录状态
           </label>
           <button type="submit" disabled={!configured}>登录后台</button>
-          <p className="admin-muted">忘记密码请联系 Cowin Supply 管理员重置环境变量中的后台密码。</p>
+          <p className="admin-muted">忘记密码请联系 Cowin Supply 管理员。</p>
         </form>
       </section>
     </main>

@@ -1,4 +1,4 @@
-import { getCmsItems } from "@/lib/cmsStore";
+import { getCmsCollections } from "@/lib/cmsStore";
 import { canonicalProductSlug, isCanonicalProductRecord } from "@/lib/catalogTaxonomy";
 import { notFoundResponse } from "@/lib/interiorRendering";
 import { uniqueNews } from "@/lib/newsDuplicates";
@@ -19,7 +19,7 @@ export async function GET(request, { params }) {
   const slug = rawSlug.replace(/\.html$/i, "");
   const canonicalSlug = canonicalProductSlug(slug);
   if (canonicalSlug !== slug) return Response.redirect(new URL(`/product/${encodeURIComponent(canonicalSlug)}.html`, request.url), 301);
-  const [records, news] = await Promise.all([getCmsItems("product"), getCmsItems("news")]);
+  const { product: records, news } = await getCmsCollections(["product", "news"]);
   const products = records.filter(isCanonicalProductRecord);
   const product = products.find((item) => item.slug === slug);
   if (!product) return notFoundResponse();

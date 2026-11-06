@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   IconActivity, IconArticle, IconBook2, IconCategory, IconChartBar, IconChartDots3,
   IconChevronRight, IconDatabase, IconDeviceDesktopAnalytics, IconFileSearch,
@@ -44,24 +44,52 @@ const groups = [
 export default function AdminShell({ children, email }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const sidebar = useRef(null);
+  const toggle = useRef(null);
+  const dismiss = useRef(null);
+
+  function closeMenu() {
+    if (!menuOpen) return;
+    setMenuOpen(false);
+    requestAnimationFrame(() => toggle.current?.focus());
+  }
 
   useEffect(() => {
     if (!menuOpen) return undefined;
-    const closeOnEscape = (event) => { if (event.key === "Escape") setMenuOpen(false); };
-    window.addEventListener("keydown", closeOnEscape);
-    return () => window.removeEventListener("keydown", closeOnEscape);
+    dismiss.current?.focus();
+    const desktop = window.matchMedia("(min-width: 981px)");
+    const closeOnResize = () => { if (desktop.matches) setMenuOpen(false); };
+    const keyboard = (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setMenuOpen(false);
+        requestAnimationFrame(() => toggle.current?.focus());
+      } else if (event.key === "Tab") {
+        const links = sidebar.current?.querySelectorAll("a[href],button:not([disabled])");
+        const first = links?.[0];
+        const last = links?.[links.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+        if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+      }
+    };
+    desktop.addEventListener("change", closeOnResize);
+    window.addEventListener("keydown", keyboard);
+    return () => {
+      desktop.removeEventListener("change", closeOnResize);
+      window.removeEventListener("keydown", keyboard);
+    };
   }, [menuOpen]);
 
   return (
     <div className="admin-dashboard admin-v2">
-      {menuOpen ? <button className="admin-nav-backdrop" type="button" aria-label="关闭导航" onClick={() => setMenuOpen(false)} /> : null}
-      <aside className={`admin-sidebar ${menuOpen ? "is-open" : ""}`} aria-label="后台导航">
+      {menuOpen ? <button className="admin-nav-backdrop" type="button" tabIndex={-1} aria-label="关闭导航" onClick={closeMenu} /> : null}
+      <aside className={`admin-sidebar ${menuOpen ? "is-open" : ""}`} id="admin-sidebar" ref={sidebar} aria-label="后台导航">
         <div className="admin-sidebar-top">
-          <Link className="admin-logo" href="/admin" onClick={() => setMenuOpen(false)} aria-label="Cowin Supply 后台首页">
+          <Link className="admin-logo" href="/admin" onClick={closeMenu} aria-label="Cowin Supply 后台首页">
             <strong>COWIN<span>SUPPLY</span></strong>
             <small>管理后台</small>
           </Link>
-          <button className="admin-nav-close" type="button" aria-label="关闭导航" onClick={() => setMenuOpen(false)}><IconX size={22} /></button>
+          <button className="admin-nav-close" type="button" ref={dismiss} aria-label="关闭导航" onClick={closeMenu}><IconX size={22} /></button>
         </div>
         <nav aria-label="主导航">
           {groups.map((group) => (
@@ -69,7 +97,7 @@ export default function AdminShell({ children, email }) {
               <span className="admin-nav-heading">{group.title}</span>
               {group.links.map(({ href, label, icon: Icon }) => {
                 const active = href === "/admin" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
-                return <Link className={active ? "is-active" : ""} aria-current={active ? "page" : undefined} href={href} key={href} onClick={() => setMenuOpen(false)}>
+                return <Link className={active ? "is-active" : ""} aria-current={active ? "page" : undefined} href={href} key={href} onClick={closeMenu}>
                   <Icon size={20} stroke={1.9} aria-hidden="true" /><span>{label}</span>{active ? <IconChevronRight className="admin-nav-chevron" size={16} aria-hidden="true" /> : null}
                 </Link>;
               })}
@@ -82,9 +110,9 @@ export default function AdminShell({ children, email }) {
           <form action="/api/admin/logout" method="post"><button type="submit"><IconLogout size={18} aria-hidden="true" />退出登录</button></form>
         </div>
       </aside>
-      <div className="admin-workspace">
+      <div className="admin-workspace" inert={menuOpen || undefined}>
         <header className="admin-topbar">
-          <button className="admin-nav-toggle" type="button" aria-label="打开导航" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}><IconMenu2 size={22} /></button>
+          <button className="admin-nav-toggle" type="button" ref={toggle} aria-label="打开导航" aria-controls="admin-sidebar" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}><IconMenu2 size={22} /></button>
           <strong>CowinSupply 管理后台</strong>
           <span className="admin-topbar-account">{email}</span>
         </header>

@@ -1,5 +1,5 @@
 import { publicHtmlResponse } from "@/lib/staticHtml";
-import { getCmsItems, getSeoGoneUrls } from "@/lib/cmsStore";
+import { getCmsCollections, getSeoGoneUrls } from "@/lib/cmsStore";
 import { isCanonicalProductRecord } from "@/lib/catalogTaxonomy";
 import { notFoundResponse } from "@/lib/interiorRendering";
 import { renderNewsDetailHtml } from "@/lib/newsRendering";
@@ -10,19 +10,18 @@ export const dynamic = "force-dynamic";
 
 export async function GET(request, { params }) {
   const { slug } = await params;
-  if (/\.html$/i.test(String(slug || ""))) {
-    const canonicalSlug = String(slug).replace(/\.html$/i, "");
-    return Response.redirect(new URL(`/news/${encodeURIComponent(canonicalSlug)}`, request.url), 301);
-  }
-  const cleanSlug = String(slug || "").replace(/\.html$/, "");
+  const rawSlug = String(slug || "");
+  const cleanSlug = rawSlug.replace(/\.html$/i, "");
   const redirectTarget = LEGACY_NEWS_REDIRECTS.get(cleanSlug);
   if (redirectTarget) return Response.redirect(new URL(redirectTarget, request.url), 301);
   if ((await getSeoGoneUrls()).includes(`/news/${cleanSlug}`)) return new Response("Gone", { status: 410 });
-  const [news, products] = await Promise.all([getCmsItems("news"), getCmsItems("product")]);
+  const { product: products, news } = await getCmsCollections(["product", "news"]);
   const article = news.find((item) => item.slug === cleanSlug);
   if (article) {
     const canonicalSlug = canonicalNewsBySlug(news).get(cleanSlug);
-    if (canonicalSlug && canonicalSlug !== cleanSlug) return Response.redirect(new URL(`/news/${encodeURIComponent(canonicalSlug)}`, request.url), 301);
+    if (rawSlug !== cleanSlug || (canonicalSlug && canonicalSlug !== cleanSlug)) {
+      return Response.redirect(new URL(`/news/${encodeURIComponent(canonicalSlug || cleanSlug)}`, request.url), 301);
+    }
     return new Response(renderNewsDetailHtml({ article, products: products.filter(isCanonicalProductRecord), relatedNews: uniqueNews(news) }), {
       // A newly published article must be visible immediately to the front-end
       // verification step and to visitors. The database remains the source of truth.

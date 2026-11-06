@@ -5,9 +5,10 @@ export const dynamic = "force-dynamic";
 
 export async function GET(_request, { params }) {
   const { slug } = await params;
-  const news = await getCmsItems("news", { includeInactive: true });
+  const news = await getCmsItems("news");
   const article = news.find((item) => item.slug === slug);
-  return new Response(renderGeneratedCoverSvg(article?.title || "Cowin Supply News"), {
-    headers: { "content-type": "image/svg+xml; charset=utf-8", "cache-control": "public, max-age=86400, immutable" }
+  if (!article) return new Response("Not found", { status: 404, headers: { "x-robots-tag": "noindex" } });
+  return new Response(renderGeneratedCoverSvg(article.title), {
+    headers: { "content-type": "image/svg+xml; charset=utf-8", "cache-control": "public, max-age=3600", "x-robots-tag": "noindex" }
   });
 }

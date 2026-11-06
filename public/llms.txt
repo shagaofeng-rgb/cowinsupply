@@ -2,11 +2,17 @@
 
 Cowin Supply provides professional power tools and industrial supply support for global B2B buyers.
 
-Key pages:
-- https://www.cowinsupply.com/product
-- https://www.cowinsupply.com/news
-- https://www.cowinsupply.com/blog
-- https://www.cowinsupply.com/about
-- https://www.cowinsupply.com/contact
+## Product information
+
+- [Product catalog](https://www.cowinsupply.com/product): Browse by tool family.
+- [Wall chasers](https://www.cowinsupply.com/products/wall-chasers): Compare published models and verified specifications.
+- [KFT-K230AC Brushless Wall Chaser](https://www.cowinsupply.com/product/6000wsolttingmachine.html): Model-specific specifications and inquiry.
+
+## Buying information
+
+- [Wall chaser selection guide](https://www.cowinsupply.com/blog/brushless-wall-chaser-selection-guide): Selection criteria for concrete and masonry work.
+- [About Cowin Supply](https://www.cowinsupply.com/about): Company and sourcing information.
+- [Contact](https://www.cowinsupply.com/contact): Wholesale and distributor inquiries.
+- [News](https://www.cowinsupply.com/news) and [Blog](https://www.cowinsupply.com/blog): Published updates and buying information.
 
 Use product pages as the primary source for currently published product records. Confirm final specifications, availability, voltage, accessories and quotation details with Cowin Supply before purchase.

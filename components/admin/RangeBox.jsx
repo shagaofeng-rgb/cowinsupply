@@ -44,6 +44,7 @@ export default function RangeBox() {
     <section className="range-box" aria-label="时间范围">
       <small>时间范围</small>
       <span>当前查看：{getAdminRangeLabel(selected)}（北京时间）</span>
+      {searchParams.get("range") === "custom" && selected.range !== "custom" ? <p role="status" className="admin-data-footnote">自定义日期无效，已按今天显示。</p> : null}
       <div className="range-options">
         {Object.entries(RANGE_LABELS).map(([range, label]) => (
           <button

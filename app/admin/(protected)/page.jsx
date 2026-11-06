@@ -5,16 +5,15 @@ import { DataTable, MetricCard, SyncStrip } from "@/components/admin/DataPanels"
 import RangeBox from "@/components/admin/RangeBox";
 import TrafficTrend from "@/components/admin/TrafficTrend";
 import { getAdminDateRange } from "@/lib/adminDateRange";
-import { getAnalyticsReport, getCmsItems, getInquiriesPage, getSyncStatus } from "@/lib/cmsStore";
+import { getAnalyticsReport, getCmsCollections, getInquiriesPage, getSyncStatus } from "@/lib/cmsStore";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminDashboardPage({ searchParams }) {
   const range = getAdminDateRange(await searchParams);
-  const [analytics, products, news, inquiries, sync] = await Promise.all([
+  const [analytics, { product: products, news }, inquiries, sync] = await Promise.all([
     getAnalyticsReport(range),
-    getCmsItems("product", { includeInactive: true }),
-    getCmsItems("news", { includeInactive: true }),
+    getCmsCollections(["product", "news"], { includeInactive: true }),
     getInquiriesPage({ ...range, page: 1, pageSize: 10 }),
     getSyncStatus()
   ]);

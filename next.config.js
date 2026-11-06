@@ -1,20 +1,6 @@
-/** @type {import('next').NextConfig} */
-const legacyNewsSlugs = [
-  "35",
-  "36",
-  "anglegrinder",
-  "AngleGrinderBrushless",
-  "AngleGrinderIndustry",
-  "AngleGrinders",
-  "anglegrinderskeyrole",
-  "brushlessangelgrinders",
-  "index-q257a9712e3",
-  "index-q289b109c68",
-  "IndustrialAngleGrinder",
-  "repair",
-  "WallChaseImproves"
-];
+const legacyNewsRedirects = require("./lib/legacyNewsRedirects.json");
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
   trailingSlash: false,
@@ -39,9 +25,17 @@ const nextConfig = {
       { source: "/product/index.html", destination: "/product", permanent: true },
       { source: "/blog/index.html", destination: "/blog", permanent: true },
       { source: "/news/index.html", destination: "/news", permanent: true },
+      { source: "/measuring-tools", destination: "/products/measuring-tools", permanent: true },
+      { source: "/products/electric-wall-chasers", destination: "/products/wall-chasers", permanent: true },
+      { source: "/industrial-tools", destination: "/product", permanent: true },
       { source: "/es/blog", destination: "/blog", permanent: true },
       { source: "/es/blog/:slug", destination: "/blog/:slug", permanent: true },
-      ...legacyNewsSlugs.map((slug) => ({ source: `/news/${slug}.html`, destination: "/news", permanent: true }))
+      // Redirect old HTML before public file lookup can serve the archived copy.
+      ...Object.entries(legacyNewsRedirects).map(([slug, destination]) => ({
+        source: `/news/${slug}.html`, destination, permanent: true
+      })),
+      { source: "/news/index-q257a9712e3.html", destination: "/news", permanent: true },
+      { source: "/news/index-q289b109c68.html", destination: "/news", permanent: true }
     ];
   }
 };

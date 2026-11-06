@@ -1,7 +1,8 @@
 import { apiError, apiOk } from "@/lib/adminApi";
-import { recordInquiryNotification, saveInquiry } from "@/lib/cmsStore";
+import { appendInquiryActivity, recordInquiryNotification, saveInquiry } from "@/lib/cmsStore";
 import { sendAdminInquiryEmail } from "@/lib/emailService";
 import { allowInquiry } from "@/lib/inquiryRateLimit";
+import { inquirySubmissionId } from "@/lib/inquirySubmission";
 import { after } from "next/server";
 
 export const maxDuration = 60;
@@ -28,33 +29,43 @@ export async function POST(request) {
   if ([body.name, body.email, body.company, body.phone, body.product, body.message, body.country, body.buyerType, body.estimatedQuantity, body.requiredSpecification, body.productModel, body.pageUrl].some((value) => String(value || "").length > 4000)) {
     return apiError("Inquiry contains an invalid field length.", 400);
   }
-  if (!(await allowInquiry(request))) {
-    return apiError("Too many submissions. Please try again later.", 429);
-  }
-
-  const inquiry = await saveInquiry({
-    ...body,
-    userAgent: request.headers.get("user-agent") || "",
-    visitorCountry: request.headers.get("x-vercel-ip-country") || ""
-  });
-  after(async () => {
-  let notification = { sent: false };
-
+  let saved;
   try {
-    notification = await sendAdminInquiryEmail(inquiry);
+    if (!(await allowInquiry(request))) return apiError("Too many submissions. Please try again later.", 429);
+    saved = await saveInquiry({
+      ...body,
+      userAgent: request.headers.get("user-agent") || "",
+      visitorCountry: request.headers.get("x-vercel-ip-country") || ""
+    }, inquirySubmissionId(request.headers.get("idempotency-key"), body));
   } catch (error) {
-    console.error("[inquiry] Email notification failed:", error?.message || error);
-    notification = { sent: false, reason: "email-send-failed" };
+    console.error("[inquiry] Unable to persist inquiry:", error?.code || error?.name || "unknown-error");
+    return apiError("We could not save your inquiry. Please try again or contact us on WhatsApp.", 503);
   }
-  try {
-    await recordInquiryNotification({ inquiryId: inquiry.id, ...notification });
-  } catch (error) {
-    console.error("[inquiry] Notification audit logging failed:", error?.message || error);
+  const { inquiry, created } = saved;
+  if (created) {
+    after(async () => {
+      try {
+        await appendInquiryActivity({ inquiryId: inquiry.id, type: "received", actor: "website", summary: "Website inquiry received" });
+      } catch (error) {
+        console.error("[inquiry] Unable to log receipt:", inquiry.id, error?.code || error?.name || "unknown-error");
+      }
+      let notification;
+      try {
+        notification = await sendAdminInquiryEmail(inquiry);
+      } catch (error) {
+        console.error("[inquiry] Email notification failed:", inquiry.id, error?.code || error?.name || "unknown-error");
+        notification = { sent: false, reason: "email-send-failed" };
+      }
+      try {
+        await recordInquiryNotification({ inquiryId: inquiry.id, ...notification });
+      } catch (error) {
+        console.error("[inquiry] Notification audit logging failed:", inquiry.id, error?.code || error?.name || "unknown-error");
+      }
+    });
   }
-  });
 
   if (!isJson) {
     return Response.redirect(new URL("/message?success=1", request.url), 303);
   }
-  return apiOk({ inquiry: { id: inquiry.id }, notification: { status: "pending" } }, { status: 201 });
+  return apiOk({ inquiry: { id: inquiry.id }, notification: { status: created ? "pending" : "existing" } }, { status: created ? 201 : 200 });
 }
