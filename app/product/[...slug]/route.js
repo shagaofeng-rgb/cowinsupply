@@ -26,6 +26,10 @@ export async function GET(request, { params }) {
   const relatedProducts = products.filter(item => item.slug !== slug && item.categorySlug === product.categorySlug).slice(0, 3);
   const relatedNews = uniqueNews(news).filter(item => newsMatchesProduct(item, product)).slice(0, 3);
   return new Response(renderProductDetailHtml({ product, relatedProducts, relatedNews }), {
-    headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=0, must-revalidate" }
+    headers: {
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "vercel-cdn-cache-control": "public, s-maxage=30"
+    }
   });
 }
