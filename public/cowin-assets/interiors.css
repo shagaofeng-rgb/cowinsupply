@@ -56,6 +56,7 @@
 .interior .cw-text-link { display: inline-flex; gap: 7px; align-items: center; color: var(--cw-accent); font-weight: 750; text-decoration: none; }
 .interior .cw-text-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .interior .cw-media { display: grid; place-items: center; position: relative; overflow: hidden; min-width: 0; aspect-ratio: 3 / 2; background: #eef0ef; }
+.interior .cw-media > picture { display: contents; }
 .interior .cw-media img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: cover; }
 .interior .cw-media-product { background: #f2f2ef; }
 .interior .cw-media-product img { object-fit: contain; mix-blend-mode: multiply; }
