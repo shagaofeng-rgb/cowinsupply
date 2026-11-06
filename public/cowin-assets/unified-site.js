@@ -53,7 +53,8 @@
       event.preventDefault();
     }
   });
-  window.addEventListener('pageshow', close);
+  // Reset a restored page, but leave menus alone while a new page finishes loading.
+  window.addEventListener('pageshow', (event) => { if (event.persisted) close(); });
   wide.addEventListener('change', close);
 
   document.querySelectorAll('form[action="/api/inquiry"]').forEach(form => {
